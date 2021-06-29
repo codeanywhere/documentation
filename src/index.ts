@@ -3,11 +3,12 @@ import marked from 'marked'
 import { promises as fs } from 'fs'
 import path from 'path'
 require('ejs')
+require('dotenv').config()
 
 const app = express()
 app.use(express.static('static'))
-app.use(express.static(__dirname + "/public"))
-app.set('views', __dirname + '/views');
+app.use(express.static(__dirname + '/public'))
+app.set('views', __dirname + '/views')
 app.set('view engine', 'ejs')
 
 marked.setOptions({
@@ -63,6 +64,7 @@ app.get('/:category/:slug', async (req, res) => {
   })
 })
 
-app.listen(3000, () => {
-  console.log('Docs running at port 3000')
+const port = process.env.PROCESS_PORT || 3000
+app.listen(port, () => {
+  console.log(`Docs running at port ${port}`)
 })
