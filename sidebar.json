@@ -1,0 +1,107 @@
+[
+    {
+        "name": "Get Started",
+        "slug": "getting-started",
+        "contents": [
+            {
+                "name": "What is Codeanywhere?",
+                "slug": "what-is-codeanywhere"
+            },
+            {
+                "name": "Quick Tutorial",
+                "slug": "quick-tutorial"
+            },
+            {
+                "name": "Frequently Asked Questions",
+                "slug": "faq"
+            }
+        ]
+    },
+    {
+        "name": "Connections",
+        "slug": "connections",
+        "contents": [
+            {
+                "name": "Container",
+                "slug": "container"
+            },
+            {
+                "name": "Container Configuration",
+                "slug": "container-configuration"
+            },
+            {
+                "name": "Setting Custom Domain",
+                "slug": "setting-custom-domain"
+            }
+        ]
+    },{
+        "name": "Preferences",
+        "slug": "preferences",
+        "contents": [
+          {
+            "name": "Preferences Structure",
+            "slug": "preferences-structure"
+          },
+          {
+            "name": "General",
+            "slug": "general"
+          },
+          {
+            "name": "Key Bindings",
+            "slug": "key-bindings"
+          },
+          {
+            "name": "Linting",
+            "slug": "linting"
+          },
+          {
+            "name": "Snippets",
+            "slug": "snippets"
+          }
+        ]
+      },
+    {
+        "name": "Features",
+        "slug": "features",
+        "contents": [
+            {
+                "name": "Color Picker",
+                "slug": "color-picker"
+            },
+            {
+                "name": "Share",
+                "slug": "share"
+            },
+            {
+                "name": "Pair Programming",
+                "slug": "pair-programming"
+            },
+            {
+                "name": "Distraction Free Mode",
+                "slug": "distraction-free-mode"
+            }
+        ]
+    },
+    {
+        "name": "Account Management",
+        "slug": "account-management",
+        "contents": [
+            {
+                "name": "Purchasing a Premium Plan",
+                "slug": "purchase-premium-plan"
+            },
+            {
+                "name": "Addons",
+                "slug": "addons"
+            },
+            {
+                "name": "Trial Plan",
+                "slug": "trial-plan"
+            },
+            {
+                "name": "Cancel Membership",
+                "slug": "cancel-membership"
+            }
+        ]
+    }
+]
