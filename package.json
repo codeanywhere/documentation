@@ -1,0 +1,42 @@
+{
+  "name": "codeanywhere-docs",
+  "version": "1.0.0",
+  "description": "This is the repo for the [documentation](https://repl.it/site/docs) for [Repl.it](https://repl.it), a powerful online IDE.",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "copy-assets": "cp -R src/views dist/ && cp -R src/docs dist/ && cp -R src/public dist/",
+    "tsc": "tsc",
+    "build": "npm run clean && npm run tsc && npm run copy-assets",
+    "dev:start": "npm run build && npm start",
+    "dev": "nodemon --watch src -e ts,ejs --exec npm run dev:start",
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format:check": "prettier --check ./index.ts",
+    "format": "prettier --write src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/replit/replit.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/replit/replit.github.io/issues"
+  },
+  "homepage": "https://github.com/replit/replit.github.io#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "highlight.js": "^9.15.10",
+    "marked": "^0.7.0",
+    "nodemon": "^2.0.8",
+    "prettier": "^2.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "@types/marked": "^2.0.3",
+    "typescript": "^4.3.4"
+  }
+}
