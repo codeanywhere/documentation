@@ -12,43 +12,48 @@
     />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-    <link
-      rel="shortcut icon"
-      href="/favicon.ico"
-    />
+    <link rel="shortcut icon" href="/favicon.ico" />
     <script>
-      (function (isTouchDevice) {
-        if (!isTouchDevice) return;
-        var isTouchClass = "is-touch-device";
-        var docElement = document.documentElement;
+      ;(function (isTouchDevice) {
+        if (!isTouchDevice) return
+        var isTouchClass = 'is-touch-device'
+        var docElement = document.documentElement
         docElement.className = docElement.className
-          ? [docElement.className, isTouchClass].join(" ")
-          : isTouchClass;
+          ? [docElement.className, isTouchClass].join(' ')
+          : isTouchClass
       })(
-        "ontouchstart" in window ||
+        'ontouchstart' in window ||
           (window.DocumentTouch && document instanceof DocumentTouch)
-      );
+      )
     </script>
   </head>
   <body>
     <div class="docs-container">
       <%- include('header'); %>
 
-      <div class="content-container" >
+      <div class="content-container">
         <div class="menu__content" data-menu="content">
           <div class="sidebar">
-            <% for (const cat of sidebar) { %>
+            <% for (const section of sidebar) { %>
             <div>
-              <div class="sidebar-heading"><%= cat.name %></div>
+              <span class="sidebar-section"><%= section.name %></span>
               <ul class="sidebar-list">
-                <% for (const c of cat.contents) { %>
-                <li>
-                  <% const path = cat.slug + '/' + c.slug; const alink = active
-                  === path ? 'active' : ''; %>
-                  <a class="sidebar-link <%= alink %>" href="/<%= path %>">
-                    <%= c.name %>
-                  </a>
-                </li>
+                <% for (const subsection of section.contents) { %>
+                <div>
+                  <div class="sidebar-subsection"><%= subsection.name %></div>
+                  <ul class="sidebar-list">
+                    <% for (const article of subsection.contents) { %>
+                    <li>
+                      <% const path = section.slug + '/' + subsection.slug + '/'
+                      + article.slug; const alink = active === path ? 'active' :
+                      ''; %>
+                      <a class="sidebar-link <%= alink %>" href="/<%= path %>">
+                        <%= article.name %>
+                      </a>
+                    </li>
+                    <% } %>
+                  </ul>
+                </div>
                 <% } %>
               </ul>
             </div>

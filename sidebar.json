@@ -1,40 +1,61 @@
 [
-    {
-        "name": "Get Started",
+  {
+    "name": "General",
+    "slug": "general",
+    "contents": [
+      {
+        "name": "Getting Started",
         "slug": "getting-started",
         "contents": [
-            {
-                "name": "What is Codeanywhere?",
-                "slug": "what-is-codeanywhere"
-            },
-            {
-                "name": "Quick Tutorial",
-                "slug": "quick-tutorial"
-            },
-            {
-                "name": "Frequently Asked Questions",
-                "slug": "faq"
-            }
+          {
+            "name": "What is Codeanywhere?",
+            "slug": "what-is-codeanywhere"
+          },
+          {
+            "name": "Quick Tutorial",
+            "slug": "quick-tutorial"
+          },
+          {
+            "name": "Frequently Asked Questions",
+            "slug": "faq"
+          }
         ]
-    },
-    {
+      },
+      {
+        "name": "Pricing",
+        "slug": "pricing",
+        "contents": [
+          {
+            "name": "Plans",
+            "slug": "plans"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Editor",
+    "slug": "editor",
+    "contents": [
+      {
         "name": "Connections",
         "slug": "connections",
         "contents": [
-            {
-                "name": "Container",
-                "slug": "container"
-            },
-            {
-                "name": "Container Configuration",
-                "slug": "container-configuration"
-            },
-            {
-                "name": "Setting Custom Domain",
-                "slug": "setting-custom-domain"
-            }
+          {
+            "name": "Container",
+            "slug": "container"
+          },
+          {
+            "name": "Container Configuration",
+            "slug": "container-configuration"
+          },
+          {
+            "name": "Setting Custom Domain",
+            "slug": "setting-custom-domain"
+          }
         ]
-    },{
+      },
+      {
         "name": "Preferences",
         "slug": "preferences",
         "contents": [
@@ -60,48 +81,56 @@
           }
         ]
       },
-    {
+      {
         "name": "Features",
         "slug": "features",
         "contents": [
-            {
-                "name": "Color Picker",
-                "slug": "color-picker"
-            },
-            {
-                "name": "Share",
-                "slug": "share"
-            },
-            {
-                "name": "Pair Programming",
-                "slug": "pair-programming"
-            },
-            {
-                "name": "Distraction Free Mode",
-                "slug": "distraction-free-mode"
-            }
+          {
+            "name": "Color Picker",
+            "slug": "color-picker"
+          },
+          {
+            "name": "Share",
+            "slug": "share"
+          },
+          {
+            "name": "Pair Programming",
+            "slug": "pair-programming"
+          },
+          {
+            "name": "Distraction Free Mode",
+            "slug": "distraction-free-mode"
+          }
         ]
-    },
-    {
+      }
+    ]
+  },
+  {
+    "name": "Dashboard",
+    "slug": "dashboard",
+    "contents": [
+      {
         "name": "Account Management",
         "slug": "account-management",
         "contents": [
-            {
-                "name": "Purchasing a Premium Plan",
-                "slug": "purchase-premium-plan"
-            },
-            {
-                "name": "Addons",
-                "slug": "addons"
-            },
-            {
-                "name": "Trial Plan",
-                "slug": "trial-plan"
-            },
-            {
-                "name": "Cancel Membership",
-                "slug": "cancel-membership"
-            }
+          {
+            "name": "Purchasing a Premium Plan",
+            "slug": "purchase-premium-plan"
+          },
+          {
+            "name": "Addons",
+            "slug": "addons"
+          },
+          {
+            "name": "Trial Plan",
+            "slug": "trial-plan"
+          },
+          {
+            "name": "Cancel Membership",
+            "slug": "cancel-membership"
+          }
         ]
-    }
+      }
+    ]
+  }
 ]
