@@ -1,11 +1,137 @@
-# Placeholder
+# Frequently Asked Questions
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna cursus. Sed id semper risus in hendrerit gravida rutrum. Consequat interdum varius sit amet. Donec adipiscing tristique risus nec feugiat in fermentum posuere. Aenean et tortor at risus viverra adipiscing. Augue eget arcu dictum varius duis at. Eget mauris pharetra et ultrices. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Ac feugiat sed lectus vestibulum mattis ullamcorper. Cras pulvinar mattis nunc sed.
+### <a name="access-ide" href="#access-ide" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to access the IDE after I've created an account?
 
-Luctus venenatis lectus magna fringilla urna. Id diam vel quam elementum pulvinar etiam non. Sed augue lacus viverra vitae congue. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. Et pharetra pharetra massa massa ultricies. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Vivamus arcu felis bibendum ut. Aliquet eget sit amet tellus cras. Vestibulum morbi blandit cursus risus at. Dui ut ornare lectus sit. Urna condimentum mattis pellentesque id nibh tortor id aliquet lectus. Volutpat maecenas volutpat blandit aliquam etiam. Adipiscing diam donec adipiscing tristique risus nec. Diam maecenas sed enim ut. Vestibulum lorem sed risus ultricies tristique nulla. Volutpat commodo sed egestas egestas fringilla phasellus. Ut tristique et egestas quis ipsum.
+Codeanywhere has introduced a <code>new and improved</code> VS Code based editor with a completely revamped experience.
 
-Vitae aliquet nec ullamcorper sit. Dignissim convallis aenean et tortor at risus. Etiam erat velit scelerisque in dictum non consectetur. Egestas integer eget aliquet nibh praesent tristique magna. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Quam adipiscing vitae proin sagittis. Sit amet consectetur adipiscing elit ut aliquam purus sit amet. Nec sagittis aliquam malesuada bibendum arcu vitae elementum. Ac ut consequat semper viverra nam libero justo. Volutpat est velit egestas dui id ornare. A pellentesque sit amet porttitor eget. Morbi quis commodo odio aenean. At ultrices mi tempus imperdiet nulla. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis. Tempor nec feugiat nisl pretium fusce id velit ut. Nulla aliquet enim tortor at auctor urna nunc id cursus. Arcu felis bibendum ut tristique et egestas quis ipsum. Vitae tortor condimentum lacinia quis vel eros donec. Suspendisse interdum consectetur libero id faucibus. Ipsum suspendisse ultrices gravida dictum fusce ut placerat.
+Find out [here](/editor/introduction/how-to-access) how to access it.
 
-Eu scelerisque felis imperdiet proin. Maecenas pharetra convallis posuere morbi leo urna. Id leo in vitae turpis massa sed. Ultrices in iaculis nunc sed augue lacus viverra vitae. Est ullamcorper eget nulla facilisi. Ullamcorper sit amet risus nullam eget felis. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Ut lectus arcu bibendum at. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui. Blandit massa enim nec dui nunc mattis enim ut tellus.
+### <a name="which-stack-to-select" href="#which-stack-to-select" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Which stack to select? Which programming language will I use the most?
 
-Tortor id aliquet lectus proin. In nulla posuere sollicitudin aliquam ultrices sagittis. Accumsan lacus vel facilisis volutpat est velit egestas dui. Maecenas pharetra convallis posuere morbi. Lacus laoreet non curabitur gravida arcu ac tortor dignissim. Proin sagittis nisl rhoncus mattis. Tortor id aliquet lectus proin. Eu feugiat pretium nibh ipsum consequat nisl. Egestas congue quisque egestas diam in arcu cursus euismod. Tempus iaculis urna id volutpat lacus. Amet facilisis magna etiam tempor orci eu lobortis elementum.
+Codeanywhere offers you a wide range of <code>predefined stacks</code>:
+
+- **Default** – Blank Development Container
+- **PHP** – LAMP Development Stack with phpMyAdmin and Composer preinstalled
+- **NodeJS** – NodeJS Development Stack with npm and yarn preinstalled
+- **Ruby** – Ruby Development Stack with RVM and Ruby on Rails preinstalled
+- **Python** – Python Development Stack with pyenv, pip and virtualenv preinstalled
+- **C/C++** – C/C++ Development Stack with gcc and g++ compiler and gdb preinstalled
+- **HTML** – HTML5 Development Stack with Apache, Node.js and npm preinstalled
+- **Wordpress** – LAMP Development Stack with Wordpress, phpMyAdmin and Composer preinstalled
+- **Java** – Java Development Stack with OpenJDK7, OpenJDE7 and Tomcat7 preinstalled
+- **.NET Core** – .NET Core Development Stack
+
+You should use a stack or a programming language which best fits your programming needs. If you wish to create a custom stack, you can do so by following [these instructions](/dashboard/custom-stacks/create-new-stack).
+
+### <a name="allowed-connections" href="#allowed-connections" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Which connections are allowed and how to connect them?
+
+Codeanywhere offers their users the ability to create the following types of connections:
+
+- **SSH**
+- **FTP**
+- **FTPS**
+
+Don't know how to create a new connection? Learn [here](/dashboard/connections/create-new-connection).
+
+### <a name="team-sharing" href="#team-sharing" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to enable team sharing?
+
+Codeanywhere has introduced a new <code>Team Sharing</code> feature in the new IDE. Find out [here](/editor/teams/collaborate-as-a-team) how to activate it.
+
+### <a name="collaborative-programming" href="#collaborative-programming" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to enable collaborative programming?
+
+Collaborative programming is <code>enabled by default</code> in Codeanywhere. All you need to do is [invite a friend](/editor/collaboration/share-container) and start coding.
+
+### <a name="edit-container-configuration" href="#edit-container-configuration" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to edit container configuration details?
+
+Unfortunately, it isn't possible to edit container configuration details.
+
+### <a name="validate-keys" href="#validate-keys" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to validate SSH / SFTP / Public / Private keys?
+
+Todo
+
+### <a name="integrate-github" href="#integrate-github" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to integrate GitHub into Codeanywhere?
+
+If you wish to connect your Codeanywhere account to your Githhub account, navigate to the <code>Account</code> tab in the sidebar and select <code>Connect</code> to Github.
+
+<p><img src="/images/general/getting-started/7.png" alt="Connect with Github" class="width-90"/></p>
+
+You will be redirected to the Github authorization page to where you will have to confirm your identity and select the <code>Authorize Codeanywhere</code> option.
+
+### <a name="custom-vsix" href="#custom-vsix" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Can I use custom extensions in the editor?
+
+Codeanywhere offers you the ability to use custom <code>VSIX</code> extensions in the IDE. Find more information [here](/editor/extensions/install-custom-vsix-extensions).
+
+### <a name="preview-progress" href="#preview-progress" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How can I preview my app progress?
+
+Codeanywhere offers their users the ability to preview their app progress via public or private links. In the editor, select <code>View -> Preview Ports</code> to enable the Preview Ports widget.
+
+<p><img src="/images/general/getting-started/10.png" alt="Enable Preview Ports" class="width-90"/></p>
+
+If your app is running, it should show up in the Preview Ports widget. Users can preview their app locally or using a public link accessible to anyone.
+
+<p><img src="/images/general/getting-started/11.png" alt="Preview Ports widget" class="width-90"/></p>
+
+**Note**: You can only preview apps running at <code>0.0.0.0</code>.
+
+### <a name="third-party-connections" href="#third-party-connections" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>I want to use third-party connections like DigitalOcean and SFTP. How can I use the new IDE with them?
+
+To do
+
+### <a name="coding-session-users-limit" href="#coding-session-users-limit" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How many users with a basic plan can participate in a coding session?
+
+Codeanywhere <code>doesn't limit</code> the number of users that can participate in a coding session.
+
+### <a name="concurrent-coding-sessions-limit"  href="#concurrent-coding-sessions-limit" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How many different coding sessions can be run concurrently with the basic plan?
+
+Codeanywhere <code>doesn't limit</code> the number of concurrent coding sessions.
+
+### <a name="what-is-a-coding-session"  href="#what-is-a-coding-session" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>What is a Coding Session?
+
+To do
+
+### <a name="invite-friend-to-collaborate" href="#invite-friend-to-collaborate" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to invite a friend to collaborate?
+
+Codeanywhere offers their users the ability to share their containers and projects with their friends and coworkers.
+
+Find out [here](/editor/collaboration/share-container) how to invite other users.
+
+### <a name="what-is-a-container"  href="#what-is-a-container" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>What is a container?
+
+<code>Containers</code> are like your own Virtual Private Servers (in essence they are OpenVZ OS containers) provisioned by Codeanywhere, each one with its own amount of RAM, Disk space and Processing power (just like any normal VPS but with some limitations such as lack of a dedicated IP address). Containers give you the ability to provision any development environment you like. You can choose between one of the many [predefined stacks](/general/getting-started/faq/#which-stack-to-select) which Codeanywhere offers.
+
+You can learn how to create a container [here](/dashboard/containers/create-new-container).
+
+### <a name="enabled-programming-languages"  href="#enabled-programming-languages" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Which programming language can I use in the container?
+
+Codeanywhere offers support for a wide range of programming languages in the shape of the following predefined stacks:
+
+- **PHP**
+- **NodeJS** – JavaScript
+- **Ruby**
+- **Python**
+- **C/C++**
+- **Wordpress** – PHP
+- **Java**
+- **.NET Core** – C#
+
+If you wish to use a different programming language, you can do so by [creating a container](/dashboard/containers/create-new-container) with a <code>Blank</code> stack, and installing the necessary dependencies in the container terminal.
+
+### <a name="can-i-install-vscode-extensions" href="#can-i-install-vscode-extensions" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Can I install extensions from the VS Code marketplace?
+
+Codeanywhere users can choose from a wide variety of extensions from the [OpenVSX](https://open-vsx.org/) registry.
+
+Find out [here](/editor/extensions/install-extensions-from-marketplace) how to install extensions from the marketplace.
+
+### <a name="configure-built-in-plugins" href="#configure-built-in-plugins" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to configure built-in plugins in the “New container” dialog?
+
+Todo
+
+### <a name="connect-container-to-ftp" href="#connect-container-to-ftp" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How can I connect my container to a FTP connection?
+
+Connecting your existing FTP connection to a container is pretty straight-forward. [Open the IDE](/editor/introduction/how-to-access) for any of your created containers and navigate to the <code>Connections</code> widget in the [sidebar](/editor/introduction/sidebar/#connections).
+
+If you already have [created an FTP extension](/dashboard/connections/create-new-connection), you will now be able to interact with it in the IDE.
+
+### <a name="clone-github-repo-in-container" href="#clone-github-repo-in-container" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How can I use my Github repository in a container?
+
+You can work directly with your repositories in the IDE. Find more information [here](/advanced-topics/working-with-repositories).

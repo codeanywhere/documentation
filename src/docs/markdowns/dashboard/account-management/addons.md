@@ -1,11 +1,16 @@
-# Placeholder
+# Manage and Purchase Addons
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna cursus. Sed id semper risus in hendrerit gravida rutrum. Consequat interdum varius sit amet. Donec adipiscing tristique risus nec feugiat in fermentum posuere. Aenean et tortor at risus viverra adipiscing. Augue eget arcu dictum varius duis at. Eget mauris pharetra et ultrices. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Ac feugiat sed lectus vestibulum mattis ullamcorper. Cras pulvinar mattis nunc sed.
+You can display all your purchased addons by navigating to the <code>Billing</code> tab in the sidebar.
 
-Luctus venenatis lectus magna fringilla urna. Id diam vel quam elementum pulvinar etiam non. Sed augue lacus viverra vitae congue. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. Et pharetra pharetra massa massa ultricies. Tortor condimentum lacinia quis vel eros donec ac odio tempor. Vivamus arcu felis bibendum ut. Aliquet eget sit amet tellus cras. Vestibulum morbi blandit cursus risus at. Dui ut ornare lectus sit. Urna condimentum mattis pellentesque id nibh tortor id aliquet lectus. Volutpat maecenas volutpat blandit aliquam etiam. Adipiscing diam donec adipiscing tristique risus nec. Diam maecenas sed enim ut. Vestibulum lorem sed risus ultricies tristique nulla. Volutpat commodo sed egestas egestas fringilla phasellus. Ut tristique et egestas quis ipsum.
+<p><img src="/images/dashboard/account-management/1.png" alt="Manage addons" class="width-60"/></p>
 
-Vitae aliquet nec ullamcorper sit. Dignissim convallis aenean et tortor at risus. Etiam erat velit scelerisque in dictum non consectetur. Egestas integer eget aliquet nibh praesent tristique magna. Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Quam adipiscing vitae proin sagittis. Sit amet consectetur adipiscing elit ut aliquam purus sit amet. Nec sagittis aliquam malesuada bibendum arcu vitae elementum. Ac ut consequat semper viverra nam libero justo. Volutpat est velit egestas dui id ornare. A pellentesque sit amet porttitor eget. Morbi quis commodo odio aenean. At ultrices mi tempus imperdiet nulla. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis. Tempor nec feugiat nisl pretium fusce id velit ut. Nulla aliquet enim tortor at auctor urna nunc id cursus. Arcu felis bibendum ut tristique et egestas quis ipsum. Vitae tortor condimentum lacinia quis vel eros donec. Suspendisse interdum consectetur libero id faucibus. Ipsum suspendisse ultrices gravida dictum fusce ut placerat.
+If you want to purchase addons, you have to [change your subscription](/dashboard/account-management/update-subscription) and purchase new addons.
 
-Eu scelerisque felis imperdiet proin. Maecenas pharetra convallis posuere morbi leo urna. Id leo in vitae turpis massa sed. Ultrices in iaculis nunc sed augue lacus viverra vitae. Est ullamcorper eget nulla facilisi. Ullamcorper sit amet risus nullam eget felis. Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Ut lectus arcu bibendum at. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui. Blandit massa enim nec dui nunc mattis enim ut tellus.
+<p><img src="/images/dashboard/account-management/2.png" alt="Purchase addons" class="width-90"/></p>
 
-Tortor id aliquet lectus proin. In nulla posuere sollicitudin aliquam ultrices sagittis. Accumsan lacus vel facilisis volutpat est velit egestas dui. Maecenas pharetra convallis posuere morbi. Lacus laoreet non curabitur gravida arcu ac tortor dignissim. Proin sagittis nisl rhoncus mattis. Tortor id aliquet lectus proin. Eu feugiat pretium nibh ipsum consequat nisl. Egestas congue quisque egestas diam in arcu cursus euismod. Tempus iaculis urna id volutpat lacus. Amet facilisis magna etiam tempor orci eu lobortis elementum.
+You can choose between the following addons:
+
+- **Additional Container** - Additional Containers give you the freedom to work with multiple workspaces inside Codeanywhere
+- **Always-On Option** - Regular containers will be stopped when you sign out. Containers with the applied “Always-On” option will keep running even if you’re not working.
+- **Additional 15 Custom Domains** - Custom Domains enable you to add any domain you wish to our containers (for example: example.domain.com).
+- **Additional 15 Connections** - Connect to remote environments via SSH, FTP, FTPS or SFTP.
