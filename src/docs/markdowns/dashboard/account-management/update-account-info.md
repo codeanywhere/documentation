@@ -16,9 +16,3 @@ In the <code>Account</code> tab, you can update your:
 **Note**: If you sign up using an external service, you will have to set an initial password.
 
 <p><img src="/images/dashboard/account-management/10.png" alt="Set initial password" class="width-60"/></p>
-
-In the <code>Billing</code> tab, you can update your:
-
-- Billing information
-
-<p><img src="/images/dashboard/account-management/9.png" alt="Change billing information" class="width-60"/></p>

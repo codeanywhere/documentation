@@ -36,7 +36,7 @@
           <div class="sidebar">
             <% for (const section of sidebar) { %>
             <div>
-              <div class="sidebar-section"><%= section.name %></div>
+              <div class="sidebar-section<%= active.startsWith(section.slug) ? ' active' : '' %>"><a href="/<%= section.slug %>"><%= section.name %></a></div>
               <ul class="sidebar-list">
                 <% for (const sectionChild of section.contents) {
                 if(sectionChild.contents) { %>
