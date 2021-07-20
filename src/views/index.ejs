@@ -36,17 +36,18 @@
           <div class="sidebar">
             <% for (const section of sidebar) { %>
             <div>
-              <span class="sidebar-section"><%= section.name %></span>
+              <div class="sidebar-section"><%= section.name %></div>
               <ul class="sidebar-list">
-                <% for (const subsection of section.contents) { %>
+                <% for (const sectionChild of section.contents) {
+                if(sectionChild.contents) { %>
                 <div>
-                  <div class="sidebar-subsection"><%= subsection.name %></div>
+                  <div class="sidebar-subsection"><%= sectionChild.name %></div>
                   <ul class="sidebar-list">
-                    <% for (const article of subsection.contents) { %>
+                    <% for (const article of sectionChild.contents) { %>
                     <li>
-                      <% const path = section.slug + '/' + subsection.slug + '/'
-                      + article.slug; const alink = active === path ? 'active' :
-                      ''; %>
+                      <% const path = section.slug + '/' + sectionChild.slug +
+                      '/' + article.slug; const alink = active === path ?
+                      'active' : ''; %>
                       <a class="sidebar-link <%= alink %>" href="/<%= path %>">
                         <%= article.name %>
                       </a>
@@ -54,13 +55,20 @@
                     <% } %>
                   </ul>
                 </div>
-                <% } %>
+                <% } else { %>
+                <li>
+                  <% const path = section.slug + '/' + sectionChild.slug; const
+                  alink = active === path ? 'active' : ''; %>
+                  <a class="sidebar-link <%= alink %>" href="/<%= path %>">
+                    <%= sectionChild.name %>
+                  </a>
+                </li>
+                <% } } %>
               </ul>
             </div>
             <% } %>
           </div>
         </div>
-
         <div class="markdown"><%- rendered %></div>
       </div>
     </div>

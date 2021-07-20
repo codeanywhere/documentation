@@ -40,6 +40,41 @@ body {
   padding: 0;
   margin: 0;
 }
+.markdown a.anchor-link {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  width: auto;
+}
+.markdown img.anchor-img {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+h1 .anchor-link img,
+h2 .anchor-link img,
+h3 .anchor-link img,
+h4 .anchor-link img,
+h5 .anchor-link img,
+h6 .anchor-link img {
+  visibility: hidden;
+}
+
+h1:hover .anchor-link img,
+h2:hover .anchor-link img,
+h3:hover .anchor-link img,
+h4:hover .anchor-link img,
+h5:hover .anchor-link img,
+h6:hover .anchor-link img,
+h1 .anchor-link:focus img,
+h2 .anchor-link:focus img,
+h3 .anchor-link:focus img,
+h4 .anchor-link:focus img,
+h5 .anchor-link:focus img,
+h6 .anchor-link:focus img {
+  visibility: visible;
+}
 
 /* Everything goes into here */
 
@@ -63,6 +98,20 @@ body {
   justify-content: center;
 }
 
+.markdown img.width-90 {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.markdown img.width-60 {
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* sidebar */
 .sidebar {
   padding: var(--spacing-3) 0 var(--spacing-1);
@@ -71,22 +120,24 @@ body {
 }
 
 .sidebar-section {
-  margin: var(--spacing-3) 0 var(--spacing-half) 0;
+  margin: var(--spacing-1) 0 0 0;
   font-size: 25px;
   font-weight: 700;
   box-shadow: inset 0 -4px 0 0 var(--primary-color);
+  display: inline-block;
 }
 
 .sidebar-subsection {
-  margin: var(--spacing-half) 0 var(--spacing-half) 0;
+  margin: var(--spacing-1) 0 var(--spacing-half) 0;
   font-size: 18px;
   font-weight: 500;
+  display: inline-block;
 }
 
 .sidebar-list {
   list-style: none;
   margin-left: var(--spacing-2);
-  padding: 0 var(--spacing-2) 0 0;
+  padding: 0 var(--spacing-1) 0 0;
 }
 
 .sidebar-link {
@@ -95,6 +146,7 @@ body {
 
   padding: 6px 0;
   margin: 2px 0;
+  margin-bottom: 5px;
   display: block;
   border-radius: 4px;
   transition: 0.2s padding ease-in-out;
@@ -201,12 +253,12 @@ code {
 }
 
 .markdown h1,
-.markdown h2 {
+.markdown h2,
+.markdown h3 {
   font-weight: 600;
   line-height: 120%;
 }
 
-.markdown h3,
 .markdown h4,
 .markdown h5 {
   font-weight: 500;
@@ -226,7 +278,7 @@ code {
 }
 
 .markdown h3 {
-  font-size: 1.25em;
+  font-size: 1.5em;
   margin: var(--spacing-5) 0 var(--spacing-2) 0;
 }
 
@@ -273,10 +325,8 @@ iframe {
 }
 
 .markdown pre {
-  overflow-x: scroll;
-  padding: 36px;
+  padding: 10px 30px;
   white-space: pre-wrap;
-
   margin: 24px 0px;
   background-color: var(--light-grey500);
   border-radius: 4px;
@@ -288,7 +338,7 @@ iframe {
 .markdown code {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.9em;
-  color: var(--code-snippet-text);
+  color: var(--primary-color);
   background-color: var(--code-snippet-highlight);
 }
 
@@ -512,5 +562,14 @@ iframe {
 
   .markdown h5 {
     font-size: 1.125em;
+  }
+
+  .sidebar-section {
+    margin: var(--spacing-1) 0;
+  }
+
+  .markdown img.width-90,
+  .markdown img.width-60 {
+    width: 100%;
   }
 }

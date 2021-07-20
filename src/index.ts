@@ -25,28 +25,42 @@ const getTree = async () =>
 const render = async (
   res: any,
   section: string,
-  subsection: string,
+  subsection: string | null,
   article: string
 ) => {
   res.set(
     'Cache-Control',
     'public, max-age=600, stale-if-error=60, stale-while-revalidate=60'
   )
-  res.locals.rendered = await renderMarkdown(
-    path.join(__dirname, 'docs', 'markdowns', section, subsection, article) +
-      '.md'
-  )
-  const t = await getTree()
-  res.locals.sidebar = t
-  res.locals.active = section + '/' + subsection + '/' + article
+  res.locals.rendered = subsection
+    ? await renderMarkdown(
+        path.join(
+          __dirname,
+          'docs',
+          'markdowns',
+          section,
+          subsection,
+          article
+        ) + '.md'
+      )
+    : await renderMarkdown(
+        path.join(__dirname, 'docs', 'markdowns', section, article) + '.md'
+      )
 
-  const sectionObj = t.find((c: { slug: string }) => c.slug === section)
-  const subsectionObj = sectionObj.contents.find(
-    (c: { slug: string }) => c.slug === subsection
+  const sidebarTree = await getTree()
+  res.locals.sidebar = sidebarTree
+  res.locals.active = subsection
+    ? section + '/' + subsection + '/' + article
+    : section + '/' + article
+
+  const sectionObj = sidebarTree.find(
+    (c: { slug: string }) => c.slug === section
   )
-  const articleObj = subsectionObj.contents.find(
-    (d: { slug: string }) => d.slug === article
-  )
+  const articleObj = subsection
+    ? sectionObj.contents
+        .find((c: { slug: string }) => c.slug === subsection)
+        .contents.find((d: { slug: string }) => d.slug === article)
+    : sectionObj.contents.find((c: { slug: string }) => c.slug === article)
 
   if (
     section === 'general' &&
@@ -56,9 +70,9 @@ const render = async (
     // landing page gets a short title for search engine visibility
     res.locals.title = 'Codeanywhere Docs'
   } else {
-    res.locals.title = `Codeanywhere Docs - ${
+    res.locals.title = `${sectionObj ? sectionObj.name : section} - ${
       articleObj ? articleObj.name : article
-    }`
+    } | Codeanywhere Docs`
   }
   res.render('index.ejs')
 }
@@ -72,12 +86,17 @@ app.get('/', (req, res) => {
   render(res, 'general', 'getting-started', 'what-is-codeanywhere')
 })
 
+app.get('/:section/:article', async (req, res) => {
+  const { section, article } = req.params
+  render(res, section, null, article).catch(err => {
+    res.send(`<h1>Something went wrong!</h1>`)
+  })
+})
+
 app.get('/:section/:subsection/:article', async (req, res) => {
   const { section, subsection, article } = req.params
   render(res, section, subsection, article).catch(err => {
-    res.send(`
-      <h1>Something went wrong!</h1>
-`)
+    res.send(`<h1>Something went wrong!</h1>`)
   })
 })
 
