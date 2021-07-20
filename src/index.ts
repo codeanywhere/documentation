@@ -1,4 +1,4 @@
-import express from 'express'
+import express, { Response } from 'express'
 import marked from 'marked'
 import { promises as fs } from 'fs'
 import path from 'path'
@@ -21,17 +21,17 @@ marked.setOptions({
 const getTree = async () =>
   JSON.parse(await fs.readFile('./sidebar.json', 'utf8'))
 
-//TODO: correct res type
 const render = async (
-  res: any,
+  res: Response,
   section: string,
   subsection: string | null,
-  article: string
+  article: string | null
 ) => {
-  res.set(
-    'Cache-Control',
-    'public, max-age=600, stale-if-error=60, stale-while-revalidate=60'
-  )
+  // TODO: ENABLE IN PRODUCTION
+  // res.set(
+  //   'Cache-Control',
+  //   'public, max-age=600, stale-if-error=60, stale-while-revalidate=60'
+  // )
   res.locals.rendered = subsection
     ? await renderMarkdown(
         path.join(
@@ -44,34 +44,32 @@ const render = async (
         ) + '.md'
       )
     : await renderMarkdown(
-        path.join(__dirname, 'docs', 'markdowns', section, article) + '.md'
+        path.join(__dirname, 'docs', 'markdowns', section, article || 'index') +
+          '.md'
       )
 
   const sidebarTree = await getTree()
   res.locals.sidebar = sidebarTree
-  res.locals.active = subsection
-    ? section + '/' + subsection + '/' + article
-    : section + '/' + article
+  res.locals.active = `${section}${subsection ? '/' + subsection : ''}${
+    article ? '/' + article : ''
+  }`
 
   const sectionObj = sidebarTree.find(
     (c: { slug: string }) => c.slug === section
   )
+
   const articleObj = subsection
     ? sectionObj.contents
         .find((c: { slug: string }) => c.slug === subsection)
         .contents.find((d: { slug: string }) => d.slug === article)
-    : sectionObj.contents.find((c: { slug: string }) => c.slug === article)
+    : sectionObj.contents?.find((c: { slug: string }) => c.slug === article)
 
-  if (
-    section === 'general' &&
-    subsection === 'getting-started' &&
-    article === 'what-is-codeanywhere'
-  ) {
+  if (section === 'general' && !subsection && !article) {
     // landing page gets a short title for search engine visibility
     res.locals.title = 'Codeanywhere Docs'
   } else {
-    res.locals.title = `${sectionObj ? sectionObj.name : section} - ${
-      articleObj ? articleObj.name : article
+    res.locals.title = `${sectionObj ? sectionObj.name : section}${
+      articleObj ? ` - ${articleObj.name}` : ''
     } | Codeanywhere Docs`
   }
   res.render('index.ejs')
@@ -83,7 +81,21 @@ const renderMarkdown = async (path: string) => {
 }
 
 app.get('/', (req, res) => {
-  render(res, 'general', 'getting-started', 'what-is-codeanywhere')
+  render(res, 'general', null, null)
+})
+
+app.get('/:section', async (req, res) => {
+  const { section } = req.params
+
+  if (section === 'editor') {
+    render(res, section, 'introduction', 'about').catch(err => {
+      res.send(`<h1>Something went wrong!</h1>`)
+    })
+  } else {
+    render(res, section, null, null).catch(err => {
+      res.send(`<h1>Something went wrong!</h1>`)
+    })
+  }
 })
 
 app.get('/:section/:article', async (req, res) => {

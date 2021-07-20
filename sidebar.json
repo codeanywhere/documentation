@@ -46,6 +46,10 @@
         "slug": "collaboration",
         "contents": [
           {
+            "name": "About",
+            "slug": "about"
+          },
+          {
             "name": "Share Container with Others",
             "slug": "share-container"
           },
@@ -158,6 +162,10 @@
         "slug": "billing",
         "contents": [
           {
+            "name": "Updating my billing information",
+            "slug": "updating-my-billing-information"
+          },
+          {
             "name": "Track Invoices",
             "slug": "track-invoices"
           }
@@ -182,6 +190,16 @@
           {
             "name": "Cancel Membership",
             "slug": "cancel-membership"
+          }
+        ]
+      },
+      {
+        "name": "Connected Accounts",
+        "slug": "connected-accounts",
+        "contents": [
+          {
+            "name": "Git Providers",
+            "slug": "git-providers"
           }
         ]
       }
@@ -236,5 +254,10 @@
         "slug": "subversion"
       }
     ]
+  },
+  {
+    "name": "Support",
+    "slug": "support",
+    "contents": []
   }
 ]

@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
 
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
 :root {
   /* Color variables */
   --text-color: black;
   --bg-color: white;
 
   --primary-color: rgba(127, 63, 152, 1);
+  --secondary-color: #0bce9a;
 
   --code-snippet-text: #c10000;
   --code-snippet-highlight: #ffeded;
@@ -125,6 +131,10 @@ h6 .anchor-link:focus img {
   font-weight: 700;
   box-shadow: inset 0 -4px 0 0 var(--primary-color);
   display: inline-block;
+}
+
+.sidebar-section.active {
+  box-shadow: inset 0 -4px 0 0 var(--secondary-color);
 }
 
 .sidebar-subsection {

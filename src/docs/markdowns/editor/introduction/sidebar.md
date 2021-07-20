@@ -2,12 +2,12 @@
 
 The new Codeanywhere IDE introduces a sidebar which contains the following productivity widgets:
 
-- **File Explorer**
-- **Search**
-- **Source Control**
-- **Debug**
-- **Extensions**
-- **Connections**
+- [**File Explorer**](#file-explorer)
+- [**Search**](#search)
+- [**Source Control**](#source-control)
+- [**Debug**](#debug)
+- [**Extensions**](#extensions)
+- [**Connections**](#connections)
 
 ### <a name="file-explorer" href="#file-explorer" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>File Explorer
 

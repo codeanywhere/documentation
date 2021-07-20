@@ -51,11 +51,7 @@ Todo
 
 ### <a name="integrate-github" href="#integrate-github" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to integrate GitHub into Codeanywhere?
 
-If you wish to connect your Codeanywhere account to your Githhub account, navigate to the <code>Account</code> tab in the sidebar and select <code>Connect</code> to Github.
-
-<p><img src="/images/general/getting-started/7.png" alt="Connect with Github" class="width-90"/></p>
-
-You will be redirected to the Github authorization page to where you will have to confirm your identity and select the <code>Authorize Codeanywhere</code> option.
+See our detailed explanation [here](/dashboard/connected-accounts/git-providers#github).
 
 ### <a name="custom-vsix" href="#custom-vsix" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Can I use custom extensions in the editor?
 
@@ -75,7 +71,11 @@ If your app is running, it should show up in the Preview Ports widget. Users can
 
 ### <a name="third-party-connections" href="#third-party-connections" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>I want to use third-party connections like DigitalOcean and SFTP. How can I use the new IDE with them?
 
-To do
+Our new IDE does not support third-party connections. You can still browse them inside the old IDE found [here](https://codeanywhere.com/editor).
+
+### <a name="what-is-a-coding-session"  href="#what-is-a-coding-session" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>What is a Coding Session?
+
+We describe a Coding Session as a collaborative session where with more than one participant. Coding sessions provide a way for users to collaborate on their code in real-time with a fully integrated chat and collaboration terminals.
 
 ### <a name="coding-session-users-limit" href="#coding-session-users-limit" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How many users with a basic plan can participate in a coding session?
 
@@ -84,10 +84,6 @@ Codeanywhere <code>doesn't limit</code> the number of users that can participate
 ### <a name="concurrent-coding-sessions-limit"  href="#concurrent-coding-sessions-limit" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How many different coding sessions can be run concurrently with the basic plan?
 
 Codeanywhere <code>doesn't limit</code> the number of concurrent coding sessions.
-
-### <a name="what-is-a-coding-session"  href="#what-is-a-coding-session" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>What is a Coding Session?
-
-To do
 
 ### <a name="invite-friend-to-collaborate" href="#invite-friend-to-collaborate" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to invite a friend to collaborate?
 
@@ -130,8 +126,50 @@ Todo
 
 Connecting your existing FTP connection to a container is pretty straight-forward. [Open the IDE](/editor/introduction/how-to-access) for any of your created containers and navigate to the <code>Connections</code> widget in the [sidebar](/editor/introduction/sidebar/#connections).
 
-If you already have [created an FTP extension](/dashboard/connections/create-new-connection), you will now be able to interact with it in the IDE.
+If you have already [created an FTP extension](/dashboard/connections/create-new-connection), you will now be able to interact with it in the IDE.
 
 ### <a name="clone-github-repo-in-container" href="#clone-github-repo-in-container" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How can I use my Github repository in a container?
 
 You can work directly with your repositories in the IDE. Find more information [here](/advanced-topics/working-with-repositories).
+
+
+### <a name="connect-to-container-via-ssh" href="#connect-to-container-via-ssh" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How can I connect to my container via SSH (e.g. Putty)?
+
+You can connect to all of your containers via SSH. To find the host and port of your container
+go to <code>Help -> Getting Started</code> where you will see the info needed to connect via SSH (**Note:** The username to connect is always <code>cabox</code>).
+
+TODO: SCREENSHOT
+
+**For example:** For the above container we would connect via ssh by entering the following command in the terminal:
+
+TODO: FILL HOST AND PORT BY SCREENSHOT
+
+```bash
+  ssh cabox@HOST -p PORT
+```
+
+**Note:** To be able to connect, you will first have to authorize your private key. Refer to the next section for more info.
+
+### <a name="authorize-key-for-ssh-container" href="#authorize-key-for-ssh-container" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How can I authorize my computer to connect via SSH to my container?
+
+
+To authorize yourself to access your container, you will have to add your public key to the
+<code>~/.ssh/authorized_keys</code> file.
+
+To generate a key pair enter the following command into your terminal and select the destination where you want the keys to be generated:
+
+```bash
+ssh-keygen -t rsa
+```
+
+Once the keys have been generated, copy the <code>id_rsa.pub</code> (If you chose a different name for the keys, make sure you select the one with the <code>.pub</code> extension).
+
+Paste the key inside of the <code>~/.ssh/authorized_keys</code> file inside your container.
+
+```bash
+  vi ~/.ssh/authorized_keys
+```
+
+(<code>:wq</code> to close and save when you're done).
+
+
