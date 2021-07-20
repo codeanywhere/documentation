@@ -123,18 +123,41 @@ h6 .anchor-link:focus img {
   padding: var(--spacing-3) 0 var(--spacing-1);
   margin-left: var(--spacing-6);
   border-right: 1px solid var(--light-grey400);
+  margin-bottom: 100px;
 }
 
-.sidebar-section {
-  margin: var(--spacing-1) 0 0 0;
+.sidebar-section-title-row {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar-section-title {
+  margin: var(--spacing-1) 0;
   font-size: 25px;
   font-weight: 700;
   box-shadow: inset 0 -4px 0 0 var(--primary-color);
   display: inline-block;
 }
 
-.sidebar-section.active {
+.sidebar-section-title.active {
   box-shadow: inset 0 -4px 0 0 var(--secondary-color);
+}
+
+.sidebar-section-title-arrow {
+  border: solid var(--primary-color);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(+45deg);
+  -webkit-transform: rotate(+45deg);
+}
+
+.sidebar-section-title-arrow.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
 }
 
 .sidebar-subsection {
@@ -146,8 +169,16 @@ h6 .anchor-link:focus img {
 
 .sidebar-list {
   list-style: none;
-  margin-left: var(--spacing-2);
+  margin: 0 0 0 var(--spacing-2);
   padding: 0 var(--spacing-1) 0 0;
+}
+
+.expandable {
+  display: none;
+}
+
+.expanded {
+  display: block;
 }
 
 .sidebar-link {

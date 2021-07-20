@@ -1,76 +1,135 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title><%= title %></title>
-    <link rel="stylesheet" type="text/css" href="/style.css" />
 
-    <link
-      href="//fonts.googleapis.com/css?family=Lato:300,400|Questrial|Raleway:400,100,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+<head>
+  <meta charset="utf-8" />
+  <title><%= title %></title>
+  <link rel="stylesheet" type="text/css" href="/style.css" />
 
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <script>
-      ;(function (isTouchDevice) {
-        if (!isTouchDevice) return
-        var isTouchClass = 'is-touch-device'
-        var docElement = document.documentElement
-        docElement.className = docElement.className
-          ? [docElement.className, isTouchClass].join(' ')
-          : isTouchClass
-      })(
-        'ontouchstart' in window ||
-          (window.DocumentTouch && document instanceof DocumentTouch)
-      )
-    </script>
-  </head>
-  <body>
-    <div class="docs-container">
-      <%- include('header'); %>
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400|Questrial|Raleway:400,100,700" rel="stylesheet"
+    type="text/css" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-      <div class="content-container">
-        <div class="menu__content" data-menu="content">
-          <div class="sidebar">
-            <% for (const section of sidebar) { %>
-            <div>
-              <div class="sidebar-section<%= active.startsWith(section.slug) ? ' active' : '' %>"><a href="/<%= section.slug %>"><%= section.name %></a></div>
-              <ul class="sidebar-list">
-                <% for (const sectionChild of section.contents) {
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <script>
+    ; (function (isTouchDevice) {
+      if (!isTouchDevice) return
+      var isTouchClass = 'is-touch-device'
+      var docElement = document.documentElement
+      docElement.className = docElement.className
+        ? [docElement.className, isTouchClass].join(' ')
+        : isTouchClass
+    })(
+      'ontouchstart' in window ||
+      (window.DocumentTouch && document instanceof DocumentTouch)
+    )
+  </script>
+</head>
+
+<body>
+  <div class="docs-container">
+    <%- include('header'); %>
+
+    <div class="content-container">
+      <div class="menu__content" data-menu="content">
+        <div class="sidebar">
+          <% for (const section of sidebar) { %>
+          <div style="width: 100%">
+            <div class="sidebar-section-title-row">
+              <div class="sidebar-section-title<%= active.startsWith(section.slug) ? ' active' : '' %>"
+                id="section-title-<%= section.slug %>" data-section-title="<%= section.slug %>"><a href="/<%= section.slug %>"><%= section.name %></a></div>
+              <% 
+                if (section.name !== 'Support') {
+                  %>
+                    <i class="sidebar-section-title-arrow" id="section-arrow-<%= section.slug %>"></i>
+                  <%  
+                }
+              %>
+            </div>
+            <ul class="sidebar-list expandable" id="section-list-<%= section.slug %>">
+              <% for (const sectionChild of section.contents) {
                 if(sectionChild.contents) { %>
-                <div>
-                  <div class="sidebar-subsection"><%= sectionChild.name %></div>
-                  <ul class="sidebar-list">
-                    <% for (const article of sectionChild.contents) { %>
-                    <li>
-                      <% const path = section.slug + '/' + sectionChild.slug +
+              <div>
+                <div class="sidebar-subsection"><%= sectionChild.name %></div>
+                <ul class="sidebar-list">
+                  <% for (const article of sectionChild.contents) { %>
+                  <li>
+                    <% const path = section.slug + '/' + sectionChild.slug +
                       '/' + article.slug; const alink = active === path ?
                       'active' : ''; %>
-                      <a class="sidebar-link <%= alink %>" href="/<%= path %>">
-                        <%= article.name %>
-                      </a>
-                    </li>
-                    <% } %>
-                  </ul>
-                </div>
-                <% } else { %>
-                <li>
-                  <% const path = section.slug + '/' + sectionChild.slug; const
+                    <a class="sidebar-link <%= alink %>" href="/<%= path %>">
+                      <%= article.name %>
+                    </a>
+                  </li>
+                  <% } %>
+                </ul>
+              </div>
+              <% } else { %>
+              <li>
+                <% const path = section.slug + '/' + sectionChild.slug; const
                   alink = active === path ? 'active' : ''; %>
-                  <a class="sidebar-link <%= alink %>" href="/<%= path %>">
-                    <%= sectionChild.name %>
-                  </a>
-                </li>
-                <% } } %>
-              </ul>
-            </div>
-            <% } %>
+                <a class="sidebar-link <%= alink %>" href="/<%= path %>">
+                  <%= sectionChild.name %>
+                </a>
+              </li>
+              <% } } %>
+            </ul>
           </div>
+          <% } %>
         </div>
-        <div class="markdown"><%- rendered %></div>
       </div>
+      <div class="markdown"><%- rendered %></div>
     </div>
-  </body>
+  </div>
+  <script>
+    function toggleSection(section) {
+      const selectedSectionExpanded = document
+        .getElementById('section-list-' + section)
+        .classList.contains('expanded')
+
+      //collapse all sections
+      const sectionLists = document.getElementsByClassName('expandable')
+      const sectionArrows = document.getElementsByClassName(
+        'sidebar-section-title-arrow'
+      )
+      for (let i = 0, len = sectionLists.length; i < len; i++) {
+        sectionLists[i].classList.remove('expanded')
+        sectionArrows[i]?.classList.remove('up')
+      }
+
+      //expand selected section if it was collapsed
+      if (!selectedSectionExpanded) {
+        document
+          .getElementById('section-list-' + section)
+          .classList.toggle('expanded')
+        document.getElementById('section-arrow-' + section)?.classList.toggle('up')
+      }
+    }
+
+    function attachClickListeners() {
+      const sectionTitles = document.getElementsByClassName(
+        'sidebar-section-title-row'
+      )
+
+      for (const sectionTitle of sectionTitles) {
+        sectionTitle.addEventListener('click', () => {
+          toggleSection(sectionTitle.firstElementChild.getAttribute('data-section-title'))
+        })
+      }
+    }
+
+    function expandCorrectSectionOnPageLoad() {
+      const pathname = window.location.pathname.substr(1)
+      if (pathname === '') {
+        toggleSection('general')
+      } else {
+        toggleSection(pathname.includes('/') ? pathname.substr(0, pathname.indexOf('/')) : pathname)
+      }
+    }
+
+    attachClickListeners()
+    expandCorrectSectionOnPageLoad()
+  </script>
+</body>
+
 </html>
