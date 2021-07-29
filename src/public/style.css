@@ -1,5 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
 
+@font-face {
+  font-family: 'Galano-Grotesque';
+  src: url('/fonts/Galano-Grotesque/Galano-Grotesque-Regular.otf')
+    format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Galano-Grotesque';
+  src: url('/fonts/Galano-Grotesque/Galano-Grotesque-Medium.otf')
+    format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Galano-Grotesque';
+  src: url('/fonts/Galano-Grotesque/Galano-Grotesque-SemiBold.otf')
+    format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Galano-Grotesque';
+  src: url('/fonts/Galano-Grotesque/Galano-Grotesque-Bold.otf')
+    format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Galano-Grotesque';
+  src: url('/fonts/Galano-Grotesque/Galano-Grotesque-ExtraBold.otf')
+    format('opentype');
+  font-weight: 800;
+}
+
 a {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
@@ -11,6 +46,7 @@ a {
   --bg-color: white;
 
   --primary-color: rgba(127, 63, 152, 1);
+  --dark-primary-color: #30063a;
   --secondary-color: #0bce9a;
 
   --code-snippet-text: #c10000;
@@ -222,31 +258,41 @@ h6 .anchor-link:focus img {
   flex: 1;
   width: 100%;
   padding: 16px 0;
+  font-family: 'Galano-Grotesque', sans-serif;
 }
 
 .navigation-container {
   display: flex;
   align-items: center;
+  height: 60px;
+}
+
+.navigation-container.space-between {
+  justify-content: space-between;
+}
+
+.logo {
+  margin-right: 10px;
 }
 
 .navigation-links {
   text-decoration: none;
+  font-weight: 500;
   padding: 4px 8px 8px 8px;
   margin: 4px;
-  color: black;
+  color: var(--dark-primary-color);
   transition: 0.2s color ease-in-out;
 }
 
 .navigation-links:hover {
-  color: rgba(127, 63, 152, 1);
+  color: var(--primary-color);
 }
 
 .navigation .sign-up {
   margin: 0 0 4px 12px;
   padding: 8px 16px;
-  background-color: rgba(127, 63, 152, 1);
+  background-color: var(--primary-color);
   border-radius: 4px;
-
   font-weight: 500;
   text-decoration: none;
   color: white;
@@ -260,24 +306,6 @@ h6 .anchor-link:focus img {
 .navigation-container img {
   margin: 0 12px;
   width: 50px;
-}
-
-@media all and (max-width: 800px) {
-  .navigation {
-    padding: 16px 0;
-    margin: 24px auto 0 auto;
-  }
-  .navigation img {
-    margin: 0;
-  }
-
-  .navigation-links {
-    display: none;
-  }
-
-  .navigation .sign-up {
-    margin: 0;
-  }
 }
 
 code {
@@ -422,34 +450,61 @@ iframe {
 
 .search {
   display: none;
-  margin-left: 2rem;
   position: relative;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  padding: 0.2rem 0.7rem;
+}
+
+@media (min-width: 750px) {
+  .search {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    max-width: 22rem;
+  }
 }
 
 @media (min-width: 850px) {
+  .search_input {
+    min-width: 25rem;
+  }
+
   .search {
-    display: block;
+    max-width: 30rem;
   }
 }
 
 .search_input {
-  border: 1px solid #e3e3e3;
+  border: none;
   padding: 0.5rem;
-  border-radius: 6px;
   font-size: 0.9rem;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Galano-Grotesque', sans-serif;
+  flex-grow: 1;
 }
 
 .search_input:focus {
-  border: 1px solid var(--primary-color);
   outline: 0;
 }
 
 .search_output {
   position: absolute;
   top: 115%;
-  left: -26rem;
+  left: -7rem;
   z-index: 9999;
+}
+
+@media (max-width: 750px) {
+  .search_output {
+    min-width: 100%;
+  }
+}
+
+@media (min-width: 800px) {
+  .search_output {
+    left: -14rem;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -460,7 +515,7 @@ iframe {
 
 @media (min-width: 1200px) {
   .search_output {
-    left: 0;
+    left: -7rem;
   }
 }
 
@@ -468,13 +523,24 @@ iframe {
   border: 1px solid grey;
   border-radius: 4px;
   padding: 2px;
-  width: 300%;
   max-width: 800px;
   background: white;
   transition: transform 0.3s, opacity 0.3s;
   transform-origin: top;
   transform: scaleY(0);
   opacity: 0;
+}
+
+@media (min-width: 750px) {
+  .search_preview {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .search_preview {
+    width: 300%;
+  }
 }
 
 .search_preview__open {
@@ -499,7 +565,7 @@ iframe {
 }
 
 .search_item:hover::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.05);
@@ -527,7 +593,26 @@ iframe {
   font-style: normal;
 }
 
-/* responsive design */
+.search_section {
+  background: var(--dark-primary-color);
+  color: white;
+  padding: 0.5rem;
+}
+
+.search-button {
+  cursor: pointer;
+  padding: 7px 9px;
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  width: 100%;
+  background: white;
+  margin-right: 1rem;
+  max-width: 300px;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+}
+
+/* responsive fixes */
 
 @media all and (max-width: 1200px) {
   .content-container {
@@ -543,14 +628,7 @@ iframe {
   }
 }
 
-@media all and (max-width: 1150px) {
-  .content-container {
-    grid-template-columns: 250px 1fr;
-    grid-gap: var(--spacing-1);
-  }
-}
-
-@media all and (max-width: 750px) {
+@media all and (max-width: 850px) {
   .docs-container {
     width: 95%;
     padding: 0 var(--spacing-2);
@@ -576,6 +654,32 @@ iframe {
 
   .repl-link {
     right: 1.5em;
+  }
+
+  .navigation-container {
+    justify-content: center;
+  }
+
+  .navigation-container.space-between {
+    height: 40px;
+    margin-bottom: 0px;
+  }
+
+  .navigation {
+    padding: 16px 0;
+    margin: 0 auto;
+  }
+  .navigation img {
+    width: 200px;
+    margin: 0;
+  }
+
+  .navigation-links {
+    display: none;
+  }
+
+  .navigation .sign-up {
+    margin: 0;
   }
 }
 
