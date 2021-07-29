@@ -80,6 +80,9 @@
       </div>
       <div class="markdown"><%- rendered %></div>
     </div>
+    <script src="/bundledSearch.js"></script>
+  </body>
+</html>
   </div>
   <script>
     function toggleSection(section) {
@@ -87,7 +90,13 @@
         .getElementById('section-list-' + section)
         .classList.contains('expanded')
 
-      //collapse all sections
+      document
+        .getElementById('section-list-' + section)
+        .classList.toggle('expanded')
+      document.getElementById('section-arrow-' + section)?.classList.toggle('up')
+    }
+
+    function collapseSections() {
       const sectionLists = document.getElementsByClassName('expandable')
       const sectionArrows = document.getElementsByClassName(
         'sidebar-section-title-arrow'
@@ -95,14 +104,6 @@
       for (let i = 0, len = sectionLists.length; i < len; i++) {
         sectionLists[i].classList.remove('expanded')
         sectionArrows[i]?.classList.remove('up')
-      }
-
-      //expand selected section if it was collapsed
-      if (!selectedSectionExpanded) {
-        document
-          .getElementById('section-list-' + section)
-          .classList.toggle('expanded')
-        document.getElementById('section-arrow-' + section)?.classList.toggle('up')
       }
     }
 
