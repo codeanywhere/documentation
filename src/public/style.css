@@ -202,13 +202,15 @@ h6 .anchor-link:focus img {
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
-  transform: rotate(+45deg);
-  -webkit-transform: rotate(+45deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transition-property: all;
+  transition: all ease-in 0.1s;
 }
 
-.sidebar-section-title-arrow.up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
+.sidebar-section-title-arrow.down {
+  transform: rotate(+45deg);
+  -webkit-transform: rotate(+45deg);
 }
 
 .sidebar-subsection {

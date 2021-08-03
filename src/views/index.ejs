@@ -93,7 +93,7 @@
       document
         .getElementById('section-list-' + section)
         .classList.toggle('expanded')
-      document.getElementById('section-arrow-' + section)?.classList.toggle('up')
+      document.getElementById('section-arrow-' + section)?.classList.toggle('down')
     }
 
     function collapseSections() {
@@ -103,7 +103,7 @@
       )
       for (let i = 0, len = sectionLists.length; i < len; i++) {
         sectionLists[i].classList.remove('expanded')
-        sectionArrows[i]?.classList.remove('up')
+        sectionArrows[i]?.classList.remove('down')
       }
     }
 
