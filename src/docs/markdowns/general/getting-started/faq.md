@@ -130,7 +130,7 @@ You can work directly with your repositories in the IDE. Find more information [
 
 You can connect to all of your containers via SSH. You can find the <code>host</code> and <code>port</code> of your container by navigating to <code>Help -> Getting Started</code>.
 
-<p><img src="/images/general/getting-started/13.png" alt="SSH credentials" class="width-90"/></p>
+<p><img src="/images/general/getting-started/ssh-connection-params.png" alt="SSH connection parameters" class="width-90"/></p>
 
 **Note:** The username for the SSH connection is always <code>cabox</code>
 
@@ -171,15 +171,15 @@ This section will be implemented soon. Feel free to help us by contributing to o
 
 You can enable two-factor authentication in the <code>Account</code> tab in the dashboard.
 
-<p><img src="/images/general/getting-started/14.png" alt="Initiate 2FA" class="width-60"/></p>
+<p><img src="/images/general/getting-started/2fa-step1.png" alt="Initiate 2FA" class="width-60"/></p>
 
 Scan the QR code with your authentication app and wait for the confirmation code.
 
-<p><img src="/images/general/getting-started/15.png" alt="Scan QR code" class="width-60"/></p>
+<p><img src="/images/general/getting-started/2fa-step2.png" alt="Scan QR code" class="width-60"/></p>
 
 Enter the confirmation code to verify the authentication method.
 
-<p><img src="/images/general/getting-started/16.png" alt="Enter confirmation code" class="width-60"/></p>
+<p><img src="/images/general/getting-started/2fa-step3.png" alt="Enter confirmation code" class="width-60"/></p>
 
 ### <a name="can-i-use-emmet-in-my-project" href="#can-i-use-emmet-in-my-project" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Can I use Emmet in my project?
 
@@ -191,7 +191,7 @@ Enter the confirmation code to verify the authentication method.
 
 Navigate to the <code>Account</code> tab in the dashboard and click on <code>Resend</code> verification email.
 
-<p><img src="/images/general/getting-started/17.png" alt="Resend verification mail" class="width-60"/></p>
+<p><img src="/images/general/getting-started/resend-verification-email.png" alt="Resend verification mail" class="width-60"/></p>
 
 ### <a name="i-registered-with-facebook-what-is-my-password" href="#i-registered-with-facebook-what-is-my-password" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>I registered with my Facebook account, what is my password?
 
