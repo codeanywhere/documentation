@@ -4,10 +4,10 @@ If you wish to use a custom development environment from one of your containers 
 
 To create a custom stack, navigate to the <code>Custom stacks</code> tab in the sidebar and click the <code>Create Stack</code> button.
 
-<p><img src="/images/dashboard/custom-stacks/1.png" alt="Create new stack" class="width-90"/></p>
+<p><img src="/images/dashboard/custom-stacks/create-stack-1.png" alt="Create new stack" class="width-90"/></p>
 
 After a new window shows up, you will be asked to provide the name and description for your new custom stack and select the existing container whose configuration you want to mirror.
 
-<p><img src="/images/dashboard/custom-stacks/2.png" alt="Create stack modal" class="width-90"/></p>
+<p><img src="/images/dashboard/custom-stacks/create-stack-2.png" alt="Create stack modal" class="width-60"/></p>
 
 You will now have the ability to use the custom stack when creating a new container.

@@ -144,7 +144,7 @@ For example, if you want to push to your master branch, just use:
 git push origin master
 ```
 
-### <a name="update-remote-repository" href="#update-remote-repository" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Update the Remote Repository
+### <a name="update-the-remote-repository" href="#update-the-remote-repository" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Update the Remote Repository
 
 Merge changes on the remote server to your Container:
 

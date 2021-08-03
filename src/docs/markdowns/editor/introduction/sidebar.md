@@ -17,11 +17,11 @@ The File Explorer is used to browse, open, and manage all of the files and folde
 - Move files and folders with drag and drop.
 - Use the context menu to explore all options.
 
-#### <a name="file-explorer/uploading-files" href="#file-explorer/uploading-files" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Uploading Files
+#### <a name="uploading-files" href="#uploading-files" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Uploading Files
 
 You can <code>drag and drop</code> files from your computer into the File Explorer to upload them to your project.
 
-<p><img src="/images/editor/introduction/4.png" alt="Drag and drop" class="width-90"/></p>
+<p><img src="/images/editor/introduction/drag-and-drop-upload.png" alt="Drag and drop" class="width-90"/></p>
 
 ### <a name="source-control" href="#source-control" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Source Control
 
@@ -43,7 +43,7 @@ There are several useful buttons in the Source Control widget header:
 - **4**: Add a <code>Signed-off-by</code> trailer at the end of the commit message
 - **5**: Menu with the most common git commands
 
-<p><img src="/images/editor/introduction/5.png" alt="Source control" class="width-90"/></p>
+<p><img src="/images/editor/introduction/source-control.png" alt="Source control" class="width-90"/></p>
 
 ### <a name="extensions" href="#extensions" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Extensions
 
@@ -63,7 +63,7 @@ By right-clicking on a <code>container</code>, you expand the following options:
 - **Rename** the container
 - **Open** a container **terminal**
 
-<p><img src="/images/editor/introduction/6.png" alt="Container options" class="width-60"/></p>
+<p><img src="/images/editor/introduction/container-options.png" alt="Container options" class="width-60 tall-narrow"/></p>
 
 By right-clicking on a <code>connection</code>, you expand the following options:
 
@@ -73,6 +73,6 @@ By right-clicking on a <code>connection</code>, you expand the following options
 - **Create** new files or folders
 - **Open** a connection **terminal**
 
-<p><img src="/images/editor/introduction/7.png" alt="Connection options" class="width-60"/></p>
+<p><img src="/images/editor/introduction/connection-options.png" alt="Connection options" class="width-60 tall-narrow"/></p>
 
 **Note**: You can also download specific files or directories as an archive.

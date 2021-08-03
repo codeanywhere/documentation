@@ -6,7 +6,7 @@ Codeanywhere's support is standing by to help you with any questions or problems
 
 Click <code> Help -> Create a Support Ticket</code>, type in your message and we will get back to you by email as soon as possible.
 
-<p><img src="/images/support/1.png" alt="Create a Support ticket from the IDE" class="width-90"/></p>
+<p><img src="/images/support/submit-support-ticket.png" alt="Create a Support ticket from the IDE" class="width-90"/></p>
 
 ### <a name="from-the-dashboard-or-website" href="#from-the-dashboard-or-website" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>From the Dashboard or Website
 

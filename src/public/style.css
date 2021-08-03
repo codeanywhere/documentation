@@ -154,6 +154,21 @@ h6 .anchor-link:focus img {
   margin-right: auto;
 }
 
+.markdown div.two-images {
+  display: flex;
+  justify-content: space-evenly;
+  height: 300px;
+}
+
+.markdown div.two-images > img {
+  width: auto;
+}
+
+.markdown img.width-60.tall-narrow {
+  width: auto;
+  height: 400px;
+}
+
 /* sidebar */
 .sidebar {
   padding: var(--spacing-3) 0 var(--spacing-1);
@@ -187,13 +202,15 @@ h6 .anchor-link:focus img {
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
-  transform: rotate(+45deg);
-  -webkit-transform: rotate(+45deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transition-property: all;
+  transition: all ease-in 0.1s;
 }
 
-.sidebar-section-title-arrow.up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
+.sidebar-section-title-arrow.down {
+  transform: rotate(+45deg);
+  -webkit-transform: rotate(+45deg);
 }
 
 .sidebar-subsection {
@@ -369,6 +386,7 @@ code {
 
 .markdown a {
   color: var(--primary-color);
+  text-decoration: underline;
 }
 
 .markdown h2 code {
@@ -470,7 +488,7 @@ iframe {
   padding: 0.2rem 0.7rem;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 751px) {
   .search {
     display: flex;
     flex-grow: 1;
@@ -480,7 +498,7 @@ iframe {
   }
 }
 
-@media (min-width: 850px) {
+@media (min-width: 851px) {
   .search_input {
     min-width: 25rem;
   }
@@ -579,7 +597,7 @@ iframe {
 }
 
 .search_item:hover::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.05);
@@ -619,11 +637,11 @@ iframe {
   border-radius: 4px;
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
-  width: 100%;
   background: white;
   margin-right: 1rem;
   max-width: 300px;
-  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%),
+    0 1px 10px 0 rgb(0 0 0 / 12%);
 }
 
 /* responsive fixes */
@@ -695,11 +713,14 @@ iframe {
   .navigation .sign-up {
     margin: 0;
   }
+
+  .sidebar-section-title-row {
+    width: 95%;
+  }
 }
 
 @media all and (max-width: 500px) {
   * {
-    font-size: 14px;
     margin: 0;
   }
 
