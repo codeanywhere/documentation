@@ -2,7 +2,7 @@
 
 To enable team sharing, you have to purchase a desired number of <code>Team Accounts</Code> for your team. First, navigate to the <code>Account</code> tab in the sidebar and select the option to change your subscription.
 
-<p><img src="/images/general/getting-started/8.png" alt="Change subscription" class="width-90"/></p>
+<p><img src="/images/editor/collaboration/5.png" alt="Change subscription" class="width-90"/></p>
 
 You will be redirected to the Checkout page, where you will be able to define the number of team accounts you wish to purchase.
 

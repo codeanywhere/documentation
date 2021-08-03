@@ -19,6 +19,6 @@ If you select SSH as your desired connection type, additional you will have to p
 - **_Password_** – The password for your remote server if you select Password as your authorization method
 - **_Private key_** – Your private key for connecting to the remote server if you select Private key as your authorization method
 
-<p><img src="/images/dashboard/connections/2.png" alt="Create connection modal" class="width-90"/></p>
+<p><img src="/images/dashboard/connections/2.png" alt="Create connection modal" class="width-60"/></p>
 
 **Note**: You have to create at least one container to create a new connection. Don't know how to create a container? Find out [here](/dashboard/containers/create-new-container).

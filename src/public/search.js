@@ -73,7 +73,7 @@ const initSearch = async () => {
                 ${groups[key]
                   .map(({ article, heading, slug }) => {
                     if (!article) article = key //index search results
-                    if (!heading) heading = article //article search results
+                    if (!heading) heading = '' //article search results
 
                     return `
                     <a href="/${slug}" class="search_item" data-search="link"> 

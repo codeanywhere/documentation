@@ -8,6 +8,6 @@ To create a custom stack, navigate to the <code>Custom stacks</code> tab in the 
 
 After a new window shows up, you will be asked to provide the name and description for your new custom stack and select the existing container whose configuration you want to mirror.
 
-<p><img src="/images/dashboard/custom-stacks/2.png" alt="Create stack modal" class="width-90"/></p>
+<p><img src="/images/dashboard/custom-stacks/2.png" alt="Create stack modal" class="width-60"/></p>
 
 You will now have the ability to use the custom stack when creating a new container.

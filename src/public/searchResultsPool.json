@@ -87,8 +87,8 @@
     "section": "General",
     "subsection": "Getting Started",
     "article": "Frequently Asked Questions",
-    "heading": "I want to use third-party connections like DigitalOcean and SFTP. How can I use the new IDE with them?",
-    "slug": "general/getting-started/faq#i-want-to-use-third-party-connections-like-digital-ocean-and-sftp-how-can-i-use-the-new-ide-with-them"
+    "heading": "How can I use the new IDE with third-party-connections?",
+    "slug": "general/getting-started/faq#how-can-i-use-the-new-ide-with-third-party-connections"
   },
   {
     "section": "General",
@@ -173,6 +173,41 @@
     "article": "Frequently Asked Questions",
     "heading": "How can I authorize my computer to connect via SSH to my container?",
     "slug": "general/getting-started/faq#how-can-i-authorize-my-computer-to-connect-via-ssh-to-my-container"
+  },
+  {
+    "section": "General",
+    "subsection": "Getting Started",
+    "article": "Frequently Asked Questions",
+    "heading": "How do I hit my API with Postman?",
+    "slug": "general/getting-started/faq#how-do-i-hit-my-api-with-postman"
+  },
+  {
+    "section": "General",
+    "subsection": "Getting Started",
+    "article": "Frequently Asked Questions",
+    "heading": "How to Enable Two-Factor Authentication?",
+    "slug": "general/getting-started/faq#how-to-enable-two-factor-authentication"
+  },
+  {
+    "section": "General",
+    "subsection": "Getting Started",
+    "article": "Frequently Asked Questions",
+    "heading": "Can I use Emmet in my project?",
+    "slug": "general/getting-started/faq#can-i-use-emmet-in-my-project"
+  },
+  {
+    "section": "General",
+    "subsection": "Getting Started",
+    "article": "Frequently Asked Questions",
+    "heading": "My email verification didn't arrive, what should I do?",
+    "slug": "general/getting-started/faq#my-email-verification-didnt-arrive-what-should-i-do"
+  },
+  {
+    "section": "General",
+    "subsection": "Getting Started",
+    "article": "Frequently Asked Questions",
+    "heading": "I registered with my Facebook account, what is my password?",
+    "slug": "general/getting-started/faq#i-registered-with-my-facebook-account-what-is-my-password"
   },
   {
     "section": "Editor",
@@ -267,6 +302,13 @@
   },
   {
     "section": "Editor",
+    "subsection": "Collaboration",
+    "article": "Collaboration Terminals",
+    "heading": null,
+    "slug": "editor/collaboration/collaboration-terminals"
+  },
+  {
+    "section": "Editor",
     "subsection": "Teams",
     "article": "What are Codeanywhere Teams?",
     "heading": null,
@@ -299,6 +341,13 @@
     "article": "How to Install Custom VSIX Extensions?",
     "heading": null,
     "slug": "editor/extensions/install-custom-vsix-extensions"
+  },
+  {
+    "section": "Editor",
+    "subsection": "Debugging",
+    "article": "Introduction",
+    "heading": null,
+    "slug": "editor/debugging/introduction"
   },
   {
     "section": "Dashboard",
@@ -432,6 +481,13 @@
     "article": "Git Providers",
     "heading": "GitLab",
     "slug": "dashboard/connected-accounts/git-providers#git-lab"
+  },
+  {
+    "section": "Dashboard",
+    "subsection": "Refer a Friend",
+    "article": "Earn Credits",
+    "heading": null,
+    "slug": "dashboard/refer-a-friend/earn-credits"
   },
   {
     "section": "Advanced Topics",

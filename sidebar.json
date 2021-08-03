@@ -56,6 +56,10 @@
           {
             "name": "Collaborate on Other Users Projects",
             "slug": "collaborate-on-other-users-projects"
+          },
+          {
+            "name": "Collaboration Terminals",
+            "slug": "collaboration-terminals"
           }
         ]
       },
@@ -88,6 +92,16 @@
           {
             "name": "How to Install Custom VSIX Extensions?",
             "slug": "install-custom-vsix-extensions"
+          }
+        ]
+      },
+      {
+        "name": "Debugging",
+        "slug": "debugging",
+        "contents": [
+          {
+            "name": "Introduction",
+            "slug": "introduction"
           }
         ]
       }
@@ -200,6 +214,16 @@
           {
             "name": "Git Providers",
             "slug": "git-providers"
+          }
+        ]
+      },
+      {
+        "name": "Refer a Friend",
+        "slug": "refer-a-friend",
+        "contents": [
+          {
+            "name": "Earn Credits",
+            "slug": "earn-credits"
           }
         ]
       }

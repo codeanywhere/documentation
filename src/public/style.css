@@ -154,6 +154,21 @@ h6 .anchor-link:focus img {
   margin-right: auto;
 }
 
+.markdown div.two-images {
+  display: flex;
+  justify-content: space-evenly;
+  height: 300px;
+}
+
+.markdown div.two-images > img {
+  width: auto;
+}
+
+.markdown img.width-60.tall-narrow {
+  width: auto;
+  height: 400px;
+}
+
 /* sidebar */
 .sidebar {
   padding: var(--spacing-3) 0 var(--spacing-1);
@@ -369,6 +384,7 @@ code {
 
 .markdown a {
   color: var(--primary-color);
+  text-decoration: underline;
 }
 
 .markdown h2 code {
@@ -565,7 +581,7 @@ iframe {
 }
 
 .search_item:hover::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.05);
@@ -609,7 +625,8 @@ iframe {
   background: white;
   margin-right: 1rem;
   max-width: 300px;
-  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%),
+    0 1px 10px 0 rgb(0 0 0 / 12%);
 }
 
 /* responsive fixes */
