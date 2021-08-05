@@ -1,28 +1,33 @@
 const browserSync = require('browser-sync').create()
+const ejs = require('ejs')
+const fs = require('fs')
 const gulp = require('gulp')
 const gulpClean = require('gulp-clean')
 const gulpCopy = require('gulp-copy')
+const gulpData = require('gulp-data')
+const gulpEjs = require('gulp-ejs')
+const gulpTap = require('gulp-tap')
+const gulpMarkdown = require('gulp-markdown')
 const gulpRename = require('gulp-rename')
-const ejs = require('gulp-ejs')
-
-const sidebar = require('./sidebar.json')
+const through = require('through2')
+const vinyl = require('vinyl')
 
 const paths = {
   views: {
-    src: 'src/views/**/*',
+    src: 'src/views/index.ejs',
     dest: 'dist',
   },
   assets: {
     src: 'src/public/**/*',
     dest: 'dist',
   },
+  docs: {
+    src: 'src/docs/markdowns/**/*.md',
+  },
 }
 
 function assets() {
-  return gulp
-    .src(paths.assets.src)
-    .pipe(gulpCopy(''))
-    .pipe(gulp.dest(paths.assets.dest))
+  return gulp.src(paths.assets.src).pipe(gulp.dest(paths.assets.dest))
 }
 
 function clean() {
@@ -30,17 +35,30 @@ function clean() {
 }
 
 function views() {
+  const sidebar = require('./sidebar.json')
+  const template = fs.readFileSync('src/views/index.ejs').toString()
   return gulp
-    .src(paths.views.src)
+    .src(paths.docs.src)
+    .pipe(gulpMarkdown())
     .pipe(
-      ejs({
-        title: 'Codeanywhere Docs',
-        sidebar,
-        active: 'test',
-        rendered: 'test',
+      through.obj(function (file, enc, cb) {
+        this.push(
+          new vinyl({
+            contents: Buffer.from(
+              ejs.render(template, {
+                title: 'Codeanywhere Docs',
+                sidebar,
+                active: 'test',
+                rendered: String(file.contents),
+                filename: 'src/views/index.ejs',
+              })
+            ),
+            path: file.relative,
+          })
+        )
+        cb()
       })
     )
-    .pipe(gulpRename({ extname: '.html' }))
     .pipe(gulp.dest(paths.views.dest))
 }
 
@@ -62,7 +80,8 @@ function serve(done) {
 }
 
 const watch = function () {
-  gulp.watch(paths.views.src, { ignoreInitial: false }, views)
+  gulp.watch([paths.views.src, paths.docs.src], { ignoreInitial: false }, gulp.series(views, reload))
+  gulp.watch([paths.assets.src], { ignoreInitial: false }, gulp.series(assets, reload))
 }
 
 const build = gulp.series(clean, gulp.parallel(assets, views))
