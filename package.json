@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "gulp development",
-    "update-search-pool": "npm run tsc src/tools/updateSearchPool.ts && node src/tools/updateSearchPool.js"
+    "update-search-pool": "npm run tsc src/tools/updateSearchPool.ts && node src/tools/updateSearchPool.js",
+    "format": "prettier --write \"**/src/**/*.{ts,tsx,js}\" && prettier --write gulpfile.js"
   },
   "keywords": [],
   "author": "",
@@ -13,10 +14,14 @@
   "dependencies": {
     "ejs": "^2.7.1",
     "fuse.js": "^6.4.6",
+    "gulp-exec": "^5.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
     "highlight.js": "^9.15.10",
     "lodash": "^4.17.21",
     "marked": "^0.7.0",
-    "regenerator-runtime": "^0.13.7"
+    "regenerator-runtime": "^0.13.7",
+    "ts-node": "^10.1.0",
+    "webpack-stream": "^6.1.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.12",
@@ -33,6 +38,7 @@
     "prettier": "^2.3.2",
     "through2": "^4.0.2",
     "webpack": "^5.46.0",
-    "webpack-cli": "^4.7.2"
+    "webpack-cli": "^4.7.2",
+    "typescript": "4.3.4"
   }
 }

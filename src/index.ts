@@ -18,45 +18,23 @@ marked.setOptions({
   },
 })
 
-const getTree = async () =>
-  JSON.parse(await fs.readFile('./sidebar.json', 'utf8'))
+const getTree = async () => JSON.parse(await fs.readFile('./sidebar.json', 'utf8'))
 
-const render = async (
-  res: Response,
-  section: string,
-  subsection: string | null,
-  article: string | null
-) => {
+const render = async (res: Response, section: string, subsection: string | null, article: string | null) => {
   // TODO: ENABLE IN PRODUCTION
   // res.set(
   //   'Cache-Control',
   //   'public, max-age=600, stale-if-error=60, stale-while-revalidate=60'
   // )
   res.locals.rendered = subsection
-    ? await renderMarkdown(
-        path.join(
-          __dirname,
-          'docs',
-          'markdowns',
-          section,
-          subsection,
-          article
-        ) + '.md'
-      )
-    : await renderMarkdown(
-        path.join(__dirname, 'docs', 'markdowns', section, article || 'index') +
-          '.md'
-      )
+    ? await renderMarkdown(path.join(__dirname, 'docs', 'markdowns', section, subsection, article) + '.md')
+    : await renderMarkdown(path.join(__dirname, 'docs', 'markdowns', section, article || 'index') + '.md')
 
   const sidebarTree = await getTree()
   res.locals.sidebar = sidebarTree
-  res.locals.active = `${section}${subsection ? '/' + subsection : ''}${
-    article ? '/' + article : ''
-  }`
+  res.locals.active = `${section}${subsection ? '/' + subsection : ''}${article ? '/' + article : ''}`
 
-  const sectionObj = sidebarTree.find(
-    (c: { slug: string }) => c.slug === section
-  )
+  const sectionObj = sidebarTree.find((c: { slug: string }) => c.slug === section)
 
   const articleObj = subsection
     ? sectionObj.contents
@@ -88,11 +66,11 @@ app.get('/:section', async (req, res) => {
   const { section } = req.params
 
   if (section === 'editor') {
-    render(res, section, 'introduction', 'about').catch(err => {
+    render(res, section, 'introduction', 'about').catch((err) => {
       res.send(`<h1>Something went wrong!</h1>`)
     })
   } else {
-    render(res, section, null, null).catch(err => {
+    render(res, section, null, null).catch((err) => {
       res.send(`<h1>Something went wrong!</h1>`)
     })
   }
@@ -100,14 +78,14 @@ app.get('/:section', async (req, res) => {
 
 app.get('/:section/:article', async (req, res) => {
   const { section, article } = req.params
-  render(res, section, null, article).catch(err => {
+  render(res, section, null, article).catch((err) => {
     res.send(`<h1>Something went wrong!</h1>`)
   })
 })
 
 app.get('/:section/:subsection/:article', async (req, res) => {
   const { section, subsection, article } = req.params
-  render(res, section, subsection, article).catch(err => {
+  render(res, section, subsection, article).catch((err) => {
     res.send(`<h1>Something went wrong!</h1>`)
   })
 })

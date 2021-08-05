@@ -1,4 +1,3 @@
-import runtime from '../../node_modules/regenerator-runtime/runtime'
 import Fuse from '../../node_modules/fuse.js'
 
 const initSearch = async () => {
@@ -35,13 +34,10 @@ const initSearch = async () => {
   const output = document.querySelector('[data-search="output"]')
 
   const removeResults = () => {
-    closing = setTimeout(
-      () => output.classList.remove('search_preview__open'),
-      500
-    )
+    closing = setTimeout(() => output.classList.remove('search_preview__open'), 500)
   }
 
-  const createResults = value => {
+  const createResults = (value) => {
     if (closing) clearTimeout(closing)
 
     output.classList.add('search_preview__open')
@@ -63,11 +59,10 @@ const initSearch = async () => {
     const html = `
             ${Object.keys(groups)
               .map(
-                key => `
+                (key) => `
                 <div class="search_section">${key.replace(
                   new RegExp(value, 'gi'),
-                  innerValue =>
-                    `<em class="search_highlight">${innerValue}</em>`
+                  (innerValue) => `<em class="search_highlight">${innerValue}</em>`
                 )}</div>
 
                 ${groups[key]
@@ -79,13 +74,11 @@ const initSearch = async () => {
                     <a href="/${slug}" class="search_item" data-search="link"> 
                         <div class="search_page">${article.replace(
                           new RegExp(value, 'gi'),
-                          innerValue =>
-                            `<em class="search_highlight">${innerValue}</em>`
+                          (innerValue) => `<em class="search_highlight">${innerValue}</em>`
                         )}</div>
                         <div class="search_heading">${heading.replace(
                           new RegExp(value, 'gi'),
-                          innerValue =>
-                            `<em class="search_highlight">${innerValue}</em>`
+                          (innerValue) => `<em class="search_highlight">${innerValue}</em>`
                         )}</div>
                     </a>
                 `

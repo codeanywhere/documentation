@@ -6,6 +6,8 @@ const gulpClean = require('gulp-clean')
 const gulpMarkdown = require('gulp-markdown')
 const through = require('through2')
 const vinyl = require('vinyl')
+const webpack = require('webpack-stream')
+const exec = require('gulp-exec')
 
 const paths = {
   views: {
@@ -27,6 +29,17 @@ function assets() {
 
 function clean() {
   return gulp.src('dist', { allowEmpty: true }).pipe(gulpClean())
+}
+
+function search() {
+  return gulp
+    .src('src/tools/search.js')
+    .pipe(webpack(require('./webpack.config.js')))
+    .pipe(gulp.dest('dist/'))
+}
+
+function updateSearchPool() {
+  return gulp.src('src/tools/updateSearchPool.ts').pipe(exec((file) => `ts-node ${file.path}`))
 }
 
 function views() {
@@ -79,7 +92,7 @@ const watch = function () {
   gulp.watch([paths.assets.src], { ignoreInitial: false }, gulp.series(assets, reload))
 }
 
-const build = gulp.series(clean, gulp.parallel(assets, views))
+const build = gulp.series(updateSearchPool, clean, gulp.parallel(assets, views, search))
 
 const development = gulp.series(build, serve, watch)
 exports.default = build
