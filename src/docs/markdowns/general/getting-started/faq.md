@@ -112,10 +112,6 @@ Codeanywhere users can choose from a wide variety of extensions from the [OpenVS
 
 Find out [here](/editor/extensions/install-extensions-from-marketplace) how to install extensions from the marketplace.
 
-### <a name="how-to-configure-built-in-plugins-in-the-new-container-dialog" href="#how-to-configure-built-in-plugins-in-the-new-container-dialog" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to configure built-in plugins in the “New container” dialog?
-
-This section will be implemented soon. Feel free to help us by contributing to our [documentation](https://github.com/codeanywhere/documentation).
-
 ### <a name="how-can-i-connect-my-container-to-a-ftp-connection" href="#how-can-i-connect-my-container-to-a-ftp-connection" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How can I connect my container to a FTP connection?
 
 Connecting your existing FTP connection to a container is pretty straight-forward. [Open the IDE](/editor/introduction/how-to-access) for any of your created containers and navigate to the <code>Connections</code> widget in the [sidebar](/editor/introduction/sidebar/#connections).

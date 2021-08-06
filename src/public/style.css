@@ -311,9 +311,10 @@ iframe {
 .sidebar-section-title {
   margin: var(--spacing-1) 0;
   font-size: 25px;
-  font-weight: 700;
-  box-shadow: inset 0 -4px 0 0 var(--primary-color);
+  font-weight: 600;
+  box-shadow: inset 0px -4px 0 0 var(--primary-color);
   display: inline-block;
+  font-family: 'Galano-Grotesque', sans-serif;
 }
 
 .sidebar-section-title-active {
@@ -341,6 +342,7 @@ iframe {
   font-size: 18px;
   font-weight: 500;
   display: inline-block;
+  font-family: 'Galano-Grotesque', sans-serif;
 }
 
 .sidebar-list {
@@ -360,7 +362,6 @@ iframe {
 .sidebar-link {
   text-decoration: none;
   color: var(--text-color);
-
   padding: 6px 0;
   margin: 2px 0;
   margin-bottom: 5px;
@@ -368,6 +369,7 @@ iframe {
   border-radius: 4px;
   transition: 0.2s padding ease-in-out;
   opacity: 0.6;
+  font-family: 'Galano-Grotesque', sans-serif;
 }
 
 .sidebar-link:hover {
@@ -379,7 +381,7 @@ iframe {
 
 .sidebar-link-active {
   color: var(--primary-color);
-  font-weight: bold;
+  font-weight: 600;
   padding-left: var(--spacing-1);
   border-left: 4px solid var(--primary-color);
   border-radius: 0;
@@ -554,6 +556,9 @@ iframe {
   width: 100%;
 }
 
+.search_page.full-width {
+  max-width: 100%;
+}
 .search_heading {
   padding: 0.7rem;
 }

@@ -68,7 +68,17 @@ const initSearch = async () => {
                 ${groups[key]
                   .map(({ article, heading, slug }) => {
                     if (!article) article = key //index search results
-                    if (!heading) heading = '' //article search results
+
+                    if (!heading) {
+                      return `
+                      <a href="/${slug}" class="search_item" data-search="link"> 
+                          <div class="search_page full-width">${article.replace(
+                            new RegExp(value, 'gi'),
+                            (innerValue) => `<em class="search_highlight">${innerValue}</em>`
+                          )}</div>
+                      </a>
+                  `
+                    }
 
                     return `
                     <a href="/${slug}" class="search_item" data-search="link"> 
