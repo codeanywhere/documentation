@@ -49,7 +49,11 @@ function highlightActiveArticle() {
   if (activeArticles.length) {
     activeArticles[0].classList.remove('sidebar-link-active')
   }
-  document.getElementById(window.location.pathname.substr(1)).classList.toggle('sidebar-link-active')
+
+  let pathname = window.location.pathname.substr(1)
+  if (pathname !== '' && pathname.substring(pathname.length - 1) !== '/') {
+    document.getElementById(pathname).classList.toggle('sidebar-link-active')
+  }
 }
 
 attachClickListeners()
