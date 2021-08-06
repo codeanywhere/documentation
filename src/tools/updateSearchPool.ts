@@ -4,7 +4,7 @@ const { kebabCase, flatten } = require('lodash')
 type SearchResult = {
   section: string
   subsection: string | null
-  article: string //TODO: index.md for every section
+  article: string
   heading: string | null
   slug: string
 }
@@ -128,37 +128,32 @@ const updateSearch = async () => {
     return [...result, ...sectionChildrenPromises]
   }, [])
 
-  //TODO: review this
   const sectionsIndexHeadingsPromise = await sidebar.reduce(async (result: SearchResult[], section: ArticleParent) => {
-    if (!section.contents.length) {
-      const contentsAsString: string = await fs.readFile(`src/docs/markdowns/${section.slug}/index.md`, 'utf-8')
-      const headingsArray: string[] = (contentsAsString.match(/^###.+$/gm) || [])
-        .map((match: string) => match.replace(/#\s?/g, ''))
-        .map((heading: string) => heading.replace(/\[/, ''))
-        .map((heading: string) => heading.replace(/\].+/, ''))
-        .map((heading: string) => heading.replace(/\*/g, ''))
-        .map((heading: string) => heading.replace(/_/g, ''))
-        .map((heading: string) => heading.replace(/<\/?[^>]+(>|$)/g, ''))
+    const contentsAsString: string = await fs.readFile(`src/docs/markdowns/${section.slug}/index.md`, 'utf-8')
+    const headingsArray: string[] = (contentsAsString.match(/^###.+$/gm) || [])
+      .map((match: string) => match.replace(/#\s?/g, ''))
+      .map((heading: string) => heading.replace(/\[/, ''))
+      .map((heading: string) => heading.replace(/\].+/, ''))
+      .map((heading: string) => heading.replace(/\*/g, ''))
+      .map((heading: string) => heading.replace(/_/g, ''))
+      .map((heading: string) => heading.replace(/<\/?[^>]+(>|$)/g, ''))
 
-      const headingsResults = headingsArray.map(
-        (heading: string): SearchResult => ({
-          section: section.name,
-          subsection: null,
-          article: null,
-          heading,
-          slug: `${section.slug}#${kebabCase(heading)}`,
-        })
-      )
+    const headingsResults = headingsArray.map(
+      (heading: string): SearchResult => ({
+        section: section.name,
+        subsection: null,
+        article: null,
+        heading,
+        slug: `${section.slug}#${kebabCase(heading)}`,
+      })
+    )
 
-      const currentResult = await result
-
-      if (!currentResult) return headingsResults
-      else {
-        currentResult.push(...headingsResults)
-      }
-
-      return currentResult
+    if (!result) return headingsResults
+    else {
+      result.push(...headingsResults)
     }
+
+    return result
   }, [])
 
   const searchResults = await Promise.all(promisesArray)

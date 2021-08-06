@@ -56,7 +56,6 @@ function views() {
               ejs.render(template, {
                 title: 'Codeanywhere Docs',
                 sidebar,
-                active: 'test',
                 rendered: String(file.contents),
                 filename: 'src/views/index.ejs',
               })

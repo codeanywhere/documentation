@@ -28,10 +28,6 @@
         "slug": "introduction",
         "contents": [
           {
-            "name": "About the IDE",
-            "slug": "about"
-          },
-          {
             "name": "How to Access the IDE?",
             "slug": "how-to-access"
           },
