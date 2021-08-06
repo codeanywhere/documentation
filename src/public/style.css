@@ -2,36 +2,31 @@
 
 @font-face {
   font-family: 'Galano-Grotesque';
-  src: url('/fonts/Galano-Grotesque/Galano-Grotesque-Regular.otf')
-    format('opentype');
+  src: url('/fonts/Galano-Grotesque/Galano-Grotesque-Regular.otf') format('opentype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Galano-Grotesque';
-  src: url('/fonts/Galano-Grotesque/Galano-Grotesque-Medium.otf')
-    format('opentype');
+  src: url('/fonts/Galano-Grotesque/Galano-Grotesque-Medium.otf') format('opentype');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'Galano-Grotesque';
-  src: url('/fonts/Galano-Grotesque/Galano-Grotesque-SemiBold.otf')
-    format('opentype');
+  src: url('/fonts/Galano-Grotesque/Galano-Grotesque-SemiBold.otf') format('opentype');
   font-weight: 600;
 }
 
 @font-face {
   font-family: 'Galano-Grotesque';
-  src: url('/fonts/Galano-Grotesque/Galano-Grotesque-Bold.otf')
-    format('opentype');
+  src: url('/fonts/Galano-Grotesque/Galano-Grotesque-Bold.otf') format('opentype');
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'Galano-Grotesque';
-  src: url('/fonts/Galano-Grotesque/Galano-Grotesque-ExtraBold.otf')
-    format('opentype');
+  src: url('/fonts/Galano-Grotesque/Galano-Grotesque-ExtraBold.otf') format('opentype');
   font-weight: 800;
 }
 
@@ -321,7 +316,7 @@ iframe {
   display: inline-block;
 }
 
-.sidebar-section-title.active {
+.sidebar-section-title-active {
   box-shadow: inset 0 -4px 0 0 var(--secondary-color);
 }
 
@@ -382,7 +377,7 @@ iframe {
   opacity: 1;
 }
 
-.sidebar-link.active {
+.sidebar-link-active {
   color: var(--primary-color);
   font-weight: bold;
   padding-left: var(--spacing-1);
@@ -391,7 +386,7 @@ iframe {
   opacity: 1;
 }
 
-.sidebar-link.active:hover {
+.sidebar-link-active:hover {
   background-color: var(--bg-color);
 }
 
@@ -583,8 +578,7 @@ iframe {
   background: white;
   margin-right: 1rem;
   max-width: 300px;
-  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%),
-    0 1px 10px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
 }
 
 .mobile-signup {

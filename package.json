@@ -5,7 +5,6 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "gulp development",
-    "update-search-pool": "npm run tsc src/tools/updateSearchPool.ts && node src/tools/updateSearchPool.js",
     "format": "prettier --write \"**/src/**/*.{ts,tsx,js}\" && prettier --write gulpfile.js"
   },
   "keywords": [],
