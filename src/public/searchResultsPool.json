@@ -212,27 +212,6 @@
   {
     "section": "Editor",
     "subsection": "Introduction",
-    "article": "About the IDE",
-    "heading": null,
-    "slug": "editor/introduction/about"
-  },
-  {
-    "section": "Editor",
-    "subsection": "Introduction",
-    "article": "About the IDE",
-    "heading": "Preview Ports",
-    "slug": "editor/introduction/about#preview-ports"
-  },
-  {
-    "section": "Editor",
-    "subsection": "Introduction",
-    "article": "About the IDE",
-    "heading": "Projects",
-    "slug": "editor/introduction/about#projects"
-  },
-  {
-    "section": "Editor",
-    "subsection": "Introduction",
     "article": "How to Access the IDE?",
     "heading": null,
     "slug": "editor/introduction/how-to-access"
@@ -628,6 +607,20 @@
     "article": "Subversion",
     "heading": "Configure Server",
     "slug": "advanced-topics/subversion#configure-server"
+  },
+  {
+    "section": "Editor",
+    "subsection": null,
+    "article": null,
+    "heading": "Preview Ports",
+    "slug": "editor#preview-ports"
+  },
+  {
+    "section": "Editor",
+    "subsection": null,
+    "article": null,
+    "heading": "Projects",
+    "slug": "editor#projects"
   },
   {
     "section": "Support",

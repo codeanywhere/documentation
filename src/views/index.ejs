@@ -37,7 +37,7 @@
           <% for (const section of sidebar) { %>
           <div style="width: 100%">
             <div class="sidebar-section-title-row">
-              <div class="sidebar-section-title<%= active.startsWith(section.slug) ? ' active' : '' %>"
+              <div class="sidebar-section-title"
                 id="section-title-<%= section.slug %>" data-section-title="<%= section.slug %>"><a href="/<%= section.slug %>"><%= section.name %></a></div>
               <% 
                 if (section.name !== 'Support') {
@@ -56,9 +56,8 @@
                   <% for (const article of sectionChild.contents) { %>
                   <li>
                     <% const path = section.slug + '/' + sectionChild.slug +
-                      '/' + article.slug; const alink = active === path ?
-                      'active' : ''; %>
-                    <a class="sidebar-link <%= alink %>" href="/<%= path %>">
+                      '/' + article.slug; %>
+                    <a class="sidebar-link" id="<%= path %>" href="/<%= path %>">
                       <%= article.name %>
                     </a>
                   </li>
@@ -67,9 +66,8 @@
               </div>
               <% } else { %>
               <li>
-                <% const path = section.slug + '/' + sectionChild.slug; const
-                  alink = active === path ? 'active' : ''; %>
-                <a class="sidebar-link <%= alink %>" href="/<%= path %>">
+                <% const path = section.slug + '/' + sectionChild.slug; %>
+                <a class="sidebar-link" id="<%= path %>" href="/<%= path %>">
                   <%= sectionChild.name %>
                 </a>
               </li>
@@ -81,57 +79,7 @@
       </div>
       <div class="markdown"><%- rendered %></div>
     </div>
-    <script src="/bundledSearch.js"></script>
+    <script src="/search.js"></script>
+    <script src="/script.js"></script>
   </body>
-</html>
-  </div>
-  <script>
-    function toggleSection(section) {
-      const selectedSectionExpanded = document
-        .getElementById('section-list-' + section)
-        .classList.contains('expanded')
-
-      document
-        .getElementById('section-list-' + section)
-        .classList.toggle('expanded')
-      document.getElementById('section-arrow-' + section)?.classList.toggle('down')
-    }
-
-    function collapseSections() {
-      const sectionLists = document.getElementsByClassName('expandable')
-      const sectionArrows = document.getElementsByClassName(
-        'sidebar-section-title-arrow'
-      )
-      for (let i = 0, len = sectionLists.length; i < len; i++) {
-        sectionLists[i].classList.remove('expanded')
-        sectionArrows[i]?.classList.remove('down')
-      }
-    }
-
-    function attachClickListeners() {
-      const sectionTitles = document.getElementsByClassName(
-        'sidebar-section-title-row'
-      )
-
-      for (const sectionTitle of sectionTitles) {
-        sectionTitle.addEventListener('click', () => {
-          toggleSection(sectionTitle.firstElementChild.getAttribute('data-section-title'))
-        })
-      }
-    }
-
-    function expandCorrectSectionOnPageLoad() {
-      const pathname = window.location.pathname.substr(1)
-      if (pathname === '') {
-        toggleSection('general')
-      } else {
-        toggleSection(pathname.includes('/') ? pathname.substr(0, pathname.indexOf('/')) : pathname)
-      }
-    }
-
-    attachClickListeners()
-    expandCorrectSectionOnPageLoad()
-  </script>
-</body>
-
 </html>

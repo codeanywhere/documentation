@@ -6,7 +6,7 @@
       "noImplicitAny": true,
       "moduleResolution": "node",
       "sourceMap": true,
-      "outDir": "dist",
+      "outDir": "src/tools",
       "baseUrl": ".",
       "paths": {
           "*": [
@@ -15,6 +15,6 @@
       }
   },
   "include": [
-      "src/**/*"
+      "src/tools/updateSearchPool.ts"
   ]
 }
