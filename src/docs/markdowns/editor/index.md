@@ -31,11 +31,14 @@ You will be notified every time you restart your app so you can preview the prog
 The <code>Projects</code> view allows you to easily switch between multiple projects inside your container. You can find it by navigating to <code>View -> Projects</code> or <code>File -> New Project</code>.
 
 <p>
-  <div class="two-images">
+  <div class="side-by-side-images">
     <img src="/images/editor/introduction/view-projects.png" alt="Projects view"/>
     <img src="/images/editor/introduction/file-new-project.png" alt="New project"/>
   </div>
 </p>
+
+<p><img src="/images/editor/introduction/view-projects.png" alt="Projects view" class="width-60 solo-image"/></p>
+<p><img src="/images/editor/introduction/file-new-project.png" alt="New project" class="width-60 solo-image"/></p>
 
 Projects will also help you with cloning and opening a Git repository. Just click on <code>Clone an existing project</code> and enter your repository SSH URL and we will take care of the rest.
 
