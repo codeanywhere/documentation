@@ -292,12 +292,16 @@ iframe {
   height: 400px;
 }
 
-/* sidebar */
 .sidebar {
   padding: var(--spacing-3) 0 var(--spacing-1);
   margin-left: var(--spacing-6);
   border-right: 1px solid var(--light-grey400);
   margin-bottom: 100px;
+}
+
+.sidebar > div {
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .sidebar-section-title-row {
@@ -338,7 +342,7 @@ iframe {
 }
 
 .sidebar-subsection {
-  margin: var(--spacing-1) 0 var(--spacing-half) 0;
+  margin: var(--spacing-1) 0 6px 0;
   font-size: 18px;
   font-weight: 500;
   display: inline-block;
@@ -440,13 +444,15 @@ iframe {
 
 .navigation .sign-up {
   margin: 0 0 4px 12px;
-  padding: 8px 16px;
+  padding: 8px 12px;
   background-color: var(--primary-color);
   border-radius: 4px;
   font-weight: 500;
   text-decoration: none;
   color: white;
   transition: 0.2s opacity ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
 .navigation .sign-up:hover {
@@ -487,7 +493,7 @@ iframe {
 .search_input {
   border: none;
   padding: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 16px;
   font-family: 'Galano-Grotesque', sans-serif;
   flex-grow: 1;
 }
@@ -575,10 +581,13 @@ iframe {
 }
 
 .search-button {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Galano-Grotesque', sans-serif;
   cursor: pointer;
-  padding: 7px 9px;
+  padding: 8px 12px;
   border-radius: 4px;
-  border: 1px solid var(--primary-color);
+  border: 2px solid var(--primary-color);
   color: var(--primary-color);
   background: white;
   margin-right: 1rem;
@@ -672,7 +681,7 @@ iframe {
 
   .sidebar {
     background-color: var(--light-grey600);
-    padding: 2px var(--spacing-2) var(--spacing-4) var(--spacing-2);
+    padding: 2px var(--spacing-2) var(--spacing-2) var(--spacing-2);
     margin: 0 auto var(--spacing5) 0;
     border-right: 0;
   }
@@ -791,12 +800,9 @@ iframe {
     font-size: 2.25em;
   }
 
-  .markdown h2 {
-    font-size: 1.5em;
-  }
-
+  .markdown h2,
   .markdown h3 {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 
   .markdown h4 {
@@ -823,5 +829,29 @@ iframe {
 
   .markdown ul {
     margin: 0;
+  }
+
+  .sidebar-section-title {
+    font-size: 30px;
+  }
+
+  .sidebar-subsection {
+    font-size: 20px;
+  }
+
+  .sidebar > div {
+    margin-bottom: 20px;
+  }
+
+  .sidebar > div:last-child {
+    margin-bottom: 0px;
+  }
+
+  .search_page {
+    width: 40%;
+  }
+
+  .search_heading {
+    width: 60%;
   }
 }
