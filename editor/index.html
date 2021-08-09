@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Codeanywhere Docs</title>
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400|Questrial|Raleway:400,100,700" rel="stylesheet"
+    type="text/css" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <script>
+    ; (function (isTouchDevice) {
+      if (!isTouchDevice) return
+      var isTouchClass = 'is-touch-device'
+      var docElement = document.documentElement
+      docElement.className = docElement.className
+        ? [docElement.className, isTouchClass].join(' ')
+        : isTouchClass
+    })(
+      'ontouchstart' in window ||
+      (window.DocumentTouch && document instanceof DocumentTouch)
+    )
+  </script>
+</head>
+
+<body>
+  <div class="docs-container">
+    <script>
+  function toggleSearch() {
+    const element = document.querySelector('#search')
+    if (element) {
+      element.classList.toggle('search-mobile')
+    }
+  }
+</script>
+
+<nav class="navigation">
+  <div class="navigation-container-mobile">
+    <a class="logo" href="//codeanywhere.com">
+      <picture>
+        <source
+          srcset="/images/codeanywhere_glyph.svg"
+          media="(min-width: 851px)"
+        />
+        <source
+          srcset="/images/codeanywhere_logo.svg"
+          media="(min-width: 501px)"
+        />
+        <img src="/images/codeanywhere_glyph.svg" alt="Codeanywhere logo" />
+      </picture>
+    </a>
+
+    <div class="mobile-signup">
+      <button class="search-button" onclick="toggleSearch()">Search</button>
+      <a class="sign-up" href="//codeanywhere.com/signup">Sign up</a>
+    </div>
+  </div>
+
+  <div class="navigation-container">
+    <a class="logo" href="//codeanywhere.com">
+      <picture>
+        <source
+          srcset="/images/codeanywhere_glyph.svg"
+          media="(min-width: 851px)"
+        />
+        <source
+          srcset="/images/codeanywhere_logo.svg"
+          media="(min-width: 501px)"
+        />
+        <img src="/images/codeanywhere_glyph.svg" alt="Codeanywhere logo" />
+      </picture>
+    </a>
+
+    <a class="navigation-links" href="//codeanywhere.com/features">Features</a>
+    <a class="navigation-links" href="//codeanywhere.com/pricing">Pricing</a>
+  </div>
+  <div class="search" data-search id="search">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-search"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+      />
+    </svg>
+    <input
+      class="search_input"
+      placeholder="Search docs..."
+      data-search="source"
+    />
+    <div class="search_output">
+      <div class="search_preview" data-search="output"></div>
+    </div>
+  </div>
+  <a class="sign-up desktop-sign-up" href="//codeanywhere.com/signup"
+    >Sign up</a
+  >
+</nav>
+
+    <a class="contribute-link" target="_blank" href="https://github.com/codeanywhere/documentation"> Contribute </a>
+    
+    <div class="content-container">
+      <div class="menu__content" data-menu="content">
+        <div class="sidebar">
+          
+          <div style="width: 100%">
+            <div class="sidebar-section-title-row">
+              <div class="sidebar-section-title"
+                id="section-title-general" data-section-title="general"><a href="/general">General</a></div>
+              
+                    <i class="sidebar-section-title-arrow" id="section-arrow-general"></i>
+                  
+            </div>
+            <ul class="sidebar-list expandable" id="section-list-general">
+              
+              <div>
+                <div class="sidebar-subsection">Getting Started</div>
+                <ul class="sidebar-list">
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="general/getting-started/what-is-codeanywhere" href="/general/getting-started/what-is-codeanywhere">
+                      What is Codeanywhere?
+                    </a>
+                  </li>
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="general/getting-started/faq" href="/general/getting-started/faq">
+                      Frequently Asked Questions
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+            </ul>
+          </div>
+          
+          <div style="width: 100%">
+            <div class="sidebar-section-title-row">
+              <div class="sidebar-section-title"
+                id="section-title-editor" data-section-title="editor"><a href="/editor">Editor</a></div>
+              
+                    <i class="sidebar-section-title-arrow" id="section-arrow-editor"></i>
+                  
+            </div>
+            <ul class="sidebar-list expandable" id="section-list-editor">
+              
+              <div>
+                <div class="sidebar-subsection">Introduction</div>
+                <ul class="sidebar-list">
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="editor/introduction/how-to-access" href="/editor/introduction/how-to-access">
+                      How to Access the IDE?
+                    </a>
+                  </li>
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="editor/introduction/sidebar" href="/editor/introduction/sidebar">
+                      Sidebar
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+              <div>
+                <div class="sidebar-subsection">Collaboration</div>
+                <ul class="sidebar-list">
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="editor/collaboration/about" href="/editor/collaboration/about">
+                      About
+                    </a>
+                  </li>
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="editor/collaboration/share-container" href="/editor/collaboration/share-container">
+                      Share Container with Others
+                    </a>
+                  </li>
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="editor/collaboration/collaborate-on-other-users-projects" href="/editor/collaboration/collaborate-on-other-users-projects">
+                      Collaborate on Other Users Projects
+                    </a>
+                  </li>
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="editor/collaboration/collaboration-terminals" href="/editor/collaboration/collaboration-terminals">
+                      Collaboration Terminals
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+              <div>
+                <div class="sidebar-subsection">Teams</div>
+                <ul class="sidebar-list">
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="editor/teams/about" href="/editor/teams/about">
+                      What are Codeanywhere Teams?
+                    </a>
+                  </li>
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="editor/teams/collaborate-as-a-team" href="/editor/teams/collaborate-as-a-team">
+                      How to Collaborate as a Team?
+                    </a>
+                  </li>
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="editor/teams/invite-users-without-subscription" href="/editor/teams/invite-users-without-subscription">
+                      How to Invite Users Without a Subscription
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+              <div>
+                <div class="sidebar-subsection">Extensions</div>
+                <ul class="sidebar-list">
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="editor/extensions/install-extensions-from-marketplace" href="/editor/extensions/install-extensions-from-marketplace">
+                      How to Install Extensions from the Marketplace?
+                    </a>
+                  </li>
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="editor/extensions/install-custom-vsix-extensions" href="/editor/extensions/install-custom-vsix-extensions">
+                      How to Install Custom VSIX Extensions?
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+              <div>
+                <div class="sidebar-subsection">Debugging</div>
+                <ul class="sidebar-list">
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="editor/debugging/introduction" href="/editor/debugging/introduction">
+                      Introduction
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+            </ul>
+          </div>
+          
+          <div style="width: 100%">
+            <div class="sidebar-section-title-row">
+              <div class="sidebar-section-title"
+                id="section-title-dashboard" data-section-title="dashboard"><a href="/dashboard">Dashboard</a></div>
+              
+                    <i class="sidebar-section-title-arrow" id="section-arrow-dashboard"></i>
+                  
+            </div>
+            <ul class="sidebar-list expandable" id="section-list-dashboard">
+              
+              <div>
+                <div class="sidebar-subsection">Containers</div>
+                <ul class="sidebar-list">
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="dashboard/containers/create-new-container" href="/dashboard/containers/create-new-container">
+                      Create New Container
+                    </a>
+                  </li>
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="dashboard/containers/change-container-name" href="/dashboard/containers/change-container-name">
+                      Change Container Name
+                    </a>
+                  </li>
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="dashboard/containers/add-custom-domain" href="/dashboard/containers/add-custom-domain">
+                      Add Custom Domain to Container
+                    </a>
+                  </li>
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="dashboard/containers/restart-container" href="/dashboard/containers/restart-container">
+                      Restart Container
+                    </a>
+                  </li>
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="dashboard/containers/destroy-container" href="/dashboard/containers/destroy-container">
+                      Destroy Container
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+              <div>
+                <div class="sidebar-subsection">Shares</div>
+                <ul class="sidebar-list">
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="dashboard/shares/shared-with-me" href="/dashboard/shares/shared-with-me">
+                      Containers Shared with Me
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+              <div>
+                <div class="sidebar-subsection">Connections</div>
+                <ul class="sidebar-list">
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="dashboard/connections/create-new-connection" href="/dashboard/connections/create-new-connection">
+                      Create New Connection
+                    </a>
+                  </li>
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="dashboard/connections/edit-existing-connection" href="/dashboard/connections/edit-existing-connection">
+                      Edit Existing Connection
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+              <div>
+                <div class="sidebar-subsection">Custom Stacks</div>
+                <ul class="sidebar-list">
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="dashboard/custom-stacks/create-new-stack" href="/dashboard/custom-stacks/create-new-stack">
+                      Create New Stack
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+              <div>
+                <div class="sidebar-subsection">Billing</div>
+                <ul class="sidebar-list">
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="dashboard/billing/updating-my-billing-information" href="/dashboard/billing/updating-my-billing-information">
+                      Updating my billing information
+                    </a>
+                  </li>
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="dashboard/billing/track-invoices" href="/dashboard/billing/track-invoices">
+                      Track Invoices
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+              <div>
+                <div class="sidebar-subsection">Account Management</div>
+                <ul class="sidebar-list">
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="dashboard/account-management/update-account-info" href="/dashboard/account-management/update-account-info">
+                      Update Account Information
+                    </a>
+                  </li>
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="dashboard/account-management/addons" href="/dashboard/account-management/addons">
+                      Manage and Purchase Addons
+                    </a>
+                  </li>
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="dashboard/account-management/update-subscription" href="/dashboard/account-management/update-subscription">
+                      Update Subscription
+                    </a>
+                  </li>
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="dashboard/account-management/cancel-membership" href="/dashboard/account-management/cancel-membership">
+                      Cancel Membership
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+              <div>
+                <div class="sidebar-subsection">Connected Accounts</div>
+                <ul class="sidebar-list">
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="dashboard/connected-accounts/git-providers" href="/dashboard/connected-accounts/git-providers">
+                      Git Providers
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+              <div>
+                <div class="sidebar-subsection">Refer a Friend</div>
+                <ul class="sidebar-list">
+                  
+                  <li>
+                    
+                    <a class="sidebar-link" id="dashboard/refer-a-friend/earn-credits" href="/dashboard/refer-a-friend/earn-credits">
+                      Earn Credits
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              
+            </ul>
+          </div>
+          
+          <div style="width: 100%">
+            <div class="sidebar-section-title-row">
+              <div class="sidebar-section-title"
+                id="section-title-advanced-topics" data-section-title="advanced-topics"><a href="/advanced-topics">Advanced Topics</a></div>
+              
+                    <i class="sidebar-section-title-arrow" id="section-arrow-advanced-topics"></i>
+                  
+            </div>
+            <ul class="sidebar-list expandable" id="section-list-advanced-topics">
+              
+              <li>
+                
+                <a class="sidebar-link" id="advanced-topics/change-mysql-password" href="/advanced-topics/change-mysql-password">
+                  Changing MySQL Password
+                </a>
+              </li>
+              
+              <li>
+                
+                <a class="sidebar-link" id="advanced-topics/install-sass" href="/advanced-topics/install-sass">
+                  Installing SASS
+                </a>
+              </li>
+              
+              <li>
+                
+                <a class="sidebar-link" id="advanced-topics/install-laravel" href="/advanced-topics/install-laravel">
+                  Installing Laravel Framework
+                </a>
+              </li>
+              
+              <li>
+                
+                <a class="sidebar-link" id="advanced-topics/install-angular" href="/advanced-topics/install-angular">
+                  Installing Angular Framework
+                </a>
+              </li>
+              
+              <li>
+                
+                <a class="sidebar-link" id="advanced-topics/install-django" href="/advanced-topics/install-django">
+                  Installing Django Framework
+                </a>
+              </li>
+              
+              <li>
+                
+                <a class="sidebar-link" id="advanced-topics/install-meteor" href="/advanced-topics/install-meteor">
+                  Installing Meteor Framework
+                </a>
+              </li>
+              
+              <li>
+                
+                <a class="sidebar-link" id="advanced-topics/install-mongodb" href="/advanced-topics/install-mongodb">
+                  Installing MongoDB
+                </a>
+              </li>
+              
+              <li>
+                
+                <a class="sidebar-link" id="advanced-topics/install-mean-stack" href="/advanced-topics/install-mean-stack">
+                  Installing MEAN Stack
+                </a>
+              </li>
+              
+              <li>
+                
+                <a class="sidebar-link" id="advanced-topics/working-with-repositories" href="/advanced-topics/working-with-repositories">
+                  Working with Repositories
+                </a>
+              </li>
+              
+              <li>
+                
+                <a class="sidebar-link" id="advanced-topics/change-document-root-in-container" href="/advanced-topics/change-document-root-in-container">
+                  Changing Document Root in Container
+                </a>
+              </li>
+              
+              <li>
+                
+                <a class="sidebar-link" id="advanced-topics/subversion" href="/advanced-topics/subversion">
+                  Subversion
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+          
+          <div style="width: 100%">
+            <div class="sidebar-section-title-row">
+              <div class="sidebar-section-title"
+                id="section-title-support" data-section-title="support"><a href="/support">Support</a></div>
+              
+            </div>
+            <ul class="sidebar-list expandable" id="section-list-support">
+              
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <div class="markdown"><h1 id="about-the-ide">About the IDE</h1>
+<p>Our Cloud IDE is built on <a href="https://theia-ide.org/">Theia</a>, an open-source editor which offers all VS Code features in a lightweight web environment. Use it to develop, debug and deploy all of your applications.</p>
+<p>Codeanywhere has developed a number of <code>unique extensions</code> which improve the productivity and user experience while using the editor. They include:</p>
+<ul>
+<li><a href="#preview-ports"><strong>Preview Ports</strong></a></li>
+<li><a href="#projects"><strong>Projects</strong></a></li>
+<li><a href="/editor/collaboration/about"><strong>Collaboration</strong></a></li>
+<li><a href="/editor/introduction/sidebar#connections"><strong>Connections</strong></a></li>
+</ul>
+<h3 id="preview-ports"><a name="preview-ports" href="#preview-ports" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Preview Ports</h3>
+<p>Codeanywhere offers their users the ability to preview their app progress via public or private links. In the editor, select <code>View -> Preview Ports</code> to enable the Preview Ports widget.</p>
+<p><img src="/images/editor/introduction/open-preview-ports.png" alt="Enable Preview Ports" class="width-90"/></p>
+
+<p>If your app is running, it should show up in the Preview Ports widget. Your open ports will be listed inside the widget with the option to open:</p>
+<ul>
+<li><strong>Preview port</strong>: Only accessible by you while logged into Codeanywhere.</li>
+<li><strong>Public port:</strong> Accessible to everyone, but the app <strong>must be running on</strong> <code>0.0.0.0</code>.</li>
+</ul>
+<p><img src="/images/editor/introduction/preview-ports-widget.png" alt="Preview Ports widget" class="width-90"/></p>
+
+<p>You will be notified every time you restart your app so you can preview the progress instantly.</p>
+<p><img src="/images/editor/introduction/preview-ports-popup.png" alt="Preview Ports popup" class="width-60"/></p>
+
+<h3 id="projects"><a name="projects" href="#projects" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Projects</h3>
+<p>The <code>Projects</code> view allows you to easily switch between multiple projects inside your container. You can find it by navigating to <code>View -> Projects</code> or <code>File -> New Project</code>.</p>
+<p>
+  <div class="two-images">
+    <img src="/images/editor/introduction/view-projects.png" alt="Projects view"/>
+    <img src="/images/editor/introduction/file-new-project.png" alt="New project"/>
+  </div>
+</p>
+
+<p>Projects will also help you with cloning and opening a Git repository. Just click on <code>Clone an existing project</code> and enter your repository SSH URL and we will take care of the rest.</p>
+<p><img src="/images/editor/introduction/projects-widget.png" alt="Projects widget" class="width-90"/></p>
+
+<p><strong>Note:</strong> Your Codeanywhere account must be authorized with the appropriate Git provider to successfully clone a repository. Not sure how to do that? Find out <a href="/dashboard/connected-accounts/git-providers">here</a>.</p>
+</div>
+    </div>
+    <script src="/search.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
