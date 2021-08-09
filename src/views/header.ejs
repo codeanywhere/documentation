@@ -1,0 +1,75 @@
+<script>
+  function toggleSearch() {
+    const element = document.querySelector('#search')
+    if (element) {
+      element.classList.toggle('search-mobile')
+    }
+  }
+</script>
+
+<nav class="navigation">
+  <div class="navigation-container-mobile">
+    <a class="logo" href="//codeanywhere.com">
+      <picture>
+        <source
+          srcset="/images/codeanywhere_glyph.svg"
+          media="(min-width: 851px)"
+        />
+        <source
+          srcset="/images/codeanywhere_logo.svg"
+          media="(min-width: 501px)"
+        />
+        <img src="/images/codeanywhere_glyph.svg" alt="Codeanywhere logo" />
+      </picture>
+    </a>
+
+    <div class="mobile-signup">
+      <button class="search-button" onclick="toggleSearch()">Search</button>
+      <a class="sign-up" href="//codeanywhere.com/signup">Sign up</a>
+    </div>
+  </div>
+
+  <div class="navigation-container">
+    <a class="logo" href="//codeanywhere.com">
+      <picture>
+        <source
+          srcset="/images/codeanywhere_glyph.svg"
+          media="(min-width: 851px)"
+        />
+        <source
+          srcset="/images/codeanywhere_logo.svg"
+          media="(min-width: 501px)"
+        />
+        <img src="/images/codeanywhere_glyph.svg" alt="Codeanywhere logo" />
+      </picture>
+    </a>
+
+    <a class="navigation-links" href="//codeanywhere.com/features">Features</a>
+    <a class="navigation-links" href="//codeanywhere.com/pricing">Pricing</a>
+  </div>
+  <div class="search" data-search id="search">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-search"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+      />
+    </svg>
+    <input
+      class="search_input"
+      placeholder="Search docs..."
+      data-search="source"
+    />
+    <div class="search_output">
+      <div class="search_preview" data-search="output"></div>
+    </div>
+  </div>
+  <a class="sign-up desktop-sign-up" href="//codeanywhere.com/signup"
+    >Sign up</a
+  >
+</nav>

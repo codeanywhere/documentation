@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title><%= title %></title>
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400|Questrial|Raleway:400,100,700" rel="stylesheet"
+    type="text/css" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <script>
+    ; (function (isTouchDevice) {
+      if (!isTouchDevice) return
+      var isTouchClass = 'is-touch-device'
+      var docElement = document.documentElement
+      docElement.className = docElement.className
+        ? [docElement.className, isTouchClass].join(' ')
+        : isTouchClass
+    })(
+      'ontouchstart' in window ||
+      (window.DocumentTouch && document instanceof DocumentTouch)
+    )
+  </script>
+</head>
+
+<body>
+  <div class="docs-container">
+    <%- include('header'); %>
+    <a class="contribute-link" target="_blank" href="https://github.com/codeanywhere/documentation"> Contribute </a>
+    
+    <div class="content-container">
+      <div class="menu__content" data-menu="content">
+        <div class="sidebar">
+          <% for (const section of sidebar) { %>
+          <div style="width: 100%">
+            <div class="sidebar-section-title-row">
+              <div class="sidebar-section-title"
+                id="section-title-<%= section.slug %>" data-section-title="<%= section.slug %>"><a href="/<%= section.slug %>"><%= section.name %></a></div>
+              <% 
+                if (section.name !== 'Support') {
+                  %>
+                    <i class="sidebar-section-title-arrow" id="section-arrow-<%= section.slug %>"></i>
+                  <%  
+                }
+              %>
+            </div>
+            <ul class="sidebar-list expandable" id="section-list-<%= section.slug %>">
+              <% for (const sectionChild of section.contents) {
+                if(sectionChild.contents) { %>
+              <div>
+                <div class="sidebar-subsection"><%= sectionChild.name %></div>
+                <ul class="sidebar-list">
+                  <% for (const article of sectionChild.contents) { %>
+                  <li>
+                    <% const path = section.slug + '/' + sectionChild.slug +
+                      '/' + article.slug; %>
+                    <a class="sidebar-link" id="<%= path %>" href="/<%= path %>">
+                      <%= article.name %>
+                    </a>
+                  </li>
+                  <% } %>
+                </ul>
+              </div>
+              <% } else { %>
+              <li>
+                <% const path = section.slug + '/' + sectionChild.slug; %>
+                <a class="sidebar-link" id="<%= path %>" href="/<%= path %>">
+                  <%= sectionChild.name %>
+                </a>
+              </li>
+              <% } } %>
+            </ul>
+          </div>
+          <% } %>
+        </div>
+      </div>
+      <div class="markdown"><%- rendered %></div>
+    </div>
+    <script src="/search.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
