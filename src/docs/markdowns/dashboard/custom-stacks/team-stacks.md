@@ -6,3 +6,5 @@ for teams with complex configurations and projects.
 Team stacks are created automatically when [creating a custom stack](/dashboard/custom-stacks/create-new-stack).
 
 Additionally you can access your team stacks easier if you apply the `Team` filter.
+
+<p><img src="/images/dashboard/custom-stacks/team-stacks.png" alt="Team stacks filter" class="width-90"/></p>
