@@ -164,6 +164,10 @@
           {
             "name": "Create New Stack",
             "slug": "create-new-stack"
+          },
+          {
+            "name": "Team Stacks",
+            "slug": "team-stacks"
           }
         ]
       },
