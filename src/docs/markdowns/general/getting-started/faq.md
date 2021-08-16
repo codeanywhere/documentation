@@ -87,7 +87,7 @@ Find out [here](/editor/collaboration/share-container) how to invite other users
 
 <code>Containers</code> are like your own Virtual Private Servers (in essence they are OpenVZ OS containers) provisioned by Codeanywhere, each one with its own amount of RAM, disk space and processing power.
 
-Containers give you the ability to provision any development environment you like. You can choose between one of the many [predefined stacks](/general/getting-started/faq/#which-stack-to-select) which Codeanywhere offers.
+Containers give you the ability to provision any development environment you like. You can choose between one of the many [predefined stacks](/general/getting-started/faq#which-stack-to-select) which Codeanywhere offers.
 
 Learn how to create a container [here](/dashboard/containers/create-new-container).
 
@@ -136,7 +136,7 @@ For the above container, you would connect via SSH by entering the following com
   ssh cabox@host30.codeanyhost.com -p 42293
 ```
 
-**Note:** You have to [authorize your private key](/general/getting-started/faqauthorize-key-for-ssh-container) to enable the SSH connection.
+**Note:** You have to [authorize your private key](/general/getting-started/faq#authorize-key-for-ssh-container) to enable the SSH connection.
 
 ### <a name="how-can-i-authorize-my-computer-to-connect-via-ssh-to-my-container" href="#how-can-i-authorize-my-computer-to-connect-via-ssh-to-my-container" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How can I authorize my computer to connect via SSH to my container?
 
