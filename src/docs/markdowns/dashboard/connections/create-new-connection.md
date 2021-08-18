@@ -4,7 +4,7 @@ If you wish to create a new connection, navigate to the <code>Connections</code>
 
 <p><img src="/images/dashboard/connections/create-connection-1.png" alt="Create connection button" class="width-90"/></p>
 
-After a new window shows up, you will be asked to provide the the following details:
+After a new window shows up, you will be asked to provide the following details:
 
 - **Connection name** – Name of the new connection
 - **Type** – Connection type
