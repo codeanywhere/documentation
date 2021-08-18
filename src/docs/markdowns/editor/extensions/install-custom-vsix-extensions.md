@@ -8,6 +8,6 @@ Navigate to the <code>Extensions</code> widget in the sidebar and click on <code
 
 <p><img src="/images/editor/extensions/install-vsix-step1.png" alt="More actions" class="width-60"/></p>
 
-You will be asked to select the the custom extension file. It will be located at <code>cabox/workspace/path-in-your-project</code>. After you find your custom extension, click <code>Install</code>.
+You will be asked to select the custom extension file. It will be located at <code>cabox/workspace/path-in-your-project</code>. After you find your custom extension, click <code>Install</code>.
 
 <p><img src="/images/editor/extensions/install-vsix-step2.png" alt="Install custom extension" class="width-60"/></p>

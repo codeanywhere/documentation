@@ -1,6 +1,6 @@
 # How to Invite Users Without a Subscription
 
-<code>First</code>, you have to buy a desired ammount of team account licenses. You can find more information [here](/editor/teams/collaborate-as-a-team).
+<code>First</code>, you have to buy a desired amount of team account licenses. You can find more information [here](/editor/teams/collaborate-as-a-team).
 
 Navigate to the <code>Team accounts</code> tab and click the <code>Add Team Member</code> button.
 

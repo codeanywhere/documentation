@@ -191,4 +191,4 @@ Navigate to the <code>Account</code> tab in the dashboard and click on <code>Res
 
 ### <a name="i-registered-with-facebook-what-is-my-password" href="#i-registered-with-facebook-what-is-my-password" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>I registered with my Facebook account, what is my password?
 
-You don't need to set a password if you use Google, Facebook, GitHub or Bitbucket as a registration method. Nevertheless, if you want to set a Codeanyhere password, learn [here](/dashboard/account-management/update-account-info) how to do it.
+You don't need to set a password if you use Google, Facebook, GitHub or Bitbucket as a registration method. Nevertheless, if you want to set a Codeanywhere password, learn [here](/dashboard/account-management/update-account-info) how to do it.

@@ -11,7 +11,7 @@ To do so, follow the appropriate guide:
 
 ### <a name="git-hub" href="#git-hub" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>GitHub
 
-If you wish to connect your Codeanywhere account to your Githhub account, navigate to the <code>Account</code> tab in the sidebar and select <code>Connect</code> to Github.
+If you wish to connect your Codeanywhere account to your GitHub account, navigate to the <code>Account</code> tab in the sidebar and select <code>Connect</code> to Github.
 
 <p><img src="/images/dashboard/connected-accounts/connect-github.png" alt="Connect with Github" class="width-90"/></p>
 
