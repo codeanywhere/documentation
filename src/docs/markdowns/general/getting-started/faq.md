@@ -200,4 +200,4 @@ Go to <code>File</code> and click on <code>Open</code>. Navigate to the previous
 
 
 <table><tr><td><img src="/images/general/getting-started/workspace-new-project-File-Open.png" alt="Workspace new project File Open" class="width-60 tall-narrow"/></td>
-<td><img src="/images/general/getting-started/workspace-new-project-File-Open-upArrow.png" alt="Workspace new project File Open upArrow"class="width-60 tall-narrow"/></td></tr></table>
+<td><img src="/images/general/getting-started/workspace-new-project-File-Open-upArrow.png" alt="Workspace new project File Open upArrow"class="width-60 tall-narrow"/><td></tr></table>
