@@ -21,4 +21,4 @@ meteor run
 
 and [previewing it](general/getting-started/faq#preview-progress) on your preview URL after the app is lifted.
 
-**NOTE**: Meteor is resource intensive. Minimal system requirement for a succesfull application initialization is 512MB of RAM and 3GB of disk space.\*
+**NOTE**: Meteor is resource intensive. Minimal system requirement for a successful application initialization is 512MB of RAM and 3GB of disk space.\*
