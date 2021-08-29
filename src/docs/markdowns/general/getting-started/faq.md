@@ -201,3 +201,10 @@ Go to <code>File</code> and click on <code>Open</code>. Navigate to the previous
 
 <table><tr><td><img src="/images/general/getting-started/workspace-new-project-File-Open.png" alt="Workspace new project File Open" class="width-60 tall-narrow"/></td>
 <td><img src="/images/general/getting-started/workspace-new-project-File-Open-upArrow.png" alt="Workspace new project File Open upArrow"class="width-60 tall-narrow"/><td></tr></table>
+
+
+
+### <a name="tabspace-repeated-characters" href="#tabspace-repeated-characters" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>When i press tabspace key the last word i wrote is automatically repeated, how can i fix it?
+
+In mobile devices the keyboard default configuration has autocomplete functions activated. You need to disable predictive text, automatic replacement, and automatic spell check and it will work fine without duplicated text.
+
