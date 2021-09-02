@@ -59,7 +59,7 @@ Codeanywhere offers you the ability to use custom <code>VSIX</code> extensions i
 
 ### <a name="how-can-i-preview-my-app-progress" href="#how-can-i-preview-my-app-progress" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How can I preview my app progress?
 
-You can find out more information about the <code>Preview Ports</code> widget [here](/editor/introduction/about#preview-ports).
+You can find out more information about the <code>Preview Ports</code> widget [here](/editor/#preview-ports).
 
 ### <a name="how-can-i-use-the-new-ide-with-third-party-connections" href="#how-can-i-use-the-new-ide-with-third-party-connections" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How can I use the new IDE with third-party-connections?
 
@@ -161,7 +161,17 @@ Paste the key inside of the <code>~/.ssh/authorized_keys</code> file inside your
 
 ### <a name="how-do-i-hit-my-api-with-postman" href="#how-do-i-hit-my-api-with-postman" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How do I hit my API with Postman?
 
-This section will be implemented soon. Feel free to help us by contributing to our [documentation](https://github.com/codeanywhere/documentation).
+After you start your server application, click on the <code>Preview</code> button when it shows up at the bottom of your screen. If you close the widget, you can find your public port in the [Preview ports widget](/editor/#preview-ports).
+
+<p><img src="/images/general/getting-started/postman-1.png" alt="Preview server app" class="width-90"/></p>
+
+You can find the public link for your API in the new tab which will open in your browser window.
+
+<p><img src="/images/general/getting-started/postman-2.png" alt="Preview link" class="width-60"/></p>
+
+You can use that link as the base URL for your API and send specific requests to it using the [Postman](https://www.postman.com/) platform.
+
+<p><img src="/images/general/getting-started/postman-3.png" alt="Postman request" class="width-90"/></p>
 
 ### <a name="how-to-enable-two-factor-authentication" href="#how-to-enable-two-factor-authentication" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to Enable Two-Factor Authentication?
 
