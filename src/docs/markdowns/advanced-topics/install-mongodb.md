@@ -24,5 +24,5 @@ sudo apt-get install -y mongodb-enterprise
 Start MongoDB
 
 ```sh
-sudo systemctl mongod start
+sudo systemctl start mongod
 ```
