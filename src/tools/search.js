@@ -2,7 +2,7 @@ import Fuse from '../../node_modules/fuse.js'
 
 const initSearch = async () => {
   let closing = null
-  const response = await fetch('/searchResultsPool.json')
+  const response = await fetch('./searchResultsPool.json')
   const data = await response.json()
 
   const fuse = new Fuse(data, {
@@ -116,4 +116,6 @@ const initSearch = async () => {
   })
 }
 
-initSearch()
+(async() => {
+  await initSearch()
+})()
