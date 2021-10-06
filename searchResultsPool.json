@@ -143,13 +143,6 @@
     "section": "General",
     "subsection": "Getting Started",
     "article": "Frequently Asked Questions",
-    "heading": "How to configure built-in plugins in the “New container” dialog?",
-    "slug": "general/getting-started/faq#how-to-configure-built-in-plugins-in-the-new-container-dialog"
-  },
-  {
-    "section": "General",
-    "subsection": "Getting Started",
-    "article": "Frequently Asked Questions",
     "heading": "How can I connect my container to a FTP connection?",
     "slug": "general/getting-started/faq#how-can-i-connect-my-container-to-a-ftp-connection"
   },
@@ -208,6 +201,20 @@
     "article": "Frequently Asked Questions",
     "heading": "I registered with my Facebook account, what is my password?",
     "slug": "general/getting-started/faq#i-registered-with-my-facebook-account-what-is-my-password"
+  },
+  {
+    "section": "General",
+    "subsection": "Getting Started",
+    "article": "Frequently Asked Questions",
+    "heading": "I have created a new Project but now I can't see my old files.",
+    "slug": "general/getting-started/faq#i-have-created-a-new-project-but-now-i-cant-see-my-old-files"
+  },
+  {
+    "section": "General",
+    "subsection": "Getting Started",
+    "article": "Frequently Asked Questions",
+    "heading": "When i press tabspace key the last word i wrote is automatically repeated, how can i fix it?",
+    "slug": "general/getting-started/faq#when-i-press-tabspace-key-the-last-word-i-wrote-is-automatically-repeated-how-can-i-fix-it"
   },
   {
     "section": "Editor",
@@ -285,27 +292,6 @@
     "article": "Collaboration Terminals",
     "heading": null,
     "slug": "editor/collaboration/collaboration-terminals"
-  },
-  {
-    "section": "Editor",
-    "subsection": "Teams",
-    "article": "What are Codeanywhere Teams?",
-    "heading": null,
-    "slug": "editor/teams/about"
-  },
-  {
-    "section": "Editor",
-    "subsection": "Teams",
-    "article": "How to Collaborate as a Team?",
-    "heading": null,
-    "slug": "editor/teams/collaborate-as-a-team"
-  },
-  {
-    "section": "Editor",
-    "subsection": "Teams",
-    "article": "How to Invite Users Without a Subscription",
-    "heading": null,
-    "slug": "editor/teams/invite-users-without-subscription"
   },
   {
     "section": "Editor",
@@ -390,6 +376,34 @@
     "article": "Create New Stack",
     "heading": null,
     "slug": "dashboard/custom-stacks/create-new-stack"
+  },
+  {
+    "section": "Dashboard",
+    "subsection": "Custom Stacks",
+    "article": "Team Stacks",
+    "heading": null,
+    "slug": "dashboard/custom-stacks/team-stacks"
+  },
+  {
+    "section": "Dashboard",
+    "subsection": "Teams",
+    "article": "What are Codeanywhere Teams?",
+    "heading": null,
+    "slug": "dashboard/teams/about"
+  },
+  {
+    "section": "Dashboard",
+    "subsection": "Teams",
+    "article": "How to Collaborate as a Team?",
+    "heading": null,
+    "slug": "dashboard/teams/collaborate-as-a-team"
+  },
+  {
+    "section": "Dashboard",
+    "subsection": "Teams",
+    "article": "How to Add Users to My Team",
+    "heading": null,
+    "slug": "dashboard/teams/add-users-to-team"
   },
   {
     "section": "Dashboard",
