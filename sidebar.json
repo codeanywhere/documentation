@@ -60,24 +60,6 @@
         ]
       },
       {
-        "name": "Teams",
-        "slug": "teams",
-        "contents": [
-          {
-            "name": "What are Codeanywhere Teams?",
-            "slug": "about"
-          },
-          {
-            "name": "How to Collaborate as a Team?",
-            "slug": "collaborate-as-a-team"
-          },
-          {
-            "name": "How to Invite Users Without a Subscription",
-            "slug": "invite-users-without-subscription"
-          }
-        ]
-      },
-      {
         "name": "Extensions",
         "slug": "extensions",
         "contents": [
@@ -168,6 +150,24 @@
           {
             "name": "Team Stacks",
             "slug": "team-stacks"
+          }
+        ]
+      },
+      {
+        "name": "Teams",
+        "slug": "teams",
+        "contents": [
+          {
+            "name": "What are Codeanywhere Teams?",
+            "slug": "about"
+          },
+          {
+            "name": "How to Collaborate as a Team?",
+            "slug": "collaborate-as-a-team"
+          },
+          {
+            "name": "How to Add Users to My Team",
+            "slug": "add-users-to-team"
           }
         ]
       },

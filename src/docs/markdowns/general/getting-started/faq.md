@@ -35,7 +35,7 @@ Don't know how to create a new connection? Learn [here](/dashboard/connections/c
 
 ### <a name="how-to-enable-team-sharing" href="#how-to-enable-team-sharing" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to enable team sharing?
 
-Codeanywhere has introduced a new <code>Team Sharing</code> feature in the new IDE. Find out [here](/editor/teams/collaborate-as-a-team) how to activate it.
+Codeanywhere has introduced a new <code>Team Sharing</code> feature in the new IDE. Find out [here](/dashboard/teams/collaborate-as-a-team) how to activate it.
 
 ### <a name="how-to-enable-collaborative-programming" href="#how-to-enable-collaborative-programming" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to enable collaborative programming?
 
@@ -205,16 +205,11 @@ You don't need to set a password if you use Google, Facebook, GitHub or Bitbucke
 
 ### <a name="i-have-created-a-new-project-but-now-i-cant-see-my-old-files" href="#i-have-created-a-new-project-but-now-i-cant-see-my-old-files" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>I have created a new Project but now I can't see my old files.
 
-
 Go to <code>File</code> and click on <code>Open</code>. Navigate to the previous folder with an up arrow. From here you will see all your files.
-
 
 <table><tr><td><img src="/images/general/getting-started/workspace-new-project-File-Open.png" alt="Workspace new project File Open" class="width-60 tall-narrow"/></td>
 <td><img src="/images/general/getting-started/workspace-new-project-File-Open-upArrow.png" alt="Workspace new project File Open upArrow"class="width-60 tall-narrow"/><td></tr></table>
 
-
-
 ### <a name="tabspace-repeated-characters" href="#tabspace-repeated-characters" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>When i press tabspace key the last word i wrote is automatically repeated, how can i fix it?
 
 In mobile devices the keyboard default configuration has autocomplete functions activated. You need to disable predictive text, automatic replacement, and automatic spell check and it will work fine without duplicated text.
-

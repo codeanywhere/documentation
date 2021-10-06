@@ -1,5 +1,5 @@
-const fs = require('fs').promises
-const { kebabCase, flatten } = require('lodash')
+import * as fs from 'fs-extra'
+import { kebabCase, flatten } from 'lodash'
 
 type SearchResult = {
   section: string
@@ -32,13 +32,13 @@ const isSubsection = (child: ArticleParent | Article) => {
 
 const updateSearch = async () => {
   const sidebarAsString = await fs.readFile('./sidebar.json', 'utf-8')
-  const sidebar = JSON.parse(sidebarAsString)
+  const sidebar: (ArticleGrandparent | ArticleParent)[] = JSON.parse(sidebarAsString)
 
   //reduce sections to an array of search results
-  const promisesArray = sidebar.reduce((result: SearchResult[], section: ArticleGrandparent | ArticleParent) => {
+  const searchResults: SearchResult[] = flatten(await Promise.all(sidebar.map(async section => {
     //map every section child (subsection or article) into a Promise that resolves to an array of search results
-    const sectionChildrenPromises: Promise<SearchResult[] | Promise<SearchResult[]>[]>[] = section.contents.map(
-      async (child) => {
+    const sectionChildrenPromises: Promise<SearchResult[]>[] = section.contents.map(
+      async (child: Article | ArticleParent) => {
         //check if section has subsections
         if (isSubsection(child)) {
           const subsection = child as ArticleParent
@@ -125,10 +125,10 @@ const updateSearch = async () => {
       }
     )
 
-    return [...result, ...sectionChildrenPromises]
-  }, [])
+    return flatten(await Promise.all(sectionChildrenPromises))
+  })))
 
-  const sectionsIndexHeadingsPromise = await sidebar.reduce(async (result: SearchResult[], section: ArticleParent) => {
+  const sectionsIndexHeadings = flatten(await Promise.all(sidebar.map(async (section: ArticleParent | ArticleGrandparent) => {
     const contentsAsString: string = await fs.readFile(`src/docs/markdowns/${section.slug}/index.md`, 'utf-8')
     const headingsArray: string[] = (contentsAsString.match(/^###.+$/gm) || [])
       .map((match: string) => match.replace(/#\s?/g, ''))
@@ -138,7 +138,7 @@ const updateSearch = async () => {
       .map((heading: string) => heading.replace(/_/g, ''))
       .map((heading: string) => heading.replace(/<\/?[^>]+(>|$)/g, ''))
 
-    const headingsResults = headingsArray.map(
+    return headingsArray.map(
       (heading: string): SearchResult => ({
         section: section.name,
         subsection: null,
@@ -147,20 +147,13 @@ const updateSearch = async () => {
         slug: `${section.slug}#${kebabCase(heading)}`,
       })
     )
+  })))
 
-    if (!result) return headingsResults
-    else {
-      result.push(...headingsResults)
-    }
+  searchResults.push(...sectionsIndexHeadings)
 
-    return result
-  }, [])
-
-  const searchResults = await Promise.all(promisesArray)
-  const sectionsIndexesSearchResults = await sectionsIndexHeadingsPromise
-  searchResults.push(...sectionsIndexesSearchResults)
-
-  await fs.writeFile('src/public/searchResultsPool.json', JSON.stringify(flatten(searchResults), null, 2), 'utf-8')
+  await fs.outputFile('dist/searchResultsPool.json', JSON.stringify(flatten(searchResults), null, 2), 'utf-8')
 }
 
-updateSearch()
+(async () => {
+  await updateSearch()
+})()
