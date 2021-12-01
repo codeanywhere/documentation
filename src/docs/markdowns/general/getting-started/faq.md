@@ -205,6 +205,6 @@ Go to <code>File -> Open</code> and click the _up_ arrow to see your old files.
 
 <p><img src="/images/general/getting-started/old-files.png" alt="Old files" class="width-60"/></p>
 
-### <a name="tabspace-repeated-characters" href="#tabspace-repeated-characters" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>If I press the tabspace key, the last word is automatically repeated, how can i fix it?
+### <a name="if-i-press-the-tab-key-the-last-word-is-automatically-repeated-how-can-i-fix-it" href="#if-i-press-the-tab-key-the-last-word-is-automatically-repeated-how-can-i-fix-it" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>If I press the tab key, the last word is automatically repeated. How can I fix it?
 
 In mobile devices the keyboard default configuration has autocomplete functions activated. You need to disable predictive text, automatic replacement, and automatic spell check and it will work fine without duplicated text.
