@@ -1,10 +1,10 @@
 # Create New Connection
 
-If you wish to create a new connection, navigate to the <code>Connections</code> tab in the sidebar and click the <code>Create Connection</code> button.
+If you want to create a new connection, go to the <code>Home</code> or <code>Connections</code> page and click the <code>New Connection</code> button.
 
 <p><img src="/images/dashboard/connections/create-connection-1.png" alt="Create connection button" class="width-90"/></p>
 
-After a new window shows up, you will be asked to provide the following details:
+You have to enter the following details:
 
 - **Connection name** – Name of the new connection
 - **Type** – Connection type
@@ -20,5 +20,3 @@ If you select SSH as your desired connection type, additional you will have to p
 - **_Private key_** – Your private key for connecting to the remote server if you select Private key as your authorization method
 
 <p><img src="/images/dashboard/connections/create-connection-2.png" alt="Create connection modal" class="width-60"/></p>
-
-**Note**: You have to create at least one container to create a new connection. Don't know how to create a container? Find out [here](/dashboard/containers/create-new-container).

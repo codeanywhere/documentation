@@ -6,9 +6,9 @@ Codeanywhere has introduced a <code>new and improved</code> VS Code based editor
 
 Find out [here](/editor/introduction/how-to-access) how to access it.
 
-### <a name="which-stack-to-select-which-programming-language-will-i-use-the-most" href="#which-stack-to-select-which-programming-language-will-i-use-the-most" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Which stack to select? Which programming language will I use the most?
+### <a name="which-template-to-select-which-programming-language-will-i-use-the-most" href="#which-template-to-select-which-programming-language-will-i-use-the-most" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Which template to select? Which programming language will I use the most?
 
-Codeanywhere offers you a wide range of <code>predefined stacks</code>:
+Codeanywhere offers you a wide range of <code>predefined templates</code>:
 
 - **Default** – Blank Development Container
 - **PHP** – LAMP Development Stack with phpMyAdmin and Composer preinstalled
@@ -21,7 +21,7 @@ Codeanywhere offers you a wide range of <code>predefined stacks</code>:
 - **Java** – Java Development Stack with OpenJDK7, OpenJDE7 and Tomcat7 preinstalled
 - **.NET Core** – .NET Core Development Stack
 
-You should use a stack or a programming language which best fits your programming needs. If you wish to create a custom stack, you can do so by following [these instructions](/dashboard/custom-stacks/create-new-stack).
+You should use a template or a programming language which best fits your programming needs. If you wish to create a custom template, you can do so by following [these instructions](/dashboard/custom-templates/create-new-template).
 
 ### <a name="which-connections-are-allowed-and-how-to-connect-them" href="#which-connections-are-allowed-and-how-to-connect-them" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Which connections are allowed and how to connect them?
 
@@ -35,7 +35,7 @@ Don't know how to create a new connection? Learn [here](/dashboard/connections/c
 
 ### <a name="how-to-enable-team-sharing" href="#how-to-enable-team-sharing" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to enable team sharing?
 
-Codeanywhere has introduced a new <code>Team Sharing</code> feature in the new IDE. Find out [here](/dashboard/teams/collaborate-as-a-team) how to activate it.
+Codeanywhere now allows you the collaborate on projects as a <code>Team</code>. Find out [here](/dashboard/teams/collaborate-as-a-team) how to activate it.
 
 ### <a name="how-to-enable-collaborative-programming" href="#how-to-enable-collaborative-programming" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to enable collaborative programming?
 
@@ -87,13 +87,13 @@ Find out [here](/editor/collaboration/share-container) how to invite other users
 
 <code>Containers</code> are like your own Virtual Private Servers (in essence they are OpenVZ OS containers) provisioned by Codeanywhere, each one with its own amount of RAM, disk space and processing power.
 
-Containers give you the ability to provision any development environment you like. You can choose between one of the many [predefined stacks](/general/getting-started/faq#which-stack-to-select) which Codeanywhere offers.
+Containers give you the ability to provision any development environment you like. You can choose between one of the many [predefined templates](/general/getting-started/faq#which-template-to-select-which-programming-language-will-i-use-the-most) which Codeanywhere offers.
 
 Learn how to create a container [here](/dashboard/containers/create-new-container).
 
 ### <a name="which-programming-language-can-i-use-in-the-container"  href="#which-programming-language-can-i-use-in-the-container" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Which programming language can I use in the container?
 
-Codeanywhere offers support for a wide range of programming languages in the shape of the following predefined stacks:
+Codeanywhere offers support for a wide range of programming languages in the shape of the following predefined templates:
 
 - **PHP**
 - **NodeJS** – JavaScript
@@ -104,7 +104,7 @@ Codeanywhere offers support for a wide range of programming languages in the sha
 - **Java**
 - **.NET Core** – C#
 
-If you wish to use a different programming language, you can do so by [creating a container](/dashboard/containers/create-new-container) with a <code>Blank</code> stack, and installing the necessary dependencies in the container terminal.
+If you wish to use a different programming language, you can do so by [creating a container](/dashboard/containers/create-new-container) with a <code>Blank</code> template, and installing the necessary dependencies in the container terminal.
 
 ### <a name="can-i-install-extensions-from-the-vs-code-marketplace" href="#can-i-install-extensions-from-the-vs-code-marketplace" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Can I install extensions from the VS Code marketplace?
 
@@ -161,13 +161,15 @@ Paste the key inside of the <code>~/.ssh/authorized_keys</code> file inside your
 
 ### <a name="how-do-i-hit-my-api-with-postman" href="#how-do-i-hit-my-api-with-postman" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How do I hit my API with Postman?
 
-After you start your server application, click on the <code>Preview</code> button when it shows up at the bottom of your screen. If you close the widget, you can find your public port in the [Preview ports widget](/editor/#preview-ports).
+After you start your server application, click on the <code>Open Browser</code> button when it shows up at the bottom of your screen. If you close the widget, you can always find your public port in the [Preview ports widget](/editor/#preview-ports).
 
 <p><img src="/images/general/getting-started/postman-1.png" alt="Preview server app" class="width-90"/></p>
 
 You can find the public link for your API in the new tab which will open in your browser window.
 
-<p><img src="/images/general/getting-started/postman-2.png" alt="Preview link" class="width-60"/></p>
+```
+https://port-3000-my-app-fabjanv.codeanyapp.com/
+```
 
 You can use that link as the base URL for your API and send specific requests to it using the [Postman](https://www.postman.com/) platform.
 
@@ -175,17 +177,13 @@ You can use that link as the base URL for your API and send specific requests to
 
 ### <a name="how-to-enable-two-factor-authentication" href="#how-to-enable-two-factor-authentication" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to Enable Two-Factor Authentication?
 
-You can enable two-factor authentication in the <code>Account</code> tab in the dashboard.
+Navigate to the _Two-Factor authetication_ section in the <code>Account</code> page and toggle the switch.
 
-<p><img src="/images/general/getting-started/2fa-step1.png" alt="Initiate 2FA" class="width-60"/></p>
+<p><img src="/images/general/getting-started/2fa-step1.png" alt="Initiate 2FA" class="width-90"/></p>
 
-Scan the QR code with your authentication app and wait for the confirmation code.
+Scan the QR code with your authentication app and enter the confirmation code.
 
 <p><img src="/images/general/getting-started/2fa-step2.png" alt="Scan QR code" class="width-60"/></p>
-
-Enter the confirmation code to verify the authentication method.
-
-<p><img src="/images/general/getting-started/2fa-step3.png" alt="Enter confirmation code" class="width-60"/></p>
 
 ### <a name="can-i-use-emmet-in-my-project" href="#can-i-use-emmet-in-my-project" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Can I use Emmet in my project?
 
@@ -195,21 +193,20 @@ Enter the confirmation code to verify the authentication method.
 
 ### <a name="my-email-verification-didnt-arrive-what-should-i-do" href="#my-email-verification-didnt-arrive-what-should-i-do" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>My email verification didn't arrive, what should I do?
 
-Navigate to the <code>Account</code> tab in the dashboard and click on <code>Resend</code> verification email.
+If your email has not been verified, you should see a banner with an option to <code>Resend</code> the verification email.
 
-<p><img src="/images/general/getting-started/resend-verification-email.png" alt="Resend verification mail" class="width-60"/></p>
+<p><img src="/images/general/getting-started/resend-verification-email.png" alt="Resend verification mail" class="width-90"/></p>
 
 ### <a name="i-registered-with-facebook-what-is-my-password" href="#i-registered-with-facebook-what-is-my-password" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>I registered with my Facebook account, what is my password?
 
 You don't need to set a password if you use Google, Facebook, GitHub or Bitbucket as a registration method. Nevertheless, if you want to set a Codeanywhere password, learn [here](/dashboard/account-management/update-account-info) how to do it.
 
-### <a name="i-have-created-a-new-project-but-now-i-cant-see-my-old-files" href="#i-have-created-a-new-project-but-now-i-cant-see-my-old-files" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>I have created a new Project but now I can't see my old files.
+### <a name="how-can-i-see-my-old-files-after-i-create-a-new-project" href="#how-can-i-see-my-old-files-after-i-create-a-new-project" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How can I see my old files after I create a new Project?
 
-Go to <code>File</code> and click on <code>Open</code>. Navigate to the previous folder with an up arrow. From here you will see all your files.
+Go to <code>File -> Open</code> and click the _up_ arrow to see your old files.
 
-<table><tr><td><img src="/images/general/getting-started/workspace-new-project-File-Open.png" alt="Workspace new project File Open" class="width-60 tall-narrow"/></td>
-<td><img src="/images/general/getting-started/workspace-new-project-File-Open-upArrow.png" alt="Workspace new project File Open upArrow"class="width-60 tall-narrow"/><td></tr></table>
+<p><img src="/images/general/getting-started/old-files.png" alt="Old files" class="width-60"/></p>
 
-### <a name="tabspace-repeated-characters" href="#tabspace-repeated-characters" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>When i press tabspace key the last word i wrote is automatically repeated, how can i fix it?
+### <a name="if-i-press-the-tab-key-the-last-word-is-automatically-repeated-how-can-i-fix-it" href="#if-i-press-the-tab-key-the-last-word-is-automatically-repeated-how-can-i-fix-it" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>If I press the tab key, the last word is automatically repeated. How can I fix it?
 
 In mobile devices the keyboard default configuration has autocomplete functions activated. You need to disable predictive text, automatic replacement, and automatic spell check and it will work fine without duplicated text.

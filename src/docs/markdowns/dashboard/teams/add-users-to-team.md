@@ -6,14 +6,10 @@ Navigate to the <code>Team accounts</code> tab and click the <code>Add Team Memb
 
 <p><img src="/images/dashboard/teams/add-team-member-button.png" alt="Add team member" class="width-90"/></p>
 
-Enter the e-mail address of the team member you want to add.
-
-<p><img src="/images/dashboard/teams/invite-via-email.png" alt="Enter team account email" class="width-60"/></p>
-
-The new account will appear in your <code>Managed accounts</code> list. The account is marked with a red circle, because it hasn't been activated yet.
+Your new team account will be marked as _Pending_ until the user activates their account.
 
 <p><img src="/images/dashboard/teams/invite-pending-confirmation.png" alt="Team account pending confirmation" class="width-90"/></p>
 
-The user will get an invitation link which takes them to an account creation page. A green circle will signal that the user has activated their account. You will now be able grant resources to that account.
+The user will get an invitation link which takes them to an account creation page. You can assign resources to the user after they activate their account.
 
 <p><img src="/images/dashboard/teams/team-account-confirmed.png" alt="Team account confirmed" class="width-90"/></p>

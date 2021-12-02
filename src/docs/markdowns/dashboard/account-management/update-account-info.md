@@ -1,18 +1,13 @@
 # Update Account Information
 
-In the <code>Account</code> tab, you can update your:
+You can update your personal information and your password in the <code>Account</code> page.
 
-- Username
-- First name
-- Last name
-- Company name
-- E-mail address
-- Password
+### Personal Information
 
 <p><img src="/images/dashboard/account-management/change-account-info.png" alt="Change account information" class="width-60"/></p>
 
-<p><img src="/images/dashboard/account-management/change-password.png" alt="Change account information" class="width-60"/></p>
+### Password
+
+<p><img src="/images/dashboard/account-management/change-password.png" alt="Change password" class="width-60"/></p>
 
 **Note**: If you sign up using an external service, you will have to set an initial password.
-
-<p><img src="/images/dashboard/account-management/set-initial-password.png" alt="Set initial password" class="width-60"/></p>
