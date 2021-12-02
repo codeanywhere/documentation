@@ -116,4 +116,6 @@ const initSearch = async () => {
   })
 }
 
-initSearch()
+(async() => {
+  await initSearch()
+})()

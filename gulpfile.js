@@ -91,7 +91,7 @@ const watch = function () {
   gulp.watch([paths.assets.src], { ignoreInitial: false }, gulp.series(assets, reload))
 }
 
-const build = gulp.series(updateSearchPool, clean, gulp.parallel(assets, views, search))
+const build = gulp.series(clean, updateSearchPool, gulp.parallel(assets, views, search))
 const development = gulp.series(build, serve, watch)
 
 exports.default = build
