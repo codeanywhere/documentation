@@ -345,20 +345,20 @@
               </div>
               
               <div>
-                <div class="sidebar-subsection">Custom Stacks</div>
+                <div class="sidebar-subsection">Custom Templates</div>
                 <ul class="sidebar-list">
                   
                   <li>
                     
-                    <a class="sidebar-link" id="dashboard/custom-stacks/create-new-stack" href="/dashboard/custom-stacks/create-new-stack">
-                      Create New Stack
+                    <a class="sidebar-link" id="dashboard/custom-templates/create-new-template" href="/dashboard/custom-templates/create-new-template">
+                      Create New Template
                     </a>
                   </li>
                   
                   <li>
                     
-                    <a class="sidebar-link" id="dashboard/custom-stacks/team-stacks" href="/dashboard/custom-stacks/team-stacks">
-                      Team Stacks
+                    <a class="sidebar-link" id="dashboard/custom-templates/team-templates" href="/dashboard/custom-templates/team-templates">
+                      Team Templates
                     </a>
                   </li>
                   
@@ -586,14 +586,14 @@
       <div class="markdown"><h1 id="add-custom-domain-to-container">Add Custom Domain to Container</h1>
 <p>If you wish to have your app publicly accessible at a custom domain, you can do so by adding a custom domain to your container.</p>
 <p>Before you start configuring your domain in Codeanywhere, you should go to a domain registrar and create a new CNAME record. The CNAME record you create must point to our proxy server: <code>sfo.codeanyproxy.com</code></p>
-<p>Navigate to the <code>Containers</code> tab in the sidebar and select the <code>Domains</code> option for the container you want to associate with a custom domain.</p>
+<p>Navigate to the <code>Home</code> or <code>Containers</code> page, expand the container menu and select the <code>Domains</code> option.</p>
 <p><img src="/images/dashboard/containers/add-custom-domain-1.png" alt="Container domains option" class="width-90"/></p>
 
-<p>A new window will show up and display your current custom domains. Select <code>Add Domain</code> to add a new custom domain.</p>
-<p><img src="/images/dashboard/containers/add-custom-domain-2.png" alt="Custom domains list" class="width-60"/></p>
+<p>You will see a page with all of your current domains for the container. Click on <code>Add Domain</code> to add a new custom domain.</p>
+<p><img src="/images/dashboard/containers/add-custom-domain-2.png" alt="Custom domains list" class="width-90"/></p>
 
 <p>Set the internal port to the port your application server is listening to. You can access your custom domain without appending the internal port at the end of the URL.</p>
-<p>Set the external port to 80, 443 or any port in the range between 1024 and 9999. If you set the external port to 443, Codeanywhere will automatically set up a free SSL certificate provided by Let&#39;s Encrypt! It is important that you have already configured your CNAME record to point to the Codeanywhere proxy server so the certificate can be issued.</p>
+<p>Set the external port to 80, 443 or any port in the range between 1024 and 9999. If you set the external port to 443, Codeanywhere will automatically set up a free SSL certificate provided by <em>Let&#39;s Encrypt</em>. It is important that you have already configured your CNAME record to point to the Codeanywhere proxy server so the certificate can be issued.</p>
 <p><img src="/images/dashboard/containers/add-custom-domain-3.png" alt="Create custom domain" class="width-60"/></p>
 
 <p><strong>Note</strong>: Custom domains do not prevent the container to be turned off in case it doesn&#39;t have the <code>Always-On</code> feature enabled.</p>

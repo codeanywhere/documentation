@@ -24,8 +24,8 @@
     "section": "General",
     "subsection": "Getting Started",
     "article": "Frequently Asked Questions",
-    "heading": "Which stack to select? Which programming language will I use the most?",
-    "slug": "general/getting-started/faq#which-stack-to-select-which-programming-language-will-i-use-the-most"
+    "heading": "Which template to select? Which programming language will I use the most?",
+    "slug": "general/getting-started/faq#which-template-to-select-which-programming-language-will-i-use-the-most"
   },
   {
     "section": "General",
@@ -206,15 +206,15 @@
     "section": "General",
     "subsection": "Getting Started",
     "article": "Frequently Asked Questions",
-    "heading": "I have created a new Project but now I can't see my old files.",
-    "slug": "general/getting-started/faq#i-have-created-a-new-project-but-now-i-cant-see-my-old-files"
+    "heading": "How can I see my old files after I create a new Project?",
+    "slug": "general/getting-started/faq#how-can-i-see-my-old-files-after-i-create-a-new-project"
   },
   {
     "section": "General",
     "subsection": "Getting Started",
     "article": "Frequently Asked Questions",
-    "heading": "When i press tabspace key the last word i wrote is automatically repeated, how can i fix it?",
-    "slug": "general/getting-started/faq#when-i-press-tabspace-key-the-last-word-i-wrote-is-automatically-repeated-how-can-i-fix-it"
+    "heading": "If I press the tab key, the last word is automatically repeated. How can I fix it?",
+    "slug": "general/getting-started/faq#if-i-press-the-tab-key-the-last-word-is-automatically-repeated-how-can-i-fix-it"
   },
   {
     "section": "Editor",
@@ -372,17 +372,17 @@
   },
   {
     "section": "Dashboard",
-    "subsection": "Custom Stacks",
-    "article": "Create New Stack",
+    "subsection": "Custom Templates",
+    "article": "Create New Template",
     "heading": null,
-    "slug": "dashboard/custom-stacks/create-new-stack"
+    "slug": "dashboard/custom-templates/create-new-template"
   },
   {
     "section": "Dashboard",
-    "subsection": "Custom Stacks",
-    "article": "Team Stacks",
+    "subsection": "Custom Templates",
+    "article": "Team Templates",
     "heading": null,
-    "slug": "dashboard/custom-stacks/team-stacks"
+    "slug": "dashboard/custom-templates/team-templates"
   },
   {
     "section": "Dashboard",
@@ -425,6 +425,20 @@
     "article": "Update Account Information",
     "heading": null,
     "slug": "dashboard/account-management/update-account-info"
+  },
+  {
+    "section": "Dashboard",
+    "subsection": "Account Management",
+    "article": "Update Account Information",
+    "heading": "Personal Information",
+    "slug": "dashboard/account-management/update-account-info#personal-information"
+  },
+  {
+    "section": "Dashboard",
+    "subsection": "Account Management",
+    "article": "Update Account Information",
+    "heading": "Password",
+    "slug": "dashboard/account-management/update-account-info#password"
   },
   {
     "section": "Dashboard",

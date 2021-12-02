@@ -345,20 +345,20 @@
               </div>
               
               <div>
-                <div class="sidebar-subsection">Custom Stacks</div>
+                <div class="sidebar-subsection">Custom Templates</div>
                 <ul class="sidebar-list">
                   
                   <li>
                     
-                    <a class="sidebar-link" id="dashboard/custom-stacks/create-new-stack" href="/dashboard/custom-stacks/create-new-stack">
-                      Create New Stack
+                    <a class="sidebar-link" id="dashboard/custom-templates/create-new-template" href="/dashboard/custom-templates/create-new-template">
+                      Create New Template
                     </a>
                   </li>
                   
                   <li>
                     
-                    <a class="sidebar-link" id="dashboard/custom-stacks/team-stacks" href="/dashboard/custom-stacks/team-stacks">
-                      Team Stacks
+                    <a class="sidebar-link" id="dashboard/custom-templates/team-templates" href="/dashboard/custom-templates/team-templates">
+                      Team Templates
                     </a>
                   </li>
                   
@@ -596,10 +596,13 @@
 <p>Codeanywhere offers their users the ability to preview their app progress via public or private links. In the editor, select <code>View -> Preview Ports</code> to enable the Preview Ports widget.</p>
 <p><img src="/images/editor/introduction/open-preview-ports.png" alt="Enable Preview Ports" class="width-90"/></p>
 
-<p>If your app is running, it should show up in the Preview Ports widget. Your open ports will be listed inside the widget with the option to open:</p>
+<p>If your app is running, it should show up in the Preview Ports widget. The running processes will be listed inside the widget with the option to select:</p>
 <ul>
-<li><strong>Preview port</strong>: Only accessible by you while logged into Codeanywhere.</li>
-<li><strong>Public port:</strong> Accessible to everyone, but the app <strong>must be running on</strong> <code>0.0.0.0</code>.</li>
+<li><strong>Preview</strong>: Opens your private app link in the <code>Preview</code> widget inside the IDE.</li>
+<li><strong>Private</strong>: Opens your app in a new browser tab. The link is only accessible to you if you&#39;re logged in to your Codeanywhere account.</li>
+<li><strong>Public:</strong> Opens your app in a new browser tab. The link is publicly accessible to anyone. The app <strong>must be running on</strong> <code>0.0.0.0</code>.</li>
+<li><strong>Exit</strong>: Gracefully terminates your app. This action can be blocked, handled, and ignored.</li>
+<li><strong>Kill:</strong> Immediately terminates your app.</li>
 </ul>
 <p><img src="/images/editor/introduction/preview-ports-widget.png" alt="Preview Ports widget" class="width-90"/></p>
 
@@ -619,7 +622,7 @@
 <p><img src="/images/editor/introduction/file-new-project.png" alt="New project" class="width-60 solo-image"/></p>
 
 <p>Projects will also help you with cloning and opening a Git repository. Just click on <code>Clone an existing project</code> and enter your repository SSH URL and we will take care of the rest.</p>
-<p><img src="/images/editor/introduction/projects-widget.png" alt="Projects widget" class="width-90"/></p>
+<p><img src="/images/editor/introduction/projects-widget.png" alt="Projects widget" class="width-60"/></p>
 
 <p><strong>Note:</strong> Your Codeanywhere account must be authorized with the appropriate Git provider to successfully clone a repository. Not sure how to do that? Find out <a href="/dashboard/connected-accounts/git-providers">here</a>.</p>
 </div>
