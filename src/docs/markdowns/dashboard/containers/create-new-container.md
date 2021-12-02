@@ -1,6 +1,6 @@
 # Create New Container
 
-Creating a new [container](/getting-started/faq#what-is-a-container) is pretty straight-forward in the new Codeanywhere Dashboard. Navigate to the <code>Home</code> or <code>Containers</code> page and click the <code>New Container</code> button.
+Creating a new [container](/getting-started/faq#what-is-a-container) is pretty straight-forward in the Codeanywhere Dashboard. Navigate to the <code>Home</code> or <code>Containers</code> page and click the <code>New Container</code> button.
 
 <p><img src="/images/dashboard/containers/create-container-1.png" alt="Create new container" class="width-90"/></p>
 

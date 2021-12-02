@@ -1,6 +1,6 @@
 # Manage and Purchase Addons
 
-You can the usage of your purchased addons in the <code>Team</code> page.
+You can see the usage of your purchased addons in the <code>Team</code> page.
 
 <p><img src="/images/dashboard/account-management/addons-quantity.png" alt="Manage addons" class="width-90"/></p>
 
