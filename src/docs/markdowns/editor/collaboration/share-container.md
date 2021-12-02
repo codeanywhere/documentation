@@ -2,7 +2,7 @@
 
 You can share your containers with other users by inviting them to collaborate. Select the <code>Collaborators</code> option in the container menu or click the collaborators icon on the container card to display all collaborators.
 
-<p><img src="/images/editor/collaboration/invite-1.png" alt="Display collaborators 1" class="width-80"/></p>
+<p><img src="/images/editor/collaboration/invite-1.png" alt="Display collaborators 1" class="width-90"/></p>
 
 New users are invited by entering their email address. If you are the owner of the container, you are able to remove existing collaborators.
 

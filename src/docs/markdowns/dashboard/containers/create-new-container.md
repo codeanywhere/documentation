@@ -1,10 +1,18 @@
 # Create New Container
 
-Creating a new [container](/getting-started/faq#what-is-a-container). is pretty straight-forward in the new Codeanywhere Dashboard. Navigate to the <code>Containers</code> tab in the sidebar and click the <code>Create Container</code> button.
+Creating a new [container](/getting-started/faq#what-is-a-container) is pretty straight-forward in the new Codeanywhere Dashboard. Navigate to the <code>Home</code> or <code>Containers</code> page and click the <code>New Container</code> button.
 
 <p><img src="/images/dashboard/containers/create-container-1.png" alt="Create new container" class="width-90"/></p>
 
-After a new window shows up, you will be asked to provide the name for your new container and select the stack for the container. You can choose between one of the predefined stacks:
+To create a new container, you have to:
+
+1.  Select a template
+2.  Optionally apply the <code>Always-On</code> addon
+3.  Enter the new container name
+
+<p><img src="/images/dashboard/containers/create-container-2.png" alt="Create container modal" class="width-90"/></p>
+
+You san select a [custom template](/custom-templates/create-new-template) or one of our predefined templates:
 
 - **Default** – Blank Development Container
 - **PHP** – LAMP Development Stack with phpMyAdmin and Composer preinstalled
@@ -17,4 +25,4 @@ After a new window shows up, you will be asked to provide the name for your new 
 - **Java** – Java Development Stack with OpenJDK7, OpenJDE7 and Tomcat7 preinstalled
 - **.NET Core** – .NET Core Development Stack
 
-<p><img src="/images/dashboard/containers/create-container-2.png" alt="Create container modal" class="width-90"/></p>
+Regular containers will be stopped when you sign out. Containers with the applied <code>Always-On</code> addon wilk keep running even if you're not working.

@@ -140,16 +140,16 @@
         ]
       },
       {
-        "name": "Custom Stacks",
-        "slug": "custom-stacks",
+        "name": "Custom Templates",
+        "slug": "custom-templates",
         "contents": [
           {
-            "name": "Create New Stack",
-            "slug": "create-new-stack"
+            "name": "Create New Template",
+            "slug": "create-new-template"
           },
           {
-            "name": "Team Stacks",
-            "slug": "team-stacks"
+            "name": "Team Templates",
+            "slug": "team-templates"
           }
         ]
       },

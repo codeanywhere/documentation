@@ -6,9 +6,9 @@ Codeanywhere has introduced a <code>new and improved</code> VS Code based editor
 
 Find out [here](/editor/introduction/how-to-access) how to access it.
 
-### <a name="which-stack-to-select-which-programming-language-will-i-use-the-most" href="#which-stack-to-select-which-programming-language-will-i-use-the-most" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Which stack to select? Which programming language will I use the most?
+### <a name="which-template-to-select-which-programming-language-will-i-use-the-most" href="#which-template-to-select-which-programming-language-will-i-use-the-most" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Which template to select? Which programming language will I use the most?
 
-Codeanywhere offers you a wide range of <code>predefined stacks</code>:
+Codeanywhere offers you a wide range of <code>predefined templates</code>:
 
 - **Default** – Blank Development Container
 - **PHP** – LAMP Development Stack with phpMyAdmin and Composer preinstalled
@@ -21,7 +21,7 @@ Codeanywhere offers you a wide range of <code>predefined stacks</code>:
 - **Java** – Java Development Stack with OpenJDK7, OpenJDE7 and Tomcat7 preinstalled
 - **.NET Core** – .NET Core Development Stack
 
-You should use a stack or a programming language which best fits your programming needs. If you wish to create a custom stack, you can do so by following [these instructions](/dashboard/custom-stacks/create-new-stack).
+You should use a template or a programming language which best fits your programming needs. If you wish to create a custom template, you can do so by following [these instructions](/dashboard/custom-templates/create-new-template).
 
 ### <a name="which-connections-are-allowed-and-how-to-connect-them" href="#which-connections-are-allowed-and-how-to-connect-them" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Which connections are allowed and how to connect them?
 
@@ -87,13 +87,13 @@ Find out [here](/editor/collaboration/share-container) how to invite other users
 
 <code>Containers</code> are like your own Virtual Private Servers (in essence they are OpenVZ OS containers) provisioned by Codeanywhere, each one with its own amount of RAM, disk space and processing power.
 
-Containers give you the ability to provision any development environment you like. You can choose between one of the many [predefined stacks](/general/getting-started/faq#which-stack-to-select) which Codeanywhere offers.
+Containers give you the ability to provision any development environment you like. You can choose between one of the many [predefined templates](/general/getting-started/faq#which-template-to-select-which-programming-language-will-i-use-the-most) which Codeanywhere offers.
 
 Learn how to create a container [here](/dashboard/containers/create-new-container).
 
 ### <a name="which-programming-language-can-i-use-in-the-container"  href="#which-programming-language-can-i-use-in-the-container" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Which programming language can I use in the container?
 
-Codeanywhere offers support for a wide range of programming languages in the shape of the following predefined stacks:
+Codeanywhere offers support for a wide range of programming languages in the shape of the following predefined templates:
 
 - **PHP**
 - **NodeJS** – JavaScript
@@ -104,7 +104,7 @@ Codeanywhere offers support for a wide range of programming languages in the sha
 - **Java**
 - **.NET Core** – C#
 
-If you wish to use a different programming language, you can do so by [creating a container](/dashboard/containers/create-new-container) with a <code>Blank</code> stack, and installing the necessary dependencies in the container terminal.
+If you wish to use a different programming language, you can do so by [creating a container](/dashboard/containers/create-new-container) with a <code>Blank</code> template, and installing the necessary dependencies in the container terminal.
 
 ### <a name="can-i-install-extensions-from-the-vs-code-marketplace" href="#can-i-install-extensions-from-the-vs-code-marketplace" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Can I install extensions from the VS Code marketplace?
 
@@ -167,7 +167,9 @@ After you start your server application, click on the <code>Open Browser</code> 
 
 You can find the public link for your API in the new tab which will open in your browser window.
 
-<p><img src="/images/general/getting-started/postman-2.png" alt="Preview link" class="width-60"/></p>
+```
+https://port-3000-my-app-fabjanv.codeanyapp.com/
+```
 
 You can use that link as the base URL for your API and send specific requests to it using the [Postman](https://www.postman.com/) platform.
 
@@ -177,7 +179,7 @@ You can use that link as the base URL for your API and send specific requests to
 
 Navigate to the _Two-Factor authetication_ section in the <code>Account</code> page and toggle the switch.
 
-<p><img src="/images/general/getting-started/2fa-step1.png" alt="Initiate 2FA" class="width-80"/></p>
+<p><img src="/images/general/getting-started/2fa-step1.png" alt="Initiate 2FA" class="width-90"/></p>
 
 Scan the QR code with your authentication app and enter the confirmation code.
 
@@ -193,7 +195,7 @@ Scan the QR code with your authentication app and enter the confirmation code.
 
 If your email has not been verified, you should see a banner with an option to <code>Resend</code> the verification email.
 
-<p><img src="/images/general/getting-started/resend-verification-email.png" alt="Resend verification mail" class="width-80"/></p>
+<p><img src="/images/general/getting-started/resend-verification-email.png" alt="Resend verification mail" class="width-90"/></p>
 
 ### <a name="i-registered-with-facebook-what-is-my-password" href="#i-registered-with-facebook-what-is-my-password" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>I registered with my Facebook account, what is my password?
 

@@ -1,8 +1,8 @@
 # Update Subscription
 
-You can update your subscription by navigating to the <code>Account</code> tab in the sidebar and proceeding to checkout by clicking the <code>Change</code> subscription button.
+You can change your subscription by going to the <code>Checkout</code> page.
 
-<p><img src="/images/dashboard/account-management/change-subscription-button.png" alt="Change subscription" class="width-90"/></p>
+<p><img src="/images/dashboard/account-management/upgrade-plan.png" alt="Upgrade plan" class="width-90"/></p>
 
 The checkout consists of 3 steps:
 
