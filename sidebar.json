@@ -234,76 +234,94 @@
     "slug": "advanced-topics",
     "contents": [
       {
-        "name": "Installing Laravel Framework",
-        "slug": "install-laravel"
+        "name": "Databases",
+        "slug": "databases",
+        "contents": [
+          {
+            "name": "Installing MongoDB",
+            "slug": "install-mongodb"
+          },
+          {
+            "name": "Installing MySQL",
+            "slug": "install-mysql"
+          },
+          {
+            "name": "Installing PostgreSQL",
+            "slug": "install-postgresql"
+          },
+          {
+            "name": "Installing Microsoft SQL Server",
+            "slug": "install-sql-server"
+          },
+          {
+            "name": "Installing SQL Lite",
+            "slug": "install-sql-lite"
+          },
+          {
+            "name": "Installing Redis",
+            "slug": "install-redis"
+          },
+          {
+            "name": "Installing MariaDB",
+            "slug": "install-mariadb"
+          },
+          {
+            "name": "Installing Elasticsearch",
+            "slug": "install-elasticsearch"
+          },
+          {
+            "name": "Changing MySQL Password",
+            "slug": "change-mysql-password"
+          }
+        ]
       },
       {
-        "name": "Installing Angular Framework",
-        "slug": "install-angular"
+        "name": "Frameworks",
+        "slug": "frameworks",
+        "contents": [
+          {
+            "name": "Installing Laravel Framework",
+            "slug": "install-laravel"
+          },
+          {
+            "name": "Installing Angular Framework",
+            "slug": "install-angular"
+          },
+          {
+            "name": "Installing Django Framework",
+            "slug": "install-django"
+          },
+          {
+            "name": "Installing Meteor Framework",
+            "slug": "install-meteor"
+          }
+        ]
       },
       {
-        "name": "Installing Django Framework",
-        "slug": "install-django"
-      },
-      {
-        "name": "Installing Meteor Framework",
-        "slug": "install-meteor"
-      },
-      {
-        "name": "Installing MongoDB",
-        "slug": "install-mongodb"
-      },
-      {
-        "name": "Installing MySQL",
-        "slug": "install-mysql"
-      },
-      {
-        "name": "Installing PostgreSQL",
-        "slug": "install-postgresql"
-      },
-      {
-        "name": "Installing Microsoft SQL Server",
-        "slug": "install-sql-server"
-      },
-      {
-        "name": "Installing SQL Lite",
-        "slug": "install-sql-lite"
-      },
-      {
-        "name": "Installing Redis",
-        "slug": "install-redis"
-      },
-      {
-        "name": "Installing MariaDB",
-        "slug": "install-mariadb"
-      },
-      {
-        "name": "Installing Elasticsearch",
-        "slug": "install-elasticsearch"
-      },
-      {
-        "name": "Installing MEAN Stack",
-        "slug": "install-mean-stack"
-      },
-      {
-        "name": "Changing MySQL Password",
-        "slug": "change-mysql-password"
-      },
-      {
-        "name": "Installing SASS",
-        "slug": "install-sass"
-      },
-      {
-        "name": "Working with Repositories",
-        "slug": "working-with-repositories"
-      },
-      {
-        "name": "Changing Document Root in Container",
-        "slug": "change-document-root-in-container"
-      },
-      {
-        "name": "Subversion",
-        "slug": "subversion"
+        "name": "Other",
+        "slug": "other",
+        "contents": [
+          {
+            "name": "Installing MEAN Stack",
+            "slug": "install-mean-stack"
+          },
+          {
+            "name": "Installing SASS",
+            "slug": "install-sass"
+          },
+          {
+            "name": "Working with Repositories",
+            "slug": "working-with-repositories"
+          },
+          {
+            "name": "Changing Document Root in Container",
+            "slug": "change-document-root-in-container"
+          },
+          {
+            "name": "Subversion",
+            "slug": "subversion"
+          }
+        ]
       }
     ]
   },

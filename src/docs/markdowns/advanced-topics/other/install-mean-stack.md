@@ -1,6 +1,6 @@
 # Installing MEAN stack
 
-In order to install MEAN stack, [create a container](/dashboard/containers/create-new-container) with the Node.js stack. First you will now need to install MongoDB, check the following [guide](/advanced-topics/install-mongodb).
+In order to install MEAN stack, [create a container](/dashboard/containers/create-new-container) with the Node.js stack. First you will now need to install MongoDB, check the following [guide](/advanced-topics/databases/install-mongodb).
 
 Now that you have MongoDB installed, clone the MEAN repo in your `workspace`:
 

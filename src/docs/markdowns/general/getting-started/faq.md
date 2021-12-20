@@ -120,7 +120,7 @@ If you have already [created an FTP extension](/dashboard/connections/create-new
 
 ### <a name="how-can-i-use-my-github-repository-in-a-container" href="#how-can-i-use-my-github-repository-in-a-container" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How can I use my Github repository in a container?
 
-You can work directly with your repositories in the IDE. Find more information [here](/advanced-topics/working-with-repositories).
+You can work directly with your repositories in the IDE. Find more information [here](/advanced-topics/other/working-with-repositories).
 
 ### <a name="how-can-i-connect-to-my-container-via-ssh-e-g-putty" href="#how-can-i-connect-to-my-container-via-ssh-e-g-putty" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How can I connect to my container via SSH (e.g. Putty)?
 
