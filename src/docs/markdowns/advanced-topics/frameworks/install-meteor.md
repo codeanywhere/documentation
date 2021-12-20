@@ -19,6 +19,6 @@ Now you can run your Meteor app by running:
 meteor run
 ```
 
-and [previewing it](general/getting-started/faq#preview-progress) on your preview URL after the app is lifted.
+and [previewing it](/editor#preview-ports) on your preview URL after the app is lifted.
 
 **NOTE**: Meteor is resource intensive. Minimal system requirement for a successful application initialization is 512MB of RAM and 3GB of disk space.\*
