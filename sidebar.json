@@ -270,6 +270,10 @@
         "slug": "install-sql-lite"
       },
       {
+        "name": "Installing Redis",
+        "slug": "install-redis"
+      },
+      {
         "name": "Installing MEAN Stack",
         "slug": "install-mean-stack"
       },

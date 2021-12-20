@@ -20,3 +20,12 @@ If PostgreSQL isn't running, you can start it using the command:
 ```sh
 sudo systemctl start postgresql
 ```
+
+Run the following commands to run the <code>psql</code> command line interface tool.
+
+```sh
+sudo -i -u postgres
+psql
+```
+
+See the [official documentation](https://www.postgresql.org/docs/13/app-psql.html) for more information on interacting with your database.

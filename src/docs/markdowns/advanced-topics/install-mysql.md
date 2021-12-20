@@ -26,3 +26,5 @@ If MySQL isn't running, you can start it using the command:
 ```sh
 sudo systemctl start mysql
 ```
+
+See the [official documentation](https://dev.mysql.com/doc/refman/8.0/en/mysql.html) for more information on interacting with your database using the command line interface.
