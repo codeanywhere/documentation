@@ -274,6 +274,10 @@
         "slug": "install-redis"
       },
       {
+        "name": "Installing MariaDB",
+        "slug": "install-mariadb"
+      },
+      {
         "name": "Installing MEAN Stack",
         "slug": "install-mean-stack"
       },
