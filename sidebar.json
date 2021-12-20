@@ -262,6 +262,10 @@
         "slug": "install-postgresql"
       },
       {
+        "name": "Installing Microsoft SQL Server",
+        "slug": "install-sql-server"
+      },
+      {
         "name": "Installing MEAN Stack",
         "slug": "install-mean-stack"
       },
