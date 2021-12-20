@@ -1,6 +1,6 @@
 # Installing MongoDB
 
-To install <code>mongoDB</code> on a Codeanywhere container based on Ubuntu 16.04 distribution, just run the followings commands in your [IDE terminal](/editor/introduction/how-to-access) to install the latest official MongoDB release:
+To install <code>MongoDB</code> in your container, run the following commands in the [IDE terminal](/editor/introduction/how-to-access).
 
 Import the public key used by the package management system.
 

@@ -234,14 +234,6 @@
     "slug": "advanced-topics",
     "contents": [
       {
-        "name": "Changing MySQL Password",
-        "slug": "change-mysql-password"
-      },
-      {
-        "name": "Installing SASS",
-        "slug": "install-sass"
-      },
-      {
         "name": "Installing Laravel Framework",
         "slug": "install-laravel"
       },
@@ -262,8 +254,20 @@
         "slug": "install-mongodb"
       },
       {
+        "name": "Installing MySQL",
+        "slug": "install-mysql"
+      },
+      {
         "name": "Installing MEAN Stack",
         "slug": "install-mean-stack"
+      },
+      {
+        "name": "Changing MySQL Password",
+        "slug": "change-mysql-password"
+      },
+      {
+        "name": "Installing SASS",
+        "slug": "install-sass"
       },
       {
         "name": "Working with Repositories",
