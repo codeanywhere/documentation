@@ -266,6 +266,10 @@
         "slug": "install-sql-server"
       },
       {
+        "name": "Installing SQL Lite",
+        "slug": "install-sql-lite"
+      },
+      {
         "name": "Installing MEAN Stack",
         "slug": "install-mean-stack"
       },
