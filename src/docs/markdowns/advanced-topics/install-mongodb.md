@@ -1,6 +1,6 @@
 # Installing MongoDB
 
-To install <code>MongoDB</code> in your container, run the following commands in the [IDE terminal](/editor/introduction/how-to-access).
+To install <code>MongoDB</code> in your container, you have to run the following commands in the [IDE terminal](/editor/introduction/how-to-access).
 
 Import the public key used by the package management system.
 

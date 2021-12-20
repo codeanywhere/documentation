@@ -258,6 +258,10 @@
         "slug": "install-mysql"
       },
       {
+        "name": "Installing PostgreSQL",
+        "slug": "install-postgresql"
+      },
+      {
         "name": "Installing MEAN Stack",
         "slug": "install-mean-stack"
       },

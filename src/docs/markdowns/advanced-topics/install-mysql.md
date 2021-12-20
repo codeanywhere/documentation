@@ -1,8 +1,8 @@
 # Installing MySQL
 
-To install <code>MySQL</code> in your container, run the following commands in the [IDE terminal](/editor/introduction/how-to-access).
+To install <code>MySQL</code> in your container, you have to run the following commands in the [IDE terminal](/editor/introduction/how-to-access).
 
-On Ubuntu 16.04, only the latest version of MySQL is included in the APT package repository by default. To install it, simply update the package index on your server and install the default package. During the installation, you will be prompted to create a root password for your MySQL server.
+On Ubuntu 16.04, the latest version of MySQL is included in the APT package repository by default. Update the package index on your server and install the default <code>mysql-server</code> package. During the installation, you will be prompted to create a root password.
 
 ```sh
 sudo apt-get update
