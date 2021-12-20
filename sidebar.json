@@ -278,6 +278,10 @@
         "slug": "install-mariadb"
       },
       {
+        "name": "Installing Elasticsearch",
+        "slug": "install-elasticsearch"
+      },
+      {
         "name": "Installing MEAN Stack",
         "slug": "install-mean-stack"
       },
