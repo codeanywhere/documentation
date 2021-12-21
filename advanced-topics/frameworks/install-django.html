@@ -653,24 +653,19 @@
           
         </div>
       </div>
-      <div class="markdown"><h1 id="what-is-codeanywhere">What is Codeanywhere?</h1>
-<p>Codeanywhere is a <code>Cross Platform Cloud IDE</code> and it has all the features of Desktop IDE but with additional features only a cloud application can give you!</p>
-<p>Codeanywhere is very flexible and you can set up your workflow any way you want it. The elegant development environment will let you focus on building great applications quicker. All the features you will need for any coding task are built into Codeanywhere, making development more productive and fun. Codeanywhere can edit many types of files and has all the nice features you are used to in desktop editors:</p>
-<ul>
-<li>More than <code>120</code> programming languages syntax</li>
-<li>Code completion (js, php, html, css)</li>
-<li>Linting (js, css)</li>
-<li>Multiple cursors</li>
-<li>Zen coding support</li>
-<li>Code beautify</li>
-<li>All device and browser support</li>
-<li>Drag and Drop files and folders from your Desktop and edit them</li>
-<li>Open and save files with more than 200.000 lines</li>
-</ul>
-<p>Codeanywhere has integrated clients for connecting to FTP, SFTP, FTPS, SSH, Google Drive, GitHub, and BitBucket, so you can code and deploy without opening up multiple programs!</p>
-<p>Also, you can <a href="/dashboard/containers/create-new-container">create Containers</a> which serve as your private virtual development environment that you can fully customize through the SSH terminal. Each one comes with its own dedicated amount of memory and disk space. You can choose between a large number of predefined templates (PHP, HTML, Wordpress, etc.) or you can create new ones!</p>
-<p>You can preview your application instantly inside Codeanywhere IDE. Our large file support enables you to open and save files with over 200.000 lines! You can even drag and drop files and folders from your Desktop! Codeanywhere has a sharing capability so you can get help from a colleague, open your code base to a group or simply to show your latest code to your friends.</p>
-<p><code>In short</code>, Codeanywhere will solve all your coding needs on the go, anytime, anywhere and on any platform!</p>
+      <div class="markdown"><h1 id="installing-django-framework">Installing Django framework</h1>
+<p>In order to install Django framework, first <a href="/dashboard/containers/create-new-container">create a container</a> with the Python stack. Python has it&#39;s own package manager <code>pip</code> with whom you will install the Django framework.</p>
+<pre><code class="language-sh">pip install Django
+</code></pre>
+<p>Now that you have Django installed, create a new project in your <code>workspace</code>:</p>
+<pre><code class="language-sh">cd ~/workspace
+django-admin startproject app
+</code></pre>
+<p>After the project is created, go to the project directory and launch the server:</p>
+<pre><code class="language-sh">cd ~/workspace/app
+python manage.py runserver 0.0.0.0:3000
+</code></pre>
+<p>Once launched, you can <a href="general/getting-started/faq#preview-progress">preview your application</a> with your container preview URL.</p>
 </div>
     </div>
     <script src="/search.js"></script>

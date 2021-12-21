@@ -498,143 +498,192 @@
   },
   {
     "section": "Advanced Topics",
-    "subsection": null,
-    "article": "Changing MySQL Password",
-    "heading": null,
-    "slug": "advanced-topics/change-mysql-password"
-  },
-  {
-    "section": "Advanced Topics",
-    "subsection": null,
-    "article": "Installing SASS",
-    "heading": null,
-    "slug": "advanced-topics/install-sass"
-  },
-  {
-    "section": "Advanced Topics",
-    "subsection": null,
-    "article": "Installing Laravel Framework",
-    "heading": null,
-    "slug": "advanced-topics/install-laravel"
-  },
-  {
-    "section": "Advanced Topics",
-    "subsection": null,
-    "article": "Installing Laravel Framework",
-    "heading": "Public Directory",
-    "slug": "advanced-topics/install-laravel#public-directory"
-  },
-  {
-    "section": "Advanced Topics",
-    "subsection": null,
-    "article": "Installing Angular Framework",
-    "heading": null,
-    "slug": "advanced-topics/install-angular"
-  },
-  {
-    "section": "Advanced Topics",
-    "subsection": null,
-    "article": "Installing Django Framework",
-    "heading": null,
-    "slug": "advanced-topics/install-django"
-  },
-  {
-    "section": "Advanced Topics",
-    "subsection": null,
-    "article": "Installing Meteor Framework",
-    "heading": null,
-    "slug": "advanced-topics/install-meteor"
-  },
-  {
-    "section": "Advanced Topics",
-    "subsection": null,
+    "subsection": "Databases",
     "article": "Installing MongoDB",
     "heading": null,
-    "slug": "advanced-topics/install-mongodb"
+    "slug": "advanced-topics/databases/install-mongodb"
   },
   {
     "section": "Advanced Topics",
-    "subsection": null,
+    "subsection": "Databases",
+    "article": "Installing MySQL",
+    "heading": null,
+    "slug": "advanced-topics/databases/install-mysql"
+  },
+  {
+    "section": "Advanced Topics",
+    "subsection": "Databases",
+    "article": "Installing PostgreSQL",
+    "heading": null,
+    "slug": "advanced-topics/databases/install-postgresql"
+  },
+  {
+    "section": "Advanced Topics",
+    "subsection": "Databases",
+    "article": "Installing Microsoft SQL Server",
+    "heading": null,
+    "slug": "advanced-topics/databases/install-sql-server"
+  },
+  {
+    "section": "Advanced Topics",
+    "subsection": "Databases",
+    "article": "Installing SQL Lite",
+    "heading": null,
+    "slug": "advanced-topics/databases/install-sql-lite"
+  },
+  {
+    "section": "Advanced Topics",
+    "subsection": "Databases",
+    "article": "Installing Redis",
+    "heading": null,
+    "slug": "advanced-topics/databases/install-redis"
+  },
+  {
+    "section": "Advanced Topics",
+    "subsection": "Databases",
+    "article": "Installing MariaDB",
+    "heading": null,
+    "slug": "advanced-topics/databases/install-mariadb"
+  },
+  {
+    "section": "Advanced Topics",
+    "subsection": "Databases",
+    "article": "Installing Elasticsearch",
+    "heading": null,
+    "slug": "advanced-topics/databases/install-elasticsearch"
+  },
+  {
+    "section": "Advanced Topics",
+    "subsection": "Databases",
+    "article": "Changing MySQL Password",
+    "heading": null,
+    "slug": "advanced-topics/databases/change-mysql-password"
+  },
+  {
+    "section": "Advanced Topics",
+    "subsection": "Frameworks",
+    "article": "Installing Laravel Framework",
+    "heading": null,
+    "slug": "advanced-topics/frameworks/install-laravel"
+  },
+  {
+    "section": "Advanced Topics",
+    "subsection": "Frameworks",
+    "article": "Installing Laravel Framework",
+    "heading": "Public Directory",
+    "slug": "advanced-topics/frameworks/install-laravel#public-directory"
+  },
+  {
+    "section": "Advanced Topics",
+    "subsection": "Frameworks",
+    "article": "Installing Angular Framework",
+    "heading": null,
+    "slug": "advanced-topics/frameworks/install-angular"
+  },
+  {
+    "section": "Advanced Topics",
+    "subsection": "Frameworks",
+    "article": "Installing Django Framework",
+    "heading": null,
+    "slug": "advanced-topics/frameworks/install-django"
+  },
+  {
+    "section": "Advanced Topics",
+    "subsection": "Frameworks",
+    "article": "Installing Meteor Framework",
+    "heading": null,
+    "slug": "advanced-topics/frameworks/install-meteor"
+  },
+  {
+    "section": "Advanced Topics",
+    "subsection": "Other",
     "article": "Installing MEAN Stack",
     "heading": null,
-    "slug": "advanced-topics/install-mean-stack"
+    "slug": "advanced-topics/other/install-mean-stack"
   },
   {
     "section": "Advanced Topics",
-    "subsection": null,
+    "subsection": "Other",
+    "article": "Installing SASS",
+    "heading": null,
+    "slug": "advanced-topics/other/install-sass"
+  },
+  {
+    "section": "Advanced Topics",
+    "subsection": "Other",
     "article": "Working with Repositories",
     "heading": null,
-    "slug": "advanced-topics/working-with-repositories"
+    "slug": "advanced-topics/other/working-with-repositories"
   },
   {
     "section": "Advanced Topics",
-    "subsection": null,
+    "subsection": "Other",
     "article": "Working with Repositories",
     "heading": "Setting up a Repository",
-    "slug": "advanced-topics/working-with-repositories#setting-up-a-repository"
+    "slug": "advanced-topics/other/working-with-repositories#setting-up-a-repository"
   },
   {
     "section": "Advanced Topics",
-    "subsection": null,
+    "subsection": "Other",
     "article": "Working with Repositories",
     "heading": "Saving Changes",
-    "slug": "advanced-topics/working-with-repositories#saving-changes"
+    "slug": "advanced-topics/other/working-with-repositories#saving-changes"
   },
   {
     "section": "Advanced Topics",
-    "subsection": null,
+    "subsection": "Other",
     "article": "Working with Repositories",
     "heading": "Inspecting a Repository",
-    "slug": "advanced-topics/working-with-repositories#inspecting-a-repository"
+    "slug": "advanced-topics/other/working-with-repositories#inspecting-a-repository"
   },
   {
     "section": "Advanced Topics",
-    "subsection": null,
+    "subsection": "Other",
     "article": "Working with Repositories",
     "heading": "Connecting to a Remote Repository",
-    "slug": "advanced-topics/working-with-repositories#connecting-to-a-remote-repository"
+    "slug": "advanced-topics/other/working-with-repositories#connecting-to-a-remote-repository"
   },
   {
     "section": "Advanced Topics",
-    "subsection": null,
+    "subsection": "Other",
     "article": "Working with Repositories",
     "heading": "Working with Branches",
-    "slug": "advanced-topics/working-with-repositories#working-with-branches"
+    "slug": "advanced-topics/other/working-with-repositories#working-with-branches"
   },
   {
     "section": "Advanced Topics",
-    "subsection": null,
+    "subsection": "Other",
     "article": "Working with Repositories",
     "heading": "Update the Remote Repository",
-    "slug": "advanced-topics/working-with-repositories#update-the-remote-repository"
+    "slug": "advanced-topics/other/working-with-repositories#update-the-remote-repository"
   },
   {
     "section": "Advanced Topics",
-    "subsection": null,
+    "subsection": "Other",
     "article": "Changing Document Root in Container",
     "heading": null,
-    "slug": "advanced-topics/change-document-root-in-container"
+    "slug": "advanced-topics/other/change-document-root-in-container"
   },
   {
     "section": "Advanced Topics",
-    "subsection": null,
+    "subsection": "Other",
     "article": "Subversion",
     "heading": null,
-    "slug": "advanced-topics/subversion"
+    "slug": "advanced-topics/other/subversion"
   },
   {
     "section": "Advanced Topics",
-    "subsection": null,
+    "subsection": "Other",
     "article": "Subversion",
     "heading": "Installing Subversion",
-    "slug": "advanced-topics/subversion#installing-subversion"
+    "slug": "advanced-topics/other/subversion#installing-subversion"
   },
   {
     "section": "Advanced Topics",
-    "subsection": null,
+    "subsection": "Other",
     "article": "Subversion",
     "heading": "Configure Server",
-    "slug": "advanced-topics/subversion#configure-server"
+    "slug": "advanced-topics/other/subversion#configure-server"
   },
   {
     "section": "Editor",

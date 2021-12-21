@@ -653,24 +653,88 @@
           
         </div>
       </div>
-      <div class="markdown"><h1 id="what-is-codeanywhere">What is Codeanywhere?</h1>
-<p>Codeanywhere is a <code>Cross Platform Cloud IDE</code> and it has all the features of Desktop IDE but with additional features only a cloud application can give you!</p>
-<p>Codeanywhere is very flexible and you can set up your workflow any way you want it. The elegant development environment will let you focus on building great applications quicker. All the features you will need for any coding task are built into Codeanywhere, making development more productive and fun. Codeanywhere can edit many types of files and has all the nice features you are used to in desktop editors:</p>
-<ul>
-<li>More than <code>120</code> programming languages syntax</li>
-<li>Code completion (js, php, html, css)</li>
-<li>Linting (js, css)</li>
-<li>Multiple cursors</li>
-<li>Zen coding support</li>
-<li>Code beautify</li>
-<li>All device and browser support</li>
-<li>Drag and Drop files and folders from your Desktop and edit them</li>
-<li>Open and save files with more than 200.000 lines</li>
-</ul>
-<p>Codeanywhere has integrated clients for connecting to FTP, SFTP, FTPS, SSH, Google Drive, GitHub, and BitBucket, so you can code and deploy without opening up multiple programs!</p>
-<p>Also, you can <a href="/dashboard/containers/create-new-container">create Containers</a> which serve as your private virtual development environment that you can fully customize through the SSH terminal. Each one comes with its own dedicated amount of memory and disk space. You can choose between a large number of predefined templates (PHP, HTML, Wordpress, etc.) or you can create new ones!</p>
-<p>You can preview your application instantly inside Codeanywhere IDE. Our large file support enables you to open and save files with over 200.000 lines! You can even drag and drop files and folders from your Desktop! Codeanywhere has a sharing capability so you can get help from a colleague, open your code base to a group or simply to show your latest code to your friends.</p>
-<p><code>In short</code>, Codeanywhere will solve all your coding needs on the go, anytime, anywhere and on any platform!</p>
+      <div class="markdown"><h1 id="working-with-repositories">Working with Repositories</h1>
+<h3 id="setting-up-a-repository"><a name="setting-up-a-repository" href="#setting-up-a-repository" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Setting up a Repository</h3>
+<p>Create a new local repository:</p>
+<pre><code class="language-sh">git init
+</code></pre>
+<p>Create a new repository out of a directory:</p>
+<pre><code class="language-sh">git init &lt;directory&gt;
+</code></pre>
+<p>Create a copy of an existing repository inside Container:</p>
+<pre><code class="language-sh">git clone /path/repository_name.git
+</code></pre>
+<p>Create a copy of an existing repository inside Container into an directory:</p>
+<pre><code class="language-sh">git clone /path/repository_name.git &lt;directory&gt;
+</code></pre>
+<p>Create a copy of an private repository inside Container:</p>
+<pre><code class="language-sh">git clone username@host:/path/repository_name.git
+</code></pre>
+<h3 id="saving-changes"><a name="saving-changes" href="#saving-changes" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Saving Changes</h3>
+<p>Stage all changes in a file for next commit:</p>
+<pre><code class="language-sh">git add &lt;filename&gt;
+</code></pre>
+<p>Stage all changes in a folder for next commit:</p>
+<pre><code class="language-sh">git add &lt;foldername&gt;
+</code></pre>
+<p>Add all files to staging:</p>
+<pre><code class="language-sh">git add *
+</code></pre>
+<p>Commit changes to head:</p>
+<pre><code class="language-sh">git commit -m &quot;Commit message&quot;
+</code></pre>
+<p>Commit all changes in the working directory:</p>
+<pre><code class="language-sh">git commit -a
+</code></pre>
+<h3 id="inspecting-a-repository"><a name="inspecting-a-repository" href="#inspecting-a-repository" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Inspecting a Repository</h3>
+<p>List which files are staged, unstaged, and untracked:</p>
+<pre><code class="language-sh">git status
+</code></pre>
+<p>Display the entire commit history using the default formatting:</p>
+<pre><code class="language-sh">git log
+</code></pre>
+<h3 id="connecting-to-a-remote-repository"><a name="connecting-to-a-remote-repository" href="#connecting" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Connecting to a Remote Repository</h3>
+<p>Add the server to be able to push to it:</p>
+<pre><code class="language-sh">git remote add origin &lt;server&gt;
+</code></pre>
+<p>List all currently configured remote repositories:</p>
+<pre><code class="language-sh">git remote -v
+</code></pre>
+<h3 id="working-with-branches"><a name="working-with-branches" href="#working-with-branches" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Working with Branches</h3>
+<p>Create a new branch and switch to it:</p>
+<pre><code class="language-sh">git checkout -b &lt;branchname&gt;
+</code></pre>
+<p>Switch from one branch to another:</p>
+<pre><code class="language-sh">git checkout &lt;branchname&gt;
+</code></pre>
+<p>List all the branches in your repo, and also tell you what branch you&#39;re currently in:</p>
+<pre><code class="language-sh">git branch
+</code></pre>
+<p>Delete the feature branch:</p>
+<pre><code class="language-sh">git branch -d &lt;branchname&gt;
+</code></pre>
+<p>Push the branch to your remote repository, so others can use it:</p>
+<pre><code class="language-sh">git push origin &lt;branchname&gt;
+</code></pre>
+<p>Push all branches to your remote repository:</p>
+<pre><code class="language-sh">git push --all origin
+</code></pre>
+<p>Delete a branch on your remote repository:</p>
+<pre><code class="language-sh">git push origin :&lt;branchname&gt;
+</code></pre>
+<p>For example, if you want to push to your master branch, just use:</p>
+<pre><code class="language-sh">git push origin master
+</code></pre>
+<h3 id="update-the-remote-repository"><a name="update-the-remote-repository" href="#update-the-remote-repository" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Update the Remote Repository</h3>
+<p>Merge changes on the remote server to your Container:</p>
+<pre><code class="language-sh">git pull
+</code></pre>
+<p>Merge a different branch into your active branch:</p>
+<pre><code class="language-sh">git merge &lt;branchname&gt;
+</code></pre>
+<p>View all the merge conflicts</p>
+<pre><code class="language-sh">git diff
+</code></pre>
 </div>
     </div>
     <script src="/search.js"></script>

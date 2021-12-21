@@ -653,24 +653,27 @@
           
         </div>
       </div>
-      <div class="markdown"><h1 id="what-is-codeanywhere">What is Codeanywhere?</h1>
-<p>Codeanywhere is a <code>Cross Platform Cloud IDE</code> and it has all the features of Desktop IDE but with additional features only a cloud application can give you!</p>
-<p>Codeanywhere is very flexible and you can set up your workflow any way you want it. The elegant development environment will let you focus on building great applications quicker. All the features you will need for any coding task are built into Codeanywhere, making development more productive and fun. Codeanywhere can edit many types of files and has all the nice features you are used to in desktop editors:</p>
-<ul>
-<li>More than <code>120</code> programming languages syntax</li>
-<li>Code completion (js, php, html, css)</li>
-<li>Linting (js, css)</li>
-<li>Multiple cursors</li>
-<li>Zen coding support</li>
-<li>Code beautify</li>
-<li>All device and browser support</li>
-<li>Drag and Drop files and folders from your Desktop and edit them</li>
-<li>Open and save files with more than 200.000 lines</li>
-</ul>
-<p>Codeanywhere has integrated clients for connecting to FTP, SFTP, FTPS, SSH, Google Drive, GitHub, and BitBucket, so you can code and deploy without opening up multiple programs!</p>
-<p>Also, you can <a href="/dashboard/containers/create-new-container">create Containers</a> which serve as your private virtual development environment that you can fully customize through the SSH terminal. Each one comes with its own dedicated amount of memory and disk space. You can choose between a large number of predefined templates (PHP, HTML, Wordpress, etc.) or you can create new ones!</p>
-<p>You can preview your application instantly inside Codeanywhere IDE. Our large file support enables you to open and save files with over 200.000 lines! You can even drag and drop files and folders from your Desktop! Codeanywhere has a sharing capability so you can get help from a colleague, open your code base to a group or simply to show your latest code to your friends.</p>
-<p><code>In short</code>, Codeanywhere will solve all your coding needs on the go, anytime, anywhere and on any platform!</p>
+      <div class="markdown"><h1 id="installing-elasticsearch">Installing Elasticsearch</h1>
+<p>To install <code>Elasticsearch</code> in your container, you have to run the following commands in the <a href="/editor/introduction/how-to-access">IDE terminal</a>.</p>
+<p>Elasticsearch is based on Java, therefore you have to run the following commands to install OpenJDK 8.<br><strong>Note</strong>: You can skip this step if you selected the <code>Java</code> template for your container.</p>
+<pre><code class="language-sh">sudo apt update
+sudo apt install openjdk-8-jdk
+</code></pre>
+<p>Now that OpenJDK is installed, import the Elasticsearch GPG key:</p>
+<pre><code class="language-sh">wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+</code></pre>
+<p>Register the Elasticsearch repository:</p>
+<pre><code class="language-sh">sudo sh -c &#39;echo &quot;deb https://artifacts.elastic.co/packages/6.x/apt stable main&quot; &gt; /etc/apt/sources.list.d/elastic-6.x.list&#39;
+</code></pre>
+<p>Update the package index and install the <code>elasticsearch</code> package.</p>
+<pre><code class="language-sh">sudo apt-get update
+sudo apt-get install elasticsearch
+</code></pre>
+<p>After installing Elasticsearch package, run the following commands below to start the service and make sure it automatically starts up whenever the server boots up.</p>
+<pre><code class="language-sh">sudo systemctl start elasticsearch.service
+sudo systemctl enable elasticsearch.service
+</code></pre>
+<p>See the <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/settings.html">official documentation</a> for more information on configuring Elasticsearch.</p>
 </div>
     </div>
     <script src="/search.js"></script>
