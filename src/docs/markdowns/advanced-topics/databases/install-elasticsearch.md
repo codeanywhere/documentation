@@ -29,7 +29,7 @@ sudo apt-get update
 sudo apt-get install elasticsearch
 ```
 
-After installing Elasticsearch package, run the following commands below to run start the service and make sure it automatically starts up whenever the server boots up.
+After installing Elasticsearch package, run the following commands below to start the service and make sure it automatically starts up whenever the server boots up.
 
 ```sh
 sudo systemctl start elasticsearch.service
