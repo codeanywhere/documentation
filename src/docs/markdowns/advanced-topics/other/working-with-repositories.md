@@ -1,7 +1,5 @@
 # Working with Repositories
 
-With Codeanywhere, you’ll be able to work directly with your repositories. You can work with your repository using standard git commands inside your SSH terminal. Go to the [Connections](/editor/sidebar/connections) widget in the sidebar and right click on your container and select SSH Terminal in order to open it up.
-
 ### <a name="setting-up-a-repository" href="#setting-up-a-repository" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Setting up a Repository
 
 Create a new local repository:
