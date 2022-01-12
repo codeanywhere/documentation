@@ -1,6 +1,6 @@
 # Working with React-Native 
 
-In order to install React-Native framework, first [create a container](/dashboard/containers/create-new-container) with the Node.js stack. Node.js has it's own package manager `npm` with whom you will install the Expo CLI.
+In order to install React-Native framework, first [create a container](/dashboard/containers/create-new-container) with the Node.js stack. Node.js has it's own package manager `npm` with which you will install the Expo CLI.
 
 ```sh
 npm install -g expo-cli

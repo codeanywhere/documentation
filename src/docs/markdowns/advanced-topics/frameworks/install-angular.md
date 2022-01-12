@@ -1,6 +1,6 @@
 # Installing Angular framework
 
-In order to install Angular framework, first [create a container](/dashboard/containers/create-new-container) with the Node.js stack. Node.js has it's own package manager `npm` with whom you will install the Angular CLI.
+In order to install Angular framework, first [create a container](/dashboard/containers/create-new-container) with the Node.js stack. Node.js has it's own package manager `npm` with which you will install the Angular CLI.
 
 ```sh
 npm install -g @angular/cli
