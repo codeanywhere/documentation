@@ -1,6 +1,6 @@
 # Installing Django framework
 
-In order to install Django framework, first [create a container](/dashboard/containers/create-new-container) with the Python stack. Python has it's own package manager `pip` with whom you will install the Django framework.
+In order to install Django framework, first [create a container](/dashboard/containers/create-new-container) with the Python stack. Python has it's own package manager `pip` with which you will install the Django framework.
 
 ```sh
 pip install Django
