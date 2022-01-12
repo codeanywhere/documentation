@@ -660,28 +660,26 @@
           
         </div>
       </div>
-      <div class="markdown"><h1 id="installing-mariadb">Installing MariaDB</h1>
-<p>To install <code>MariaDB</code> in your container, you have to run the following commands in the <a href="/editor/introduction/how-to-access">IDE terminal</a>.</p>
-<p>Import the MariaDB GnuPG signing key to your system:</p>
-<pre><code class="language-sh">sudo apt-key adv --fetch-keys &#39;http://mariadb.org/mariadb_release_signing_key.asc&#39;
+      <div class="markdown"><h1 id="working-with-react-native">Working with React-Native</h1>
+<p>In order to install React-Native framework, first <a href="/dashboard/containers/create-new-container">create a container</a> with the Node.js stack. Node.js has it&#39;s own package manager <code>npm</code> with which you will install the Expo CLI.</p>
+<pre><code class="language-sh">npm install -g expo-cli
 </code></pre>
-<p>Register the MariaDB repository:</p>
-<pre><code class="language-sh">sudo add-apt-repository &#39;deb [arch=amd64,arm64,i386,ppc64el] http://sfo1.mirrors.digitalocean.com/mariadb/repo/10.4/ubuntu xenial main&#39;
+<p>Now that you have the Expo CLI installed, create a new project in your <code>workspace</code>:</p>
+<pre><code class="language-sh">expo init AwesomeProject
 </code></pre>
-<p>Update the package index and install the <code>mariadb-server</code> and the <code>mariadb-client</code> packages.</p>
-<pre><code class="language-sh">sudo apt-get update
-sudo apt-get install -y mariadb-server mariadb-client
+<p>After the project is created, go to the project directory:</p>
+<pre><code class="language-sh">cd ~/AwesomeProject
 </code></pre>
-<p>You can check if your MariaDB instance is running with the following command:</p>
-<pre><code class="language-sh">sudo service mariadb status
+<p>To run React-Native application on a port run:</p>
+<pre><code class="language-sh">WEB_PORT=3001 yarn web
 </code></pre>
-<p>If MariaDB isn&#39;t running, you can start it using the command:</p>
-<pre><code class="language-sh">sudo systemctl start mariadb
+<p>Once launched, you can <a href="general/getting-started/faq#preview-progress">preview your application</a> with your container preview URL.</p>
+<p>To run React-Native on your Android device add to your package.json under scripts:</p>
+<pre><code class="language-sh">“webtunnel”: “expo start --web --tunnel”
 </code></pre>
-<p>To access the MariaDB instance, run the following command and enter the passwort in the prompt:</p>
-<pre><code class="language-sh">sudo mysql -u root -p
+<p>Run following command in terminal:</p>
+<pre><code class="language-sh">expo start --tunnel
 </code></pre>
-<p>See the <a href="https://dev.mysql.com/doc/refman/8.0/en/mysql.html">official documentation</a> for more information on interacting with your database using the command line interface.</p>
 </div>
     </div>
     <script src="/search.js"></script>

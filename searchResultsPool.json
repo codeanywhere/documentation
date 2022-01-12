@@ -604,6 +604,13 @@
   {
     "section": "Advanced Topics",
     "subsection": "Other",
+    "article": "Installing React-Native",
+    "heading": null,
+    "slug": "advanced-topics/other/install-react-native"
+  },
+  {
+    "section": "Advanced Topics",
+    "subsection": "Other",
     "article": "Installing SASS",
     "heading": null,
     "slug": "advanced-topics/other/install-sass"
