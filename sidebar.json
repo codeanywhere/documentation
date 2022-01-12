@@ -306,6 +306,10 @@
             "slug": "install-mean-stack"
           },
           {
+            "name": "Installing React-Native",
+            "slug": "install-react-native"
+          },
+          {
             "name": "Installing SASS",
             "slug": "install-sass"
           },
