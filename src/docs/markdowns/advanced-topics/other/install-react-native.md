@@ -37,6 +37,6 @@ To run React-Native on your Android device add to your package.json under script
 Run following command in terminal:
 
 ```sh
-expo start --tunnel
+WEB_PORT=3000 npm run webtunnel
 ```
 

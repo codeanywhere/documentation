@@ -10,7 +10,6 @@ Find out [here](/editor/introduction/how-to-access) how to access it.
 
 Codeanywhere offers you a wide range of <code>predefined templates</code>:
 
-- **Default** – Blank Development Container
 - **PHP** – LAMP Development Stack with phpMyAdmin and Composer preinstalled
 - **NodeJS** – NodeJS Development Stack with npm and yarn preinstalled
 - **Ruby** – Ruby Development Stack with RVM and Ruby on Rails preinstalled
@@ -20,6 +19,8 @@ Codeanywhere offers you a wide range of <code>predefined templates</code>:
 - **Wordpress** – LAMP Development Stack with Wordpress, phpMyAdmin and Composer preinstalled
 - **Java** – Java Development Stack with OpenJDK7, OpenJDE7 and Tomcat7 preinstalled
 - **.NET Core** – .NET Core Development Stack
+- **Go** – Go Development Stack with Go and gvm preinstalled
+- **Rust** – Rust Development Stack with Rust and Cargo preinstalled.
 
 You should use a template or a programming language which best fits your programming needs. If you wish to create a custom template, you can do so by following [these instructions](/dashboard/custom-templates/create-new-template).
 
@@ -103,6 +104,8 @@ Codeanywhere offers support for a wide range of programming languages in the sha
 - **Wordpress** – PHP
 - **Java**
 - **.NET Core** – C#
+- **Go** 
+- **Rust** 
 
 If you wish to use a different programming language, you can do so by [creating a container](/dashboard/containers/create-new-container) with a <code>Blank</code> template, and installing the necessary dependencies in the container terminal.
 
