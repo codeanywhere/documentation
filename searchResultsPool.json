@@ -178,6 +178,13 @@
     "section": "General",
     "subsection": "Getting Started",
     "article": "Frequently Asked Questions",
+    "heading": "My Node.js container is Always-on but my script stops running",
+    "slug": "general/getting-started/faq#my-node-js-container-is-always-on-but-my-script-stops-running"
+  },
+  {
+    "section": "General",
+    "subsection": "Getting Started",
+    "article": "Frequently Asked Questions",
     "heading": "How to Enable Two-Factor Authentication?",
     "slug": "general/getting-started/faq#how-to-enable-two-factor-authentication"
   },

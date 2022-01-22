@@ -770,6 +770,14 @@
 <p>You can use that link as the base URL for your API and send specific requests to it using the <a href="https://www.postman.com/">Postman</a> platform.</p>
 <p><img src="/images/general/getting-started/postman-3.png" alt="Postman request" class="width-90"/></p>
 
+<h3 id="my-nodejs-container-is-always-on-but-my-script-stops-running"><a name="my-node-js-container-is-always-on-but-my-script-stops-running" href="#my-node-js-container-is-always-on-but-my-script-stops-running" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>My Node.js container is Always-on but my script stops running</h3>
+<p>The Always-on feature means that your container won&#39;t be stopped, and it isn&#39;t. It&#39;s the process that is being stopped. To avoid this you&#39;ll need a supervisor program to run your application.</p>
+<p>There are plenty of supervisor programs available for Node.js but we strongly advise you to use PM2 - <a href="http://pm2.keymetrics.io/">Keymetrics</a> You can simply install it globally by running:</p>
+<pre><code> npm install pm2 -g 
+</code></pre>
+<p>After that just run your application with:</p>
+<pre><code> pm2 start APP_SCRIPT.js
+</code></pre>
 <h3 id="how-to-enable-two-factor-authentication"><a name="how-to-enable-two-factor-authentication" href="#how-to-enable-two-factor-authentication" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How to Enable Two-Factor Authentication?</h3>
 <p>Navigate to the <em>Two-Factor authetication</em> section in the <code>Account</code> page and toggle the switch.</p>
 <p><img src="/images/general/getting-started/2fa-step1.png" alt="Initiate 2FA" class="width-90"/></p>
