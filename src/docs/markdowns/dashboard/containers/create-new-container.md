@@ -14,7 +14,6 @@ To create a new container, you have to:
 
 You san select a [custom template](/custom-templates/create-new-template) or one of our predefined templates:
 
-- **Default** – Blank Development Container
 - **PHP** – LAMP Development Stack with phpMyAdmin and Composer preinstalled
 - **NodeJS** – NodeJS Development Stack with npm and yarn preinstalled
 - **Ruby** – Ruby Development Stack with RVM and Ruby on Rails preinstalled
