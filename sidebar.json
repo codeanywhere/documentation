@@ -310,6 +310,10 @@
             "slug": "install-react-native"
           },
           {
+            "name": "Installing Jupyter Notebook",
+            "slug": "install-jupyter-notebook"
+          },
+          {
             "name": "Installing SASS",
             "slug": "install-sass"
           },
