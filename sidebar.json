@@ -212,6 +212,10 @@
         "slug": "connected-accounts",
         "contents": [
           {
+            "name": "Adding the Codeanywhere SSH Key to Your Git Provider",
+            "slug": "adding-codeanywhere-ssh-key-to-git-provider"
+          },
+          {
             "name": "Git Providers",
             "slug": "git-providers"
           }
