@@ -674,16 +674,30 @@
           
         </div>
       </div>
-      <div class="markdown"><h1 id="installing-sql-lite">Installing SQL Lite</h1>
-<p>To install <code>SQL Lite</code> in your container, you have to run the following commands in the <a href="/editor/introduction/how-to-access">IDE terminal</a>.</p>
-<p>Update the package index on your server and install the default <code>postgresql</code> package.</p>
-<pre><code class="language-sh">sudo apt-get update
-sudo apt-get install sqlite3
-</code></pre>
-<p>You can validate the installation by running the following command. Terminate the program by typing <code>CTRL+D</code>.</p>
-<pre><code class="language-sh">sqlite3
-</code></pre>
-<p>See the <a href="https://sqlite.org/cli.html">official documentation</a> for more information on interacting with your database using the command line interface.</p>
+      <div class="markdown"><h1 id="adding-the-codeanywhere-ssh-public-key-to-your-git-provider">Adding the Codeanywhere SSH Public Key to your Git Provider</h1>
+<p>To authorize Codeanywhere to access your resources, you will need to add the Codeanywhere SSH public key to your Git account. First, find the public key in the <em>SSH Public Key</em> section of the <code>Account</code> page and copy it to your clipboard.</p>
+<p><img src="/images/dashboard/connected-accounts/show-public-key.png" alt="Copy Codeanywhere SSH public key" class="width-90"/></p>
+
+<h3 id="github"><a name="git-hub" href="#git-hub" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>GitHub</h3>
+<p>Sign into your GitHub account, click on your profile photo in the upper-right corner of the page and then click on <em>Settings</em>. Find the <em>Access</em> section in the sidebar and click on <code>SSH and GPG keys</code>.</p>
+<p>At the top of the page, find the <em>New SSH key</em> button.</p>
+<p><img src="/images/dashboard/connected-accounts/github-ssh-1.png" alt="New Github SSH key" class="width-90"/></p>
+
+<p>In the <em>Title</em> field, add a descriptive label for the new key. Also, select <em>Authentication Key</em> as the key type. Finally, paste the Codeanywhere SSH public key in the <em>Key</em> field and confirm your submission. If prompted, confirm access to your account on GitHub.</p>
+<p><img src="/images/dashboard/connected-accounts/github-ssh-2.png" alt="New Github SSH key" class="width-90"/></p>
+
+<h3 id="bitbucket"><a name="bitbucket" href="#bitbucket" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Bitbucket</h3>
+<p>Sign into your Bitbucket account, click on your profile photo in the upper-right corner of the page and then click on <em>Personal settings</em>. Find the <em>Security</em> section in the sidebar and click on <code>SSH keys</code>.</p>
+<p>At the top of the page, find the <em>Add key</em> button.</p>
+<p><img src="/images/dashboard/connected-accounts/bitbucket-ssh-1.png" alt="New Bitbucket SSH key" class="width-90"/></p>
+
+<p>First, add a descriptive label for the new key. Paste the Codeanywhere SSH public key in <em>Key</em> field and confirm your submission. If prompted, confirm access to your account on Bitbucket.</p>
+<p><img src="/images/dashboard/connected-accounts/bitbucket-ssh-2.png" alt="New Bitbucket SSH key" class="width-90"/></p>
+
+<h3 id="gitlab"><a name="git-lab" href="#git-lab" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>GitLab</h3>
+<p>Sign into your GitLab account, click on your profile photo in the upper-right corner of the page and then click on <em>Preferences</em>. Select the <code>SSH Keys</code> option in the sidebar.</p>
+<p>At the start of the page, you will find an option to add a new SSH key. First, paste the Codeanywhere SSH public key in <em>Key</em> field. In the <em>Title</em> field, add a descriptive label for the new key. Also, select <em>Authentication</em> as the usage type. Finally, choose if you want to set an expiration date for when this key becomes invalid and confirm your submission. If prompted, confirm access to your account on GitLab.</p>
+<p><img src="/images/dashboard/connected-accounts/gitlab-ssh-1.png" alt="New Gitlab SSH key" class="width-90"/></p>
 </div>
     </div>
     <script src="/search.js"></script>

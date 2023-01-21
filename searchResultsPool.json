@@ -471,6 +471,34 @@
   {
     "section": "Dashboard",
     "subsection": "Connected Accounts",
+    "article": "Adding the Codeanywhere SSH Key to Your Git Provider",
+    "heading": null,
+    "slug": "dashboard/connected-accounts/adding-codeanywhere-ssh-key-to-git-provider"
+  },
+  {
+    "section": "Dashboard",
+    "subsection": "Connected Accounts",
+    "article": "Adding the Codeanywhere SSH Key to Your Git Provider",
+    "heading": "GitHub",
+    "slug": "dashboard/connected-accounts/adding-codeanywhere-ssh-key-to-git-provider#git-hub"
+  },
+  {
+    "section": "Dashboard",
+    "subsection": "Connected Accounts",
+    "article": "Adding the Codeanywhere SSH Key to Your Git Provider",
+    "heading": "Bitbucket",
+    "slug": "dashboard/connected-accounts/adding-codeanywhere-ssh-key-to-git-provider#bitbucket"
+  },
+  {
+    "section": "Dashboard",
+    "subsection": "Connected Accounts",
+    "article": "Adding the Codeanywhere SSH Key to Your Git Provider",
+    "heading": "GitLab",
+    "slug": "dashboard/connected-accounts/adding-codeanywhere-ssh-key-to-git-provider#git-lab"
+  },
+  {
+    "section": "Dashboard",
+    "subsection": "Connected Accounts",
     "article": "Git Providers",
     "heading": null,
     "slug": "dashboard/connected-accounts/git-providers"
