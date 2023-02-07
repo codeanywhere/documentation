@@ -104,8 +104,8 @@ Codeanywhere offers support for a wide range of programming languages in the sha
 - **Wordpress** – PHP
 - **Java**
 - **.NET Core** – C#
-- **Go** 
-- **Rust** 
+- **Go**
+- **Rust**
 
 If you wish to use a different programming language, you can do so by [creating a container](/dashboard/containers/create-new-container) with a <code>Blank</code> template, and installing the necessary dependencies in the container terminal.
 
@@ -117,7 +117,7 @@ Find out [here](/editor/extensions/install-extensions-from-marketplace) how to i
 
 ### <a name="how-can-i-connect-my-container-to-a-ftp-connection" href="#how-can-i-connect-my-container-to-a-ftp-connection" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How can I connect my container to a FTP connection?
 
-Connecting your existing FTP connection to a container is pretty straight-forward. [Open the IDE](/editor/introduction/how-to-access) for any of your created containers and navigate to the <code>Connections</code> widget in the [sidebar](/editor/introduction/sidebar/#connections).
+Connecting your existing FTP connection to a container is pretty straight-forward. [Open the IDE](/editor/introduction/how-to-access) for any of your created containers and navigate to the <code>Connections</code> widget in the [sidebar](/editor/introduction/sidebar#connections).
 
 If you have already [created an FTP extension](/dashboard/connections/create-new-connection), you will now be able to interact with it in the IDE.
 
@@ -182,12 +182,10 @@ You can use that link as the base URL for your API and send specific requests to
 
 The Always-on feature means that your container won't be stopped, and it isn't. It's the process that is being stopped. To avoid this you'll need a supervisor program to run your application.
 
-
-
 There are plenty of supervisor programs available for Node.js but we strongly advise you to use PM2 - [Keymetrics](http://pm2.keymetrics.io/) You can simply install it globally by running:
 
 ```
- npm install pm2 -g 
+ npm install pm2 -g
 ```
 
 After that just run your application with:
