@@ -20,4 +20,4 @@ cd ~/workspace/app
 python manage.py runserver 0.0.0.0:3000
 ```
 
-Once launched, you can [preview your application](general/getting-started/faq#preview-progress) with your container preview URL.
+Once launched, you can [preview your application](/general/getting-started/faq#preview-progress) with your container preview URL.

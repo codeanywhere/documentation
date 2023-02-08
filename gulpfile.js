@@ -55,8 +55,11 @@ function views() {
             contents: Buffer.from(
               ejs.render(template, {
                 title: 'Codeanywhere Docs',
+                description:
+                  "Welcome to the official Codeanywhere documentation! Here you'll find articles and tutorials to help you get started with the Codeanywhere platform.",
                 sidebar,
                 rendered: String(file.contents),
+                filePath: file.relative.replace('.html', '').replaceAll('\\', '/').replace('index', ''),
                 filename: 'src/views/index.ejs',
               })
             ),
