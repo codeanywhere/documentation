@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <title>Codeanywhere Docs</title>
+  <meta name="description" content="Welcome to the official Codeanywhere documentation! Here you&#39;ll find articles and tutorials to help you get started with the Codeanywhere platform.">
+  <meta name="og:title" content="Codeanywhere Docs">
+  <meta name="og:type" content="website">
+  <meta name="og:image" content="https://codeanywhere.com/img/backgrounds/codeanywhere-bg.jpg" />
+  <meta name="og:url" content="https://docs.codeanywhere.com/general/getting-started/faq" />
   <link rel="stylesheet" type="text/css" href="/style.css" />
   <link href="//fonts.googleapis.com/css?family=Lato:300,400|Questrial|Raleway:400,100,700" rel="stylesheet"
     type="text/css" />
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
   <link rel="shortcut icon" href="/favicon.ico" />
+  <meta name="twitter:title" content="Codeanywhere Docs" />
+  <meta name="twitter:domain" content="https://codeanywhere.com" />
+  <meta name="twitter:creator" content="@Codeanywhere" />
+  <meta name="twitter:site" content="@Codeanywhere" />
+  <meta name="twitter:description" content="Welcome to the official Codeanywhere documentation! Here you&#39;ll find articles and tutorials to help you get started with the Codeanywhere platform." />
+  <meta name="twitter:image" content="https://codeanywhere.com/img/backgrounds/codeanywhere-bg.jpg" />
 
   <script>
   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -742,15 +753,15 @@
 <li><strong>Wordpress</strong> – PHP</li>
 <li><strong>Java</strong></li>
 <li><strong>.NET Core</strong> – C#</li>
-<li><strong>Go</strong> </li>
-<li><strong>Rust</strong> </li>
+<li><strong>Go</strong></li>
+<li><strong>Rust</strong></li>
 </ul>
 <p>If you wish to use a different programming language, you can do so by <a href="/dashboard/containers/create-new-container">creating a container</a> with a <code>Blank</code> template, and installing the necessary dependencies in the container terminal.</p>
 <h3 id="can-i-install-extensions-from-the-vs-code-marketplace"><a name="can-i-install-extensions-from-the-vs-code-marketplace" href="#can-i-install-extensions-from-the-vs-code-marketplace" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>Can I install extensions from the VS Code marketplace?</h3>
 <p>Codeanywhere users can choose from a wide variety of extensions from the <a href="https://open-vsx.org/">OpenVSX</a> registry.</p>
 <p>Find out <a href="/editor/extensions/install-extensions-from-marketplace">here</a> how to install extensions from the marketplace.</p>
 <h3 id="how-can-i-connect-my-container-to-a-ftp-connection"><a name="how-can-i-connect-my-container-to-a-ftp-connection" href="#how-can-i-connect-my-container-to-a-ftp-connection" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How can I connect my container to a FTP connection?</h3>
-<p>Connecting your existing FTP connection to a container is pretty straight-forward. <a href="/editor/introduction/how-to-access">Open the IDE</a> for any of your created containers and navigate to the <code>Connections</code> widget in the <a href="/editor/introduction/sidebar/#connections">sidebar</a>.</p>
+<p>Connecting your existing FTP connection to a container is pretty straight-forward. <a href="/editor/introduction/how-to-access">Open the IDE</a> for any of your created containers and navigate to the <code>Connections</code> widget in the <a href="/editor/introduction/sidebar#connections">sidebar</a>.</p>
 <p>If you have already <a href="/dashboard/connections/create-new-connection">created an FTP extension</a>, you will now be able to interact with it in the IDE.</p>
 <h3 id="how-can-i-use-my-github-repository-in-a-container"><a name="how-can-i-use-my-github-repository-in-a-container" href="#how-can-i-use-my-github-repository-in-a-container" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>How can I use my Github repository in a container?</h3>
 <p>You can work directly with your repositories in the IDE. Find more information <a href="/advanced-topics/other/working-with-repositories">here</a>.</p>
@@ -787,7 +798,7 @@
 <h3 id="my-nodejs-container-is-always-on-but-my-script-stops-running"><a name="my-node-js-container-is-always-on-but-my-script-stops-running" href="#my-node-js-container-is-always-on-but-my-script-stops-running" class="anchor-link"><img src="/images/anchor.svg" alt="Link anchor" class="anchor-img"></a>My Node.js container is Always-on but my script stops running</h3>
 <p>The Always-on feature means that your container won&#39;t be stopped, and it isn&#39;t. It&#39;s the process that is being stopped. To avoid this you&#39;ll need a supervisor program to run your application.</p>
 <p>There are plenty of supervisor programs available for Node.js but we strongly advise you to use PM2 - <a href="http://pm2.keymetrics.io/">Keymetrics</a> You can simply install it globally by running:</p>
-<pre><code> npm install pm2 -g 
+<pre><code> npm install pm2 -g
 </code></pre>
 <p>After that just run your application with:</p>
 <pre><code> pm2 start APP_SCRIPT.js
